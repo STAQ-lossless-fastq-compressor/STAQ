@@ -60,23 +60,23 @@ fi
 if [ "$mode" == "-c" ]; then
     # Compression mode
     if [ -z "$deep_option" ]; then
-        ./spring -c -i "$input_file" --no-ids --no-quality -o "$output_file" &
+        ./spring/build/spring -c -i "$input_file" --no-ids --no-quality -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
 
     else
-        ./spring -c -i "$input_file" --no-ids --no-quality --deep -o "$output_file" &
+        ./spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
     fi
 elif [ "$mode" == "-d" ]; then
     # Decompression mode
     if [ -z "$deep_option" ]; then
-        ./spring -d -i "$input_file" -o "$output_file" &
+        ./spring/build/spring -d -i "$input_file" -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
     else
-        ./spring -d -i "$input_file" --deep -o "$output_file" &
+        ./spring/build/spring -d -i "$input_file" --deep -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
 fi
