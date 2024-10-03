@@ -49,7 +49,7 @@ void decompress_short(const std::string &temp_dir, const std::string &outfile_1,
                       const std::string &outfile_2,
                       const compression_params &cp, const int &num_thr,
                       const uint64_t &start_num, const uint64_t &end_num,
-                      const bool &gzip_flag, const int &gzip_level) {
+                      const bool &gzip_flag, const int &gzip_level, const bool &deep_flag) {
   std::string basedir = temp_dir;
 
   std::string file_seq = basedir + "read_seq.bin";
@@ -124,7 +124,7 @@ void decompress_short(const std::string &temp_dir, const std::string &outfile_1,
   // Decompress read_seq and store in a string
   std::string seq;
   int num_thr_e = cp.num_thr;  // number of encoding threads
-  decompress_unpack_seq(file_seq, num_thr_e, num_thr, basedir);
+  decompress_unpack_seq(file_seq, num_thr_e, num_thr, basedir,deep_flag);
   for (int tid_e = 0; tid_e < num_thr_e; tid_e++) {
     uint64_t prev_len = seq.size();
     uint64_t file_len;
@@ -489,7 +489,7 @@ void decompress_long(const std::string &temp_dir, const std::string &outfile_1,
                      const std::string &outfile_2, const compression_params &cp,
                      const int &num_thr, const uint64_t &start_num,
                      const uint64_t &end_num, const bool &gzip_flag,
-                     const int &gzip_level) {
+                     const int &gzip_level, const bool &deep_flag) {
   std::string infileread[2];
   std::string infilequality[2];
   std::string infileid[2];
@@ -665,36 +665,53 @@ void decompress_long(const std::string &temp_dir, const std::string &outfile_1,
 }
 
 void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
-                           const int &num_thr, const std::string &temp_dir) {
+                           const int &num_thr, const std::string &temp_dir, const bool &deep_flag) {
 #pragma omp parallel
   {
     std::string basedir = temp_dir;
     int tid = omp_get_thread_num();
     for (int tid_e = tid * num_thr_e / num_thr;
          tid_e < (tid + 1) * num_thr_e / num_thr; tid_e++) {
+
+      std::string outfile = infile_seq + '.' + std::to_string(tid_e);
+      std::ifstream in_seq;
+      fs::path input_file_path;    
+      if(deep_flag){
+      // Define input and output file names for DZIP decompression
+      std::string infile_trace = infile_seq + '.' + std::to_string(tid_e) + ".tmp.compressed.combined";
+      std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir" + infile_trace + " --batch_size 512 --gpu_id 1 --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
+      // Execute the command
+      system(bash_cmd.c_str());
+
+      // Remove the zpaq compressed file
+      remove(infile_dzip.c_str());
+
+      // 여기 경로 설정 다시
+      in_seq.open("read_seq.bin" + '.' + std::to_string(tid_e), std::ios::binary);
+      if (!in_seq) {
+          std::cerr << "Error: File read_seq.bin" << '.' << std::to_string(tid_e) << " could not be opened." << std::endl;
+      }
+      }
+      else{
       // Define input and output file names for zpaq decompression
       std::string infile_zpaq = infile_seq + '.' + std::to_string(tid_e) + ".zpaq";
-      std::string outfile = infile_seq + '.' + std::to_string(tid_e);
 
       // Use zpaq to decompress the file
       std::string command = "zpaq x " + infile_zpaq + " -to " +basedir;
       std::system(command.c_str());
-
       // Remove the zpaq compressed file
       remove(infile_zpaq.c_str());
 
       // 최신 폴더 찾기
       fs::path decompressed_folder = find_unique_folder(basedir);
-      fs::path input_file_path = decompressed_folder / ("read_seq.bin." + std::to_string(tid_e) + ".tmp");
-
+      input_file_path = decompressed_folder / ("read_seq.bin." + std::to_string(tid_e) + ".tmp");
       std::cout << decompressed_folder << std::endl;
-      std::ofstream f_seq(infile_seq + '.' + std::to_string(tid_e) + ".tmp");
-      std::ifstream in_seq(input_file_path,
-                           std::ios::binary);
-          // Check if the file was successfully opened
+      in_seq.open(input_file_path, std::ios::binary);
       if (!in_seq) {
           std::cerr << "Error: File " << input_file_path << " could not be opened." << std::endl;
       }
+
+      std::ofstream f_seq(infile_seq + '.' + std::to_string(tid_e) + ".tmp");
       std::ifstream in_seq_tail(infile_seq + '.' + std::to_string(tid_e) +
                                 ".tail");
       char inttobase[4];
@@ -725,8 +742,10 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       remove((infile_seq + '.' + std::to_string(tid_e) + ".tail").c_str());
       rename((infile_seq + '.' + std::to_string(tid_e) + ".tmp").c_str(),
              (infile_seq + '.' + std::to_string(tid_e)).c_str());
+    
     }  // for end
   }    // parallel end
+  }
 }
 
 void set_dec_noise_array(char **dec_noise) {

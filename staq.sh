@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments is provided
 if [ "$#" -lt 6 ]; then
-    echo "Usage: ./staq.sh [-c|-d] -i input.fastq [--deep] -o output.sdzip"
+    echo "Usage: ./staq.sh [-c|-d] -i input.fastq [--deep] -o output.staq"
     exit 1
 fi
 
@@ -60,25 +60,29 @@ fi
 if [ "$mode" == "-c" ]; then
     # Compression mode
     if [ -z "$deep_option" ]; then
-        ./spring/build/spring -c -i "$input_file" --no-ids --no-quality -o "$output_file" &
+        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
-
     else
-        ./spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "$output_file" &
+        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
     fi
+    # tar로 결과 파일을 묶기
+    tar -cf "${output_file}" *.spring *.zpaq *.combined
+    rm -f *.spring *.zpaq
+
 elif [ "$mode" == "-d" ]; then
     # Decompression mode
     if [ -z "$deep_option" ]; then
-        ./spring/build/spring -d -i "$input_file" -o "$output_file" &
+        ./Spring/build/spring -d -i "$input_file" -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
     else
-        ./spring/build/spring -d -i "$input_file" --deep -o "$output_file" &
+        ./Spring/build/spring -d -i "$input_file" --deep -o "$output_file" &
         python3 split_id_qual.py "$input_file" &
         wait
+    fi
 fi
 
 echo "Operation completed: $output_file"
