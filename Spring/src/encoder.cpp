@@ -157,23 +157,21 @@ void pack_compress_seq(const encoder_global &eg, uint64_t *file_len_seq_thr, boo
     // Compress using zpaq and remove uncompressed files if deep is false
     if(deep){
       // Define the command to run the Python script
-      // python3 -u compressor.py --input_dir ./read_seq.bin.2 --batch_size 512 --gpu_id 1 --prefix comp --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64
       std::string infile_deep = eg.outfile_seq + '.' + std::to_string(tid) + ".tmp";
       std::string python_cmd = "python3 -u Trace/compressor.py --input_dir " + infile_deep + " --batch_size 512 --gpu_id 1 --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
       // Execute the command
       system(python_cmd.c_str());
     }
-
     else {
       std::string infile_zpaq = eg.outfile_seq + '.' + std::to_string(tid) + ".tmp";
       std::string outfile_zpaq = eg.outfile_seq + '.' + std::to_string(tid) + ".zpaq";
       std::string compress_cmd = "zpaq add " + outfile_zpaq + " " + infile_zpaq + " -method 5";
       system(compress_cmd.c_str());
-
-      // Remove the uncompressed and temporary files
-      remove((eg.outfile_seq + '.' + std::to_string(tid)).c_str());
     }
+        // Remove the uncompressed and temporary files
+    remove((eg.outfile_seq + '.' + std::to_string(tid)).c_str());
     remove((eg.outfile_seq + '.' + std::to_string(tid) + ".tmp").c_str());
+
 
   }
   return;

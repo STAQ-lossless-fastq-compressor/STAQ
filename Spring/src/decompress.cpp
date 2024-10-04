@@ -684,7 +684,7 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       system(bash_cmd.c_str());
 
       // Remove the zpaq compressed file
-      remove(infile_dzip.c_str());
+      remove(infile_trace.c_str());
 
       // 여기 경로 설정 다시
       in_seq.open("read_seq.bin" + '.' + std::to_string(tid_e), std::ios::binary);

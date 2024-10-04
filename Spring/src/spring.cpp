@@ -361,10 +361,10 @@ void decompress(const std::string &temp_dir,
   std::cout << "Decompressing ...\n";
   if (long_flag)
     decompress_long(temp_dir, outfile_1, outfile_2, cp, num_thr, start_num,
-                    end_num, gzip_flag, gzip_level);
+                    end_num, gzip_flag, gzip_level, deep_flag);
   else
     decompress_short(temp_dir, outfile_1, outfile_2, cp, num_thr, start_num,
-                     end_num, gzip_flag, gzip_level);
+                     end_num, gzip_flag, gzip_level, deep_flag);
 
   delete cp_ptr;
   auto decompression_end = std::chrono::steady_clock::now();

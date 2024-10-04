@@ -60,19 +60,21 @@ fi
 if [ "$mode" == "-c" ]; then
     # Compression mode
     if [ -z "$deep_option" ]; then
-        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality -o "$output_file" &
+        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality -o "staq.spring" &
         python3 split_id_qual.py "$input_file" &
         wait
     else
-        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "$output_file" &
+        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "staq.spring" &
         python3 split_id_qual.py "$input_file" &
         wait
     fi
     # tar로 결과 파일을 묶기
     tar -cf "${output_file}" *.spring *.zpaq *.combined
-    rm -f *.spring *.zpaq
+    rm -f *.spring *.zpaq *.combined
 
 elif [ "$mode" == "-d" ]; then
+    # tar 압축 해제
+    tar -xf "${input_file}" -C .
     # Decompression mode
     if [ -z "$deep_option" ]; then
         ./Spring/build/spring -d -i "$input_file" -o "$output_file" &
