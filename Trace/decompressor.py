@@ -162,13 +162,18 @@ def main(_):
   file_name = os.path.basename(FLAGS.input_dir)
   temp_dir = "{}_temp".format(file_name)
   compressed_file = temp_dir.replace("_temp", ".compressed")
+
+  print(f"Input directory: {FLAGS.input_dir}")
+  print(f"File name: {file_name}")
+  print(f"Temporary directory: {temp_dir}")
+
   
   #Decode
   os.mkdir(temp_dir)
   
   #Split compressed file
   
-  f = open(compressed_file+'.combined','rb')
+  f = open(compressed_file,'rb')
   len_series = len(series) 
   for i in range(FLAGS.batch_size):
     f_out = open(temp_dir+'/'+compressed_file+'.'+str(i),'wb')

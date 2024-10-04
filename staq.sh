@@ -75,16 +75,32 @@ if [ "$mode" == "-c" ]; then
 elif [ "$mode" == "-d" ]; then
     # tar 압축 해제
     tar -xf "${input_file}" -C .
+    spring_file=$(find . -maxdepth 1 -type f -name "*.spring" -print -quit)
+    id_zpaq_file=$(find . -maxdepth 1 -type f -name "*id.zpaq" -print -quit)
+    qual_zpaq_file=$(find . -maxdepth 1 -type f -name "*qual.zpaq" -print -quit)
+
+    output_base_name="${output_file%.*}"
+    id_base_name="${id_zpaq_file%.*}"
+    qual_base_name="${qual_zpaq_file%.*}"
+
+    echo "$output_base_name, $id_base_name, $qual_base_name"
+
+    if [ -z "$input_file" ]; then
+    echo ".spring 확장자로 끝나는 파일을 찾을 수 없습니다."
+    exit 1
+    fi
+
     # Decompression mode
     if [ -z "$deep_option" ]; then
-        ./Spring/build/spring -d -i "$input_file" -o "$output_file" &
-        python3 split_id_qual.py "$input_file" &
+        ./Spring/build/spring -d -i "$spring_file" -o "$output_base_name.seq" &
+        python3 rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
         wait
     else
-        ./Spring/build/spring -d -i "$input_file" --deep -o "$output_file" &
-        python3 split_id_qual.py "$input_file" &
+        ./Spring/build/spring -d -i "$spring_file" --deep -o "$output_base_name.seq" &
+        python3 rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
         wait
     fi
+    python3 combine.py "$id_base_name.txt" "$output_base_name.seq" "${qual_base_name}_decompress.txt" "$output_base_name.fastq"
 fi
 
 echo "Operation completed: $output_file"

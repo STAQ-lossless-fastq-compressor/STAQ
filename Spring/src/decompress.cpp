@@ -677,19 +677,20 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       std::ifstream in_seq;
       fs::path input_file_path;    
       if(deep_flag){
-      // Define input and output file names for DZIP decompression
-      std::string infile_trace = infile_seq + '.' + std::to_string(tid_e) + ".tmp.compressed.combined";
-      std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir" + infile_trace + " --batch_size 512 --gpu_id 1 --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
+      // Define input and output file names for Trace decompression
+      std::string trace = "read_seq.bin." + std::to_string(tid_e) + ".tmp.compressed.combined";
+      std::cout << "Infile trace: " << trace << std::endl;
+      std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir " + trace + " --batch_size 512 --gpu_id 1 --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
       // Execute the command
       system(bash_cmd.c_str());
 
       // Remove the zpaq compressed file
-      remove(infile_trace.c_str());
+      remove(trace.c_str());
 
       // 여기 경로 설정 다시
-      in_seq.open("read_seq.bin" + '.' + std::to_string(tid_e), std::ios::binary);
+      in_seq.open("read_seq.bin." + std::to_string(tid_e), std::ios::binary);
       if (!in_seq) {
-          std::cerr << "Error: File read_seq.bin" << '.' << std::to_string(tid_e) << " could not be opened." << std::endl;
+          std::cerr << "Error: File read_seq.bin." << std::to_string(tid_e) << " could not be opened." << std::endl;
       }
       }
       else{
