@@ -44,7 +44,7 @@ void compress(const std::string &temp_dir,
               const bool &pairing_only_flag, const bool &no_quality_flag,
               const bool &no_ids_flag,
               const std::vector<std::string> &quality_opts,
-              const bool &long_flag, const bool &gzip_flag, const bool &fasta_flag, const bool &deep_flag) {
+              const bool &long_flag, const bool &gzip_flag, const bool &fasta_flag, const bool &deep_flag, const int &gpu_id) {
   //
   // Ensure that omp parallel regions are executed with the requested
   // #threads.
@@ -163,7 +163,7 @@ void compress(const std::string &temp_dir,
 
     std::cout << "Encoding ...\n";
     auto encoder_start = std::chrono::steady_clock::now();
-    call_encoder(temp_dir, cp, deep_flag);
+    call_encoder(temp_dir, cp, deep_flag, gpu_id);
     auto encoder_end = std::chrono::steady_clock::now();
     std::cout << "Encoding done!\n";
     std::cout << "Time for this step: "
@@ -281,7 +281,7 @@ void decompress(const std::string &temp_dir,
                 const std::vector<std::string> &infile_vec,
                 const std::vector<std::string> &outfile_vec, const int &num_thr,
                 const std::vector<uint64_t> &decompress_range_vec,
-                const bool &gzip_flag, const int &gzip_level, const bool &deep_flag) {
+                const bool &gzip_flag, const int &gzip_level, const bool &deep_flag, const int &gpu_id) {
   //
   // Ensure that omp parallel regions are executed with the requested
   // #threads.
@@ -361,10 +361,10 @@ void decompress(const std::string &temp_dir,
   std::cout << "Decompressing ...\n";
   if (long_flag)
     decompress_long(temp_dir, outfile_1, outfile_2, cp, num_thr, start_num,
-                    end_num, gzip_flag, gzip_level, deep_flag);
+                    end_num, gzip_flag, gzip_level, deep_flag, gpu_id);
   else
     decompress_short(temp_dir, outfile_1, outfile_2, cp, num_thr, start_num,
-                     end_num, gzip_flag, gzip_level, deep_flag);
+                     end_num, gzip_flag, gzip_level, deep_flag, gpu_id);
 
   delete cp_ptr;
   auto decompression_end = std::chrono::steady_clock::now();

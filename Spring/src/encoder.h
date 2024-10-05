@@ -96,7 +96,7 @@ void writecontig(const std::string &ref,
                  std::ofstream &f_RC, std::ofstream &f_readlength,
                  const encoder_global &eg, uint64_t &abs_pos);
 
-void pack_compress_seq(const encoder_global &eg, uint64_t *file_len_seq_thr, bool deep);
+void pack_compress_seq(const encoder_global &eg, uint64_t *file_len_seq_thr, bool deep, int gpu_id);
 
 void getDataParams(encoder_global &eg, const compression_params &cp);
 
@@ -124,7 +124,7 @@ std::string bitsettostring(std::bitset<bitset_size> b, const uint16_t readlen,
 template <size_t bitset_size>
 void encode(std::bitset<bitset_size> *read, bbhashdict *dict, uint32_t *order_s,
             uint16_t *read_lengths_s, const encoder_global &eg,
-            const encoder_global_b<bitset_size> &egb, bool deep) {
+            const encoder_global_b<bitset_size> &egb, bool deep, int gpu_id) {
   static const int thresh_s = THRESH_ENCODER;
   static const int maxsearch = MAX_SEARCH_ENCODER;
   omp_lock_t *read_lock = new omp_lock_t[eg.numreads_s + eg.numreads_N];
@@ -469,7 +469,7 @@ void encode(std::bitset<bitset_size> *read, bbhashdict *dict, uint32_t *order_s,
   uint64_t *file_len_seq_thr = new uint64_t[eg.num_thr];
   uint64_t abs_pos = 0;
   uint64_t abs_pos_thr;
-  pack_compress_seq(eg, file_len_seq_thr, deep);
+  pack_compress_seq(eg, file_len_seq_thr, deep, gpu_id);
   std::ofstream fout_pos(eg.outfile_pos, std::ios::binary);
   for (int tid = 0; tid < eg.num_thr; tid++) {
     std::ifstream fin_pos(eg.outfile_pos + '.' + std::to_string(tid),
@@ -570,7 +570,7 @@ void readsingletons(std::bitset<bitset_size> *read, uint32_t *order_s,
 }
 
 template <size_t bitset_size>
-void encoder_main(const std::string &temp_dir, const compression_params &cp, bool deep) {
+void encoder_main(const std::string &temp_dir, const compression_params &cp, bool deep, int gpu_id) {
   encoder_global_b<bitset_size> *egb_ptr =
       new encoder_global_b<bitset_size>(cp.max_readlen);
   encoder_global *eg_ptr = new encoder_global;
@@ -622,7 +622,7 @@ void encoder_main(const std::string &temp_dir, const compression_params &cp, boo
     constructdictionary<bitset_size>(read, dict, read_lengths_s, eg.numdict_s,
                                      eg.numreads_s + eg.numreads_N, 3,
                                      eg.basedir, eg.num_thr);
-  encode<bitset_size>(read, dict, order_s, read_lengths_s, eg, egb, deep);
+  encode<bitset_size>(read, dict, order_s, read_lengths_s, eg, egb, deep, gpu_id);
 
   delete[] read;
   delete[] dict;

@@ -26,13 +26,13 @@ void compress(const std::string &temp_dir,
               const bool &pairing_only_flag, const bool &no_quality_flag,
               const bool &no_ids_flag,
               const std::vector<std::string> &quality_opts,
-              const bool &long_flag, const bool &gzip_flag, const bool &fasta_flag, const bool &deep_flag);
+              const bool &long_flag, const bool &gzip_flag, const bool &fasta_flag, const bool &deep_flag, const int &gpu_id);
 
 void decompress(const std::string &temp_dir,
                 const std::vector<std::string> &infile_vec,
                 const std::vector<std::string> &outfile_vec, const int &num_thr,
                 const std::vector<uint64_t> &decompress_range_vec,
-                const bool &gzip_flag, const int &gzip_level, const bool &deep_flag);
+                const bool &gzip_flag, const int &gzip_level, const bool &deep_flag, const int &gpu_id);
 
 std::string random_string(size_t length);
 

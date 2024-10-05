@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
   std::vector<std::string> infile_vec, outfile_vec, quality_opts;
   std::vector<uint64_t> decompress_range_vec;
   std::string working_dir;
-  int num_thr, gzip_level;
+  int num_thr, gzip_level, gpu_id;
   po::options_description desc("Allowed options");
   desc.add_options()("help,h", po::bool_switch(&help_flag),
                      "produce help message")(
@@ -94,7 +94,10 @@ int main(int argc, char** argv) {
       "gzip-level", po::value<int>(&gzip_level)->default_value(6),
       "gzip level (0-9) to use during decompression if -g flag is specified (default: 6)")(
       "fasta-input", po::bool_switch(&fasta_flag),
-      "enable if compression input is fasta file (i.e., no qualities)");
+      "enable if compression input is fasta file (i.e., no qualities)")(
+      "gpu-id", po::value<int>(&gpu_id)->default_value(0),
+      "ID of the GPU to use (default: 0)"
+      );
   po::variables_map vm;
   po::store(po::parse_command_line(argc, argv, desc), vm);
   po::notify(vm);
@@ -142,10 +145,10 @@ int main(int argc, char** argv) {
     if (compress_flag)
       spring::compress(temp_dir, infile_vec, outfile_vec, num_thr,
                        pairing_only_flag, no_quality_flag, no_ids_flag,
-                       quality_opts, long_flag, gzip_flag, fasta_flag, deep_flag);
+                       quality_opts, long_flag, gzip_flag, fasta_flag, deep_flag, gpu_id);
     else
       spring::decompress(temp_dir, infile_vec, outfile_vec, num_thr,
-                         decompress_range_vec, gzip_flag, gzip_level, deep_flag);
+                         decompress_range_vec, gzip_flag, gzip_level, deep_flag, gpu_id);
 
   }
   // Error handling

@@ -8,7 +8,7 @@ namespace spring {
 
 void call_reorder(const std::string &temp_dir, compression_params &cp);
 
-void call_encoder(const std::string &temp_dir, compression_params &cp, bool deep);
+void call_encoder(const std::string &temp_dir, compression_params &cp, bool deep, int gpu_id);
 
 }  // namespace spring
 
