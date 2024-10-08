@@ -28,7 +28,7 @@ def rle_encode(data):
     
     return bytes(encoding)
 
-def rle_encode_file(input_file, output_file, chunk_size=1024*1024):  # 1MB 청크
+def rle_encode_file(input_file, output_file, chunk_size=1024*1024*1000):  # 1MB 청크
     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
         prev_char = None
         count = 0

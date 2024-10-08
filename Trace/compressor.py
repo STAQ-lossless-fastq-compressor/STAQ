@@ -146,9 +146,18 @@ def main(_):
   np.random.seed(FLAGS.random_seed)
   torch.manual_seed(FLAGS.random_seed)
 
-  file_name = os.path.basename(FLAGS.input_dir)
-  temp_dir = "{}_temp".format(file_name)
-  compressed_file = temp_dir.replace("_temp", ".compressed")
+  # file_name = os.path.basename(FLAGS.input_dir)
+  # temp_dir = "{}_temp".format(file_name)
+  # compressed_file = temp_dir.replace("_temp", ".compressed")
+  # os.mkdir(temp_dir)
+  # print(compressed_file)
+
+  input_dir = FLAGS.input_dir
+  file_name = os.path.basename(input_dir)
+  # input_dir에서 디렉터리 경로 추출
+  directory = os.path.dirname(input_dir)
+  temp_dir = os.path.join(directory, f"{file_name}_temp")
+  compressed_file = os.path.basename(temp_dir.replace("_temp", ".compressed"))
   os.mkdir(temp_dir)
   print(compressed_file)
   
@@ -173,7 +182,7 @@ def main(_):
     encode(temp_dir, compressed_file, FLAGS, series[:l+FLAGS.seq_len], train_data[:l], series[l:])
   
   #Combined compressed results
-  f = open(compressed_file+'.combined','wb')
+  f = open(directory+"/"+compressed_file+'.combined','wb')
   for i in range(FLAGS.batch_size):
     f_in = open(temp_dir+'/'+compressed_file+'.'+str(i),'rb')
     byte_str = f_in.read()

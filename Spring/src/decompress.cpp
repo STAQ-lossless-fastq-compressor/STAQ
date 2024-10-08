@@ -674,11 +674,11 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
          tid_e < (tid + 1) * num_thr_e / num_thr; tid_e++) {
 
       std::string outfile = infile_seq + '.' + std::to_string(tid_e);
-      std::ifstream in_seq;
+      // std::ifstream in_seq;
       fs::path input_file_path;    
       if(deep_flag){
       // Define input and output file names for Trace decompression
-      std::string trace = "read_seq.bin." + std::to_string(tid_e) + ".tmp.compressed.combined";
+      std::string trace = outfile + ".tmp.compressed.combined";
       std::cout << "Infile trace: " << trace << std::endl;
       std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir " + trace + " --batch_size 512 --gpu_id " + std::to_string(gpu_id) + " --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
       // Execute the command
@@ -686,12 +686,11 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
 
       // Remove the zpaq compressed file
       remove(trace.c_str());
-
-      // 여기 경로 설정 다시
-      in_seq.open("read_seq.bin." + std::to_string(tid_e), std::ios::binary);
-      if (!in_seq) {
-          std::cerr << "Error: File read_seq.bin." << std::to_string(tid_e) << " could not be opened." << std::endl;
-      }
+      input_file_path = infile_seq + '.' + std::to_string(tid_e);
+      // in_seq.open("read_seq.bin." + std::to_string(tid_e) + ".tmp", std::ios::binary);
+      // if (!in_seq) {
+      //     std::cerr << "Error: File read_seq.bin." << std::to_string(tid_e) << ".tmp could not be opened." << std::endl;
+      // }
       }
       else{
       // Define input and output file names for zpaq decompression
@@ -707,12 +706,15 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       fs::path decompressed_folder = find_unique_folder(basedir);
       input_file_path = decompressed_folder / ("read_seq.bin." + std::to_string(tid_e) + ".tmp");
       std::cout << decompressed_folder << std::endl;
-      in_seq.open(input_file_path, std::ios::binary);
-      if (!in_seq) {
-          std::cerr << "Error: File " << input_file_path << " could not be opened." << std::endl;
+      // in_seq.open(input_file_path, std::ios::binary);
+      // if (!in_seq) {
+      //     std::cerr << "Error: File " << input_file_path << " could not be opened." << std::endl;
+      // }
       }
 
+      std::cout << "현재 경로: " << std::filesystem::current_path() << std::endl;
       std::ofstream f_seq(infile_seq + '.' + std::to_string(tid_e) + ".tmp");
+      std::ifstream in_seq(input_file_path, std::ios::binary);
       std::ifstream in_seq_tail(infile_seq + '.' + std::to_string(tid_e) +
                                 ".tail");
       char inttobase[4];
@@ -747,7 +749,7 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
     }  // for end
   }    // parallel end
   }
-}
+
 
 void set_dec_noise_array(char **dec_noise) {
   dec_noise[(uint8_t)'A'][(uint8_t)'0'] = 'C';

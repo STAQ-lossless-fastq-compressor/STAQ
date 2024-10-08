@@ -4,7 +4,7 @@ import subprocess
 from Bio import SeqIO
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def rle_decode_file(input_file, output_file, chunk_size=1024*1024*100):  # 1MB 청크
+def rle_decode_file(input_file, output_file, chunk_size=1024*1024*1000):  # 1MB 청크
     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
         buffer = bytearray()
         
@@ -31,7 +31,7 @@ def decompress_with_zpaq(id_file, qual_file):
     try:
         subprocess.run(zpaq_cmd_id, shell=True, check=True)
         subprocess.run(zpaq_cmd_qual, shell=True, check=True)
-        print(f"복원된 파일: {id_file}.zpaq, {qual_file}.zpaq")
+        print(f"복원된 파일: {id_file}, {qual_file}")
     except subprocess.CalledProcessError as e:
         print(f"복원 중 오류 발생: {e}")
 
@@ -49,11 +49,12 @@ if __name__ == "__main__":
     qual_file = sys.argv[2]
 
     qual_basename = os.path.basename(qual_file)
+    qual_basename = os.path.splitext(qual_basename)[0]  # 확장자 제거
     
     # id.zpaq와 qual.zpaq 압축 해제
     decompress_with_zpaq(id_file, qual_file)
     
     # qual 파일 RLE 디코딩
     qual_decompressed_file = f"{qual_basename}_decompess.txt"
-    rle_decode_file(f"{qual_basename}.txt", qual_decompressed_file)
+    rle_decode_file(f"{qual_basename}_rle", qual_decompressed_file)
 

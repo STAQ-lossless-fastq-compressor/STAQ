@@ -53,7 +53,7 @@ flags.DEFINE_string('input_dir', 'aaa', 'input data dir')
 flags.DEFINE_string('prefix', 'text8', 'output dir')
 
 
-def decode(temp_dir, compressed_file, FLAGS, len_series, last):
+def decode(temp_dir, directory, compressed_file, FLAGS, len_series, last):
   
   bs = FLAGS.batch_size
 
@@ -112,10 +112,10 @@ def decode(temp_dir, compressed_file, FLAGS, len_series, last):
       print(train_index, ":", train_loss.item()/np.log(2))
   
   file_name = compressed_file
-  base_name = file_name.rsplit('.', 2)[0]
-  out = open(base_name, 'w')
+  base_name = file_name.rsplit('.', 3)[0]
+  out = open(directory+'/'+base_name, 'wb')  # 바이너리 모드로 파일 열기
   for i in range(len(series_2d)):
-    out.write(utils.decode_tokens(series_2d[i]))
+    out.write(series_2d[i].astype(np.uint8).tobytes()) 
   
   
   for i in range(bs):
@@ -135,8 +135,11 @@ def decode(temp_dir, compressed_file, FLAGS, len_series, last):
       series[j] = dec.read(cumul, FLAGS.vocab_size)
   
     print("Last decode part don't need inference.")
-    out.write(utils.decode_tokens(series))
-    print(utils.decode_tokens(series))
+    # out.write(utils.decode_tokens(series))
+    # out.write(series.tobytes())
+    out.write(series.astype(np.uint8).tobytes())
+    # print(utils.decode_tokens(series))
+    print(series.astype(np.uint8).tobytes())
     bitin.close()
     f.close()
     return
@@ -159,13 +162,30 @@ def main(_):
   np.random.seed(FLAGS.random_seed)
   torch.manual_seed(FLAGS.random_seed)
 
-  file_name = os.path.basename(FLAGS.input_dir)
-  temp_dir = "{}_temp".format(file_name)
-  compressed_file = temp_dir.replace("_temp", ".compressed")
+  # file_name = os.path.basename(FLAGS.input_dir)
+  # temp_dir = "{}_temp".format(file_name)
 
-  print(f"Input directory: {FLAGS.input_dir}")
-  print(f"File name: {file_name}")
-  print(f"Temporary directory: {temp_dir}")
+  input_dir = FLAGS.input_dir
+  file_name = os.path.basename(input_dir)
+  # input_dir에서 디렉터리 경로 추출
+  directory = os.path.dirname(input_dir)
+  temp_dir = os.path.join(directory, f"{file_name}_temp")
+
+  # print(f"Input directory: {FLAGS.input_dir}")
+  # print(f"File name: {file_name}")
+  # print(f"Temporary directory: {temp_dir}")
+  def strided_app(a, L, S):  # Window len = L, Stride len/stepsize = S
+    nrows = ((a.size - L) // S) + 1
+    n = a.strides[0]
+    return np.lib.stride_tricks.as_strided(a, shape=(nrows, L), strides=(S * n, n))
+  
+  old_seq_len = FLAGS.seq_len
+  FLAGS.seq_len = FLAGS.seq_len*(FLAGS.hidden_dim // FLAGS.vocab_dim)
+  print("FLAGS.seq_len change from {} to {} due to FLAGS.vocab_dim = {} and FLAGS.hidden_dim = {}.".format(old_seq_len, FLAGS.seq_len, FLAGS.vocab_dim, FLAGS.hidden_dim))
+  
+  with open(FLAGS.input_dir, 'rb') as fp:#, encoding='latin-1') as fp:
+    series = np.fromstring(fp.read(), dtype=np.uint8)
+  train_data = strided_app(series, FLAGS.seq_len+1, 1)
 
   
   #Decode
@@ -173,16 +193,16 @@ def main(_):
   
   #Split compressed file
   
-  f = open(compressed_file,'rb')
+  f = open(directory+'/'+file_name,'rb')
   len_series = len(series) 
   for i in range(FLAGS.batch_size):
-    f_out = open(temp_dir+'/'+compressed_file+'.'+str(i),'wb')
+    f_out = open(temp_dir+'/'+file_name+'.'+str(i),'wb')
     byte_str_len = var_int_decode(f)
     byte_str = f.read(byte_str_len)
     f_out.write(byte_str)
     f_out.close()
   
-  f_out = open(temp_dir+'/'+compressed_file+'.last','wb')
+  f_out = open(temp_dir+'/'+file_name+'.last','wb')
   byte_str_len = var_int_decode(f)
   byte_str = f.read(byte_str_len)
   f_out.write(byte_str)
@@ -191,11 +211,13 @@ def main(_):
   
   len_series = len(series)
   if (len_series-FLAGS.seq_len) % FLAGS.batch_size == 0:
-    decode(temp_dir, compressed_file, FLAGS, len_series, 0)
+    decode(temp_dir, directory, file_name, FLAGS, len_series, 0)
   else:
     last_length = (len_series - FLAGS.seq_len) % FLAGS.batch_size + FLAGS.seq_len
-    decode(temp_dir, compressed_file, FLAGS, len_series, last_length)
+    decode(temp_dir, directory, file_name, FLAGS, len_series, last_length)
   
+  #Remove temp file
+  shutil.rmtree(temp_dir)
 
 if __name__ == '__main__':
   app.run(main)

@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments is provided
 if [ "$#" -lt 6 ]; then
-    echo "Usage: ./staq.sh [-c|-d] -i input.fastq [--deep] -o output.staq"
+    echo "Usage: ./staq.sh [-c|-d] -i input.fastq [--deep] -o output.staq [--gpu-id gpu_id (Using Deep)]"
     exit 1
 fi
 
@@ -13,6 +13,7 @@ mode=""
 input_file=""
 output_file=""
 deep_option=""
+gpu_id=""
 
 # Process input arguments
 while [ "$#" -gt 0 ]; do
@@ -32,6 +33,10 @@ while [ "$#" -gt 0 ]; do
         --deep)
             deep_option="--deep"
             shift
+            ;;
+        --gpu-id)
+            gpu_id=$2  # GPU ID 값을 받음
+            shift 2
             ;;
         -o)
             output_file=$2
@@ -64,13 +69,15 @@ if [ "$mode" == "-c" ]; then
         python3 split_id_qual.py "$input_file" &
         wait
     else
-        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep -o "staq.spring" &
+        ./Spring/build/spring -c -i "$input_file" --no-ids --no-quality --deep --gpu-id "$gpu_id" -o "staq.spring" &
         python3 split_id_qual.py "$input_file" &
         wait
     fi
     # tar로 결과 파일을 묶기
-    tar -cf "${output_file}" *.spring *.zpaq *.combined
-    rm -f *.spring *.zpaq *.combined
+    # tar -cf "${output_file}" *.spring *.zpaq *.combined
+    tar -cf "${output_file}" *.spring *.zpaq
+    # rm -f *.spring *.zpaq *.combined
+    rm -f *.spring *.zpaq
 
 elif [ "$mode" == "-d" ]; then
     # tar 압축 해제
@@ -96,7 +103,7 @@ elif [ "$mode" == "-d" ]; then
         python3 rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
         wait
     else
-        ./Spring/build/spring -d -i "$spring_file" --deep -o "$output_base_name.seq" &
+        ./Spring/build/spring -d -i "$spring_file" --deep --gpu-id "$gpu_id" -o "$output_base_name.seq" &
         python3 rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
         wait
     fi
