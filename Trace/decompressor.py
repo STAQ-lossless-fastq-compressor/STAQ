@@ -113,10 +113,11 @@ def decode(temp_dir, directory, compressed_file, FLAGS, len_series, last):
   
   file_name = compressed_file
   base_name = file_name.rsplit('.', 3)[0]
-  out = open(directory+'/'+base_name, 'wb')  # 바이너리 모드로 파일 열기
+  # out = open(os.path.join(directory, base_name), 'w')
+  out = open(os.path.join(directory, base_name), 'wb')
   for i in range(len(series_2d)):
-    out.write(series_2d[i].astype(np.uint8).tobytes()) 
-  
+    # out.write(utils.decode_tokens(series_2d[i]))
+    out.write(series_2d[i].astype(np.uint8).tobytes())
   
   for i in range(bs):
     bitin[i].close()
@@ -136,10 +137,9 @@ def decode(temp_dir, directory, compressed_file, FLAGS, len_series, last):
   
     print("Last decode part don't need inference.")
     # out.write(utils.decode_tokens(series))
-    # out.write(series.tobytes())
-    out.write(series.astype(np.uint8).tobytes())
     # print(utils.decode_tokens(series))
-    print(series.astype(np.uint8).tobytes())
+    out.write(series.astype(np.uint8).tobytes())
+    print(utils.decode_tokens(series))
     bitin.close()
     f.close()
     return
@@ -156,6 +156,16 @@ def var_int_decode(f):
         byte_str_len += shift
     return byte_str_len
 
+def read_metadata(metadata_file):
+    metadata = {}
+    with open(metadata_file, 'r') as f:
+        for line in f:
+            # 줄을 읽고 양쪽의 공백을 제거한 뒤, '='로 나눔
+            key, value = line.strip().split('=')
+            metadata[key] = int(value)  # 값은 숫자로 변환 (필요 시 float이나 다른 타입으로 변환 가능)
+    return metadata
+
+
 def main(_):
 
   os.environ['CUDA_VISIBLE_DEVICES'] = FLAGS.gpu_id
@@ -170,6 +180,9 @@ def main(_):
   # input_dir에서 디렉터리 경로 추출
   directory = os.path.dirname(input_dir)
   temp_dir = os.path.join(directory, f"{file_name}_temp")
+  metadata_file = file_name+"_metadata.txt"
+  metadata = read_metadata(metadata_file)
+  print(f"Metadata: {metadata}")
 
   # print(f"Input directory: {FLAGS.input_dir}")
   # print(f"File name: {file_name}")
@@ -183,9 +196,9 @@ def main(_):
   FLAGS.seq_len = FLAGS.seq_len*(FLAGS.hidden_dim // FLAGS.vocab_dim)
   print("FLAGS.seq_len change from {} to {} due to FLAGS.vocab_dim = {} and FLAGS.hidden_dim = {}.".format(old_seq_len, FLAGS.seq_len, FLAGS.vocab_dim, FLAGS.hidden_dim))
   
-  with open(FLAGS.input_dir, 'rb') as fp:#, encoding='latin-1') as fp:
-    series = np.fromstring(fp.read(), dtype=np.uint8)
-  train_data = strided_app(series, FLAGS.seq_len+1, 1)
+  # with open(FLAGS.input_dir, 'rb') as fp:#, encoding='latin-1') as fp:
+  #   series = np.fromstring(fp.read(), dtype=np.uint8)
+  # train_data = strided_app(series, FLAGS.seq_len+1, 1)
 
   
   #Decode
@@ -194,7 +207,7 @@ def main(_):
   #Split compressed file
   
   f = open(directory+'/'+file_name,'rb')
-  len_series = len(series) 
+  # len_series = len(series)
   for i in range(FLAGS.batch_size):
     f_out = open(temp_dir+'/'+file_name+'.'+str(i),'wb')
     byte_str_len = var_int_decode(f)
@@ -209,14 +222,14 @@ def main(_):
   f_out.close()
   f.close()
   
-  len_series = len(series)
+  len_series = metadata.get('len_series') 
   if (len_series-FLAGS.seq_len) % FLAGS.batch_size == 0:
     decode(temp_dir, directory, file_name, FLAGS, len_series, 0)
   else:
     last_length = (len_series - FLAGS.seq_len) % FLAGS.batch_size + FLAGS.seq_len
     decode(temp_dir, directory, file_name, FLAGS, len_series, last_length)
   
-  #Remove temp file
+  # #Remove temp file
   shutil.rmtree(temp_dir)
 
 if __name__ == '__main__':

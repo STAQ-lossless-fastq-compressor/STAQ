@@ -277,6 +277,7 @@ void decompress_short(const std::string &temp_dir, const std::string &outfile_1,
                               std::ios::binary);
               f_RC_pair.open(file_RC_pair_path);
             }
+            
 
             char flag;
             uint64_t pos_1, pos_2, prevpos;
@@ -679,6 +680,7 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       if(deep_flag){
       // Define input and output file names for Trace decompression
       std::string trace = outfile + ".tmp.compressed.combined";
+      // std::string trace = outfile + ".compressed.combined";
       std::cout << "Infile trace: " << trace << std::endl;
       std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir " + trace + " --batch_size 512 --gpu_id " + std::to_string(gpu_id) + " --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
       // Execute the command

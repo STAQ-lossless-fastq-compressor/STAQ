@@ -146,12 +146,6 @@ def main(_):
   np.random.seed(FLAGS.random_seed)
   torch.manual_seed(FLAGS.random_seed)
 
-  # file_name = os.path.basename(FLAGS.input_dir)
-  # temp_dir = "{}_temp".format(file_name)
-  # compressed_file = temp_dir.replace("_temp", ".compressed")
-  # os.mkdir(temp_dir)
-  # print(compressed_file)
-
   input_dir = FLAGS.input_dir
   file_name = os.path.basename(input_dir)
   # input_dir에서 디렉터리 경로 추출
@@ -173,6 +167,11 @@ def main(_):
   with open(FLAGS.input_dir, 'rb') as fp:#, encoding='latin-1') as fp:
     series = np.fromstring(fp.read(), dtype=np.uint8)
   train_data = strided_app(series, FLAGS.seq_len+1, 1)
+
+  # len(series)를 메타데이터 파일에 저장
+  metadata_file = file_name+".compressed.combined_metadata.txt"
+  with open(metadata_file, 'w') as metafile:
+      metafile.write(f"len_series={len(series)}\n")
   
   total_length = len(train_data)
   if total_length % FLAGS.batch_size == 0:
@@ -183,6 +182,7 @@ def main(_):
   
   #Combined compressed results
   f = open(directory+"/"+compressed_file+'.combined','wb')
+  # f = open(compressed_file+'.combined','wb')
   for i in range(FLAGS.batch_size):
     f_in = open(temp_dir+'/'+compressed_file+'.'+str(i),'rb')
     byte_str = f_in.read()

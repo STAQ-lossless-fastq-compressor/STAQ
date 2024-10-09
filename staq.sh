@@ -75,9 +75,9 @@ if [ "$mode" == "-c" ]; then
     fi
     # tar로 결과 파일을 묶기
     # tar -cf "${output_file}" *.spring *.zpaq *.combined
-    tar -cf "${output_file}" *.spring *.zpaq
+    tar -cf "${output_file}" *.spring *.zpaq *_metadata.txt
     # rm -f *.spring *.zpaq *.combined
-    rm -f *.spring *.zpaq
+    rm -f *.spring *.zpaq *_metadata.txt
 
 elif [ "$mode" == "-d" ]; then
     # tar 압축 해제
@@ -108,6 +108,7 @@ elif [ "$mode" == "-d" ]; then
         wait
     fi
     python3 combine.py "$id_base_name.txt" "$output_base_name.seq" "${qual_base_name}_decompress.txt" "$output_base_name.fastq"
+    rm -f *_metadata.txt
 fi
 
 echo "Operation completed: $output_file"
