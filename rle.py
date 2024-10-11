@@ -33,43 +33,78 @@ def rle_decode(data):
     
     return bytes(decoding)
 
-def rle_encode_file(input_file, output_file, chunk_size=1024*1024*100):  # 1MB 청크
+# def rle_encode_file(input_file, output_file, chunk_size=1024*1024*100):  # 1MB 청크
+#     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
+#         prev_char = None
+#         count = 0
+        
+#         while True:
+#             chunk = infile.read(chunk_size)
+#             if not chunk:
+#                 if prev_char is not None:
+#                     outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
+#                 break
+            
+#             for char in chunk:
+#                 if char == prev_char and count < 255:
+#                     count += 1
+#                 else:
+#                     if prev_char is not None:
+#                         outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
+#                     count = 1
+#                     prev_char = char
+
+# def rle_decode_file(input_file, output_file, chunk_size=1024*1024*100):  # 1MB 청크
+#     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
+#         buffer = bytearray()
+        
+#         while True:
+#             chunk = infile.read(chunk_size)
+#             if not chunk:
+#                 break
+            
+#             buffer.extend(chunk)
+            
+#             while len(buffer) >= 2:
+#                 count = (buffer[0] & 0x7F) + 1
+#                 char = buffer[1]
+#                 outfile.write(bytes([char] * count))
+#                 buffer = buffer[2:]
+def rle_encode_file(input_file, output_file, chunk_size=1024*1024):
     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
         prev_char = None
         count = 0
+        total_read = 0
+        total_written = 0
         
         while True:
             chunk = infile.read(chunk_size)
             if not chunk:
                 if prev_char is not None:
-                    outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
+                    while count > 0:
+                        write_count = min(count, 128)
+                        outfile.write(bytes([(write_count - 1) | 0x80, prev_char]))
+                        total_written += 2
+                        count -= write_count
                 break
             
+            total_read += len(chunk)
+            
             for char in chunk:
-                if char == prev_char and count < 255:
+                if char == prev_char and count < 128:
                     count += 1
                 else:
                     if prev_char is not None:
-                        outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
+                        while count > 0:
+                            write_count = min(count, 128)
+                            outfile.write(bytes([(write_count - 1) | 0x80, prev_char]))
+                            total_written += 2
+                            count -= write_count
                     count = 1
                     prev_char = char
-
-def rle_decode_file(input_file, output_file, chunk_size=1024*1024*100):  # 1MB 청크
-    with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
-        buffer = bytearray()
         
-        while True:
-            chunk = infile.read(chunk_size)
-            if not chunk:
-                break
-            
-            buffer.extend(chunk)
-            
-            while len(buffer) >= 2:
-                count = (buffer[0] & 0x7F) + 1
-                char = buffer[1]
-                outfile.write(bytes([char] * count))
-                buffer = buffer[2:]
+        print(f"Total bytes read: {total_read}")
+        print(f"Total bytes written: {total_written}")
 
 # 사용 예시
 input_file = "/home/donggyu/cmc/FastqOurs/qual_comp/SRR30590406_qual_nolinebreak"

@@ -87,25 +87,25 @@ if __name__ == "__main__":
     file_name = os.path.basename(file_path)
     print(f"파일이 저장되었습니다: {file_name}_id.txt, {file_name}_qual.txt")
 
-    # ID 파일과 품질 파일 압축을 병렬로 수행
-    with ThreadPoolExecutor() as executor:
-        id_future = executor.submit(compress_with_zpaq, [f"{file_name}_id.txt"], f"{file_name}_id")
+    # # ID 파일과 품질 파일 압축을 병렬로 수행
+    # with ThreadPoolExecutor() as executor:
+    #     id_future = executor.submit(compress_with_zpaq, [f"{file_name}_id.txt"], f"{file_name}_id")
         
-        rle_encoded_file = f"{file_name}_qual_rle"
-        rle_future = executor.submit(rle_encode_file, f"{file_name}_qual.txt", rle_encoded_file)
+    #     rle_encoded_file = f"{file_name}_qual_rle"
+    #     rle_future = executor.submit(rle_encode_file, f"{file_name}_qual.txt", rle_encoded_file)
 
-        # 모든 작업이 완료될 때까지 대기
-        for future in as_completed([id_future, rle_future]):
-            if future is id_future:
-                print("ID 파일 압축 완료.")
-            elif future is rle_future:
-                print("품질 파일 RLE 인코딩 완료.")
+    #     # 모든 작업이 완료될 때까지 대기
+    #     for future in as_completed([id_future, rle_future]):
+    #         if future is id_future:
+    #             print("ID 파일 압축 완료.")
+    #         elif future is rle_future:
+    #             print("품질 파일 RLE 인코딩 완료.")
 
-    # RLE 인코딩 후 품질 파일 압축
-    compress_with_zpaq([rle_encoded_file], f"{file_name}_qual")
+    # # RLE 인코딩 후 품질 파일 압축
+    # compress_with_zpaq([rle_encoded_file], f"{file_name}_qual")
 
-    print(f"ID, Quality Score가 압축되었습니다.: {file_name}_id.zpaq, {file_name}_qual.zpaq")
+    # print(f"ID, Quality Score가 압축되었습니다.: {file_name}_id.zpaq, {file_name}_qual.zpaq")
     
-    os.remove(f"{file_name}_id.txt")
-    os.remove(f"{file_name}_qual.txt")
-    os.remove(f"{file_name}_qual_rle")
+    # os.remove(f"{file_name}_id.txt")
+    # os.remove(f"{file_name}_qual.txt")
+    # os.remove(f"{file_name}_qual_rle")

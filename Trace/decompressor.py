@@ -139,7 +139,7 @@ def decode(temp_dir, directory, compressed_file, FLAGS, len_series, last):
     # out.write(utils.decode_tokens(series))
     # print(utils.decode_tokens(series))
     out.write(series.astype(np.uint8).tobytes())
-    print(utils.decode_tokens(series))
+    # print(utils.decode_tokens(series))
     bitin.close()
     f.close()
     return

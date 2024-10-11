@@ -714,7 +714,7 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       // }
       }
 
-      std::cout << "현재 경로: " << std::filesystem::current_path() << std::endl;
+      //std::cout << "현재 경로: " << std::filesystem::current_path() << std::endl;
       std::ofstream f_seq(infile_seq + '.' + std::to_string(tid_e) + ".tmp");
       std::ifstream in_seq(input_file_path, std::ios::binary);
       std::ifstream in_seq_tail(infile_seq + '.' + std::to_string(tid_e) +
