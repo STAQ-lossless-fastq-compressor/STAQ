@@ -74,9 +74,8 @@ if [ "$mode" == "-c" ]; then
         wait
     fi
     # tar로 결과 파일을 묶기
-    # tar -cf "${output_file}" *.spring *.zpaq *.combined
     tar -cf "${output_file}" *.spring *.zpaq *_metadata.txt
-    # rm -f *.spring *.zpaq *.combined
+    rm -f *.spring *.zpaq *.combined
     rm -f *.spring *.zpaq *_metadata.txt
 
 elif [ "$mode" == "-d" ]; then
@@ -112,3 +111,4 @@ elif [ "$mode" == "-d" ]; then
 fi
 
 echo "Operation completed: $output_file"
+qual_decompressed_file_test

@@ -28,27 +28,6 @@ def rle_encode(data):
     
     return bytes(encoding)
 
-def rle_encode_file(input_file, output_file, chunk_size=1024*1024*1000):  # 1MB 청크
-    with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
-        prev_char = None
-        count = 0
-        
-        while True:
-            chunk = infile.read(chunk_size)
-            if not chunk:
-                if prev_char is not None:
-                    outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
-                break
-            
-            for char in chunk:
-                if char == prev_char and count < 255:
-                    count += 1
-                else:
-                    if prev_char is not None:
-                        outfile.write(bytes([(count - 1) | (0x80 if count > 1 else 0), prev_char]))
-                    count = 1
-                    prev_char = char
-
 def compress_with_zpaq(input_files, output_file):
     zpaq_cmd = f"zpaq a {output_file}.zpaq " + " ".join(input_files) + " -m5"
     try:
@@ -56,6 +35,42 @@ def compress_with_zpaq(input_files, output_file):
         print(f"압축된 파일 생성: {output_file}.zpaq")
     except subprocess.CalledProcessError as e:
         print(f"압축 중 오류 발생: {e}")
+
+def rle_encode_file(input_file, output_file, chunk_size=1024*1024):
+    with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
+        prev_char = None
+        count = 0
+        total_read = 0
+        total_written = 0
+        
+        while True:
+            chunk = infile.read(chunk_size)
+            if not chunk:
+                if prev_char is not None:
+                    while count > 0:
+                        write_count = min(count, 128)
+                        outfile.write(bytes([(write_count - 1) | 0x80, prev_char]))
+                        total_written += 2
+                        count -= write_count
+                break
+            
+            total_read += len(chunk)
+            
+            for char in chunk:
+                if char == prev_char and count < 128:
+                    count += 1
+                else:
+                    if prev_char is not None:
+                        while count > 0:
+                            write_count = min(count, 128)
+                            outfile.write(bytes([(write_count - 1) | 0x80, prev_char]))
+                            total_written += 2
+                            count -= write_count
+                    count = 1
+                    prev_char = char
+        
+        print(f"Total bytes read: {total_read}")
+        print(f"Total bytes written: {total_written}")
 
 def process_records(file_path):
     # 파일 이름만 추출
@@ -87,25 +102,25 @@ if __name__ == "__main__":
     file_name = os.path.basename(file_path)
     print(f"파일이 저장되었습니다: {file_name}_id.txt, {file_name}_qual.txt")
 
-    # # ID 파일과 품질 파일 압축을 병렬로 수행
-    # with ThreadPoolExecutor() as executor:
-    #     id_future = executor.submit(compress_with_zpaq, [f"{file_name}_id.txt"], f"{file_name}_id")
+    # ID 파일과 품질 파일 압축을 병렬로 수행
+    with ThreadPoolExecutor() as executor:
+        id_future = executor.submit(compress_with_zpaq, [f"{file_name}_id.txt"], f"{file_name}_id")
         
-    #     rle_encoded_file = f"{file_name}_qual_rle"
-    #     rle_future = executor.submit(rle_encode_file, f"{file_name}_qual.txt", rle_encoded_file)
+        rle_encoded_file = f"{file_name}_qual_rle"
+        rle_future = executor.submit(rle_encode_file, f"{file_name}_qual.txt", rle_encoded_file)
 
-    #     # 모든 작업이 완료될 때까지 대기
-    #     for future in as_completed([id_future, rle_future]):
-    #         if future is id_future:
-    #             print("ID 파일 압축 완료.")
-    #         elif future is rle_future:
-    #             print("품질 파일 RLE 인코딩 완료.")
+        # 모든 작업이 완료될 때까지 대기
+        for future in as_completed([id_future, rle_future]):
+            if future is id_future:
+                print("ID 파일 압축 완료.")
+            elif future is rle_future:
+                print("품질 파일 RLE 인코딩 완료.")
 
-    # # RLE 인코딩 후 품질 파일 압축
-    # compress_with_zpaq([rle_encoded_file], f"{file_name}_qual")
+    # RLE 인코딩 후 품질 파일 압축
+    compress_with_zpaq([rle_encoded_file], f"{file_name}_qual")
 
-    # print(f"ID, Quality Score가 압축되었습니다.: {file_name}_id.zpaq, {file_name}_qual.zpaq")
+    print(f"ID, Quality Score가 압축되었습니다.: {file_name}_id.zpaq, {file_name}_qual.zpaq")
     
-    # os.remove(f"{file_name}_id.txt")
-    # os.remove(f"{file_name}_qual.txt")
-    # os.remove(f"{file_name}_qual_rle")
+    os.remove(f"{file_name}_id.txt")
+    os.remove(f"{file_name}_qual.txt")
+    os.remove(f"{file_name}_qual_rle")
