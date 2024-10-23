@@ -3,13 +3,16 @@ import sys
 import subprocess
 from Bio import SeqIO
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import filecmp
+import concurrent.futures
 
 def delete_if_exists(filename):
-    """파일이 존재하면 삭제합니다."""
+    """Deletes the file if it exists."""
     if os.path.exists(filename):
         os.remove(filename)
 
 def rle_encode(data):
+    """Encodes data using Run-Length Encoding (RLE)."""
     encoding = bytearray()
     count = 1
     prev = data[0]
@@ -29,14 +32,16 @@ def rle_encode(data):
     return bytes(encoding)
 
 def compress_with_zpaq(input_files, output_file):
+    """Compresses input files using ZPAQ."""
     zpaq_cmd = f"zpaq a {output_file}.zpaq " + " ".join(input_files) + " -m5"
     try:
         subprocess.run(zpaq_cmd, shell=True, check=True)
-        print(f"압축된 파일 생성: {output_file}.zpaq")
+        print(f"Compressed file created: {output_file}.zpaq")
     except subprocess.CalledProcessError as e:
-        print(f"압축 중 오류 발생: {e}")
+        print(f"Error occurred during compression: {e}")
 
 def rle_encode_file(input_file, output_file, chunk_size=1024*1024):
+    """Encodes a file using RLE and writes the output to another file."""
     with open(input_file, 'rb') as infile, open(output_file, 'wb') as outfile:
         prev_char = None
         count = 0
@@ -72,55 +77,103 @@ def rle_encode_file(input_file, output_file, chunk_size=1024*1024):
         print(f"Total bytes read: {total_read}")
         print(f"Total bytes written: {total_written}")
 
-def process_records(file_path):
-    # 파일 이름만 추출
-    file_name = os.path.basename(file_path)
-
-    # 기존 파일이 있으면 삭제
-    delete_if_exists(f"{file_name}_id.txt")
-    delete_if_exists(f"{file_name}_qual.txt")
+def process_records(file_path, output_prefix):
+    """Processes the records in a FASTQ file and writes ID and quality score files."""
+    # Delete existing files if they exist
+    delete_if_exists(f"{output_prefix}_id.txt")
+    delete_if_exists(f"{output_prefix}_qual.txt")
     
-    with open(file_path, "r") as handle, open(f"{file_name}_id.txt", "w") as desc_file, open(f"{file_name}_qual.txt", "w") as qual_file:
+    with open(file_path, "r") as handle, open(f"{output_prefix}_id.txt", "w") as desc_file, open(f"{output_prefix}_qual.txt", "w") as qual_file:
         for record in SeqIO.parse(handle, "fastq"):
-            # 품질 점수를 ASCII 문자로 변환
+            # Convert quality scores to ASCII characters
             quality_scores = ''.join(chr(q + 33) for q in record.letter_annotations['phred_quality'])
 
-            # 첫 번째 @ 문자 제거
+            # Remove the first '@' character from the description
             description = record.description.replace('@', '', 1)
 
-            # 파일에 직접 쓰기
+            # Write directly to files
             desc_file.write(description + "\n")
             qual_file.write(quality_scores)
 
+def are_files_identical(file1, file2):
+    """Compares if the contents of two files are identical."""
+    return filecmp.cmp(file1, file2, shallow=False)
+
+def process_file(file_path, output_prefix, previous_id_file=None):
+    """Processes a single input file and handles compression of ID and quality files."""
+    process_records(file_path, output_prefix)
+    print(f"Files saved: {output_prefix}_id.txt, {output_prefix}_qual.txt")
+
+    with ThreadPoolExecutor() as executor:
+        if previous_id_file and are_files_identical(f"{output_prefix}_id.txt", previous_id_file):
+            print(f"{output_prefix} ID file is identical to the previous file. Skipping compression.")
+            os.remove(f"{output_prefix}_id.txt")
+            id_future = None
+        else:
+            id_future = executor.submit(compress_with_zpaq, [f"{output_prefix}_id.txt"], f"{output_prefix}_id")
+        
+        rle_encoded_file = f"{output_prefix}_qual_rle"
+        rle_future = executor.submit(rle_encode_file, f"{output_prefix}_qual.txt", rle_encoded_file)
+
+        # Wait for all tasks to complete
+        for future in as_completed([f for f in [id_future, rle_future] if f]):
+            if future is id_future:
+                print(f"{output_prefix} ID file compression completed.")
+            elif future is rle_future:
+                print(f"{output_prefix} Quality file RLE encoding completed.")
+
+    # Compress the RLE encoded quality file
+    compress_with_zpaq([rle_encoded_file], f"{output_prefix}_qual")
+
+    if id_future:
+        print(f"ID and Quality Score have been compressed: {output_prefix}_id.zpaq, {output_prefix}_qual.zpaq")
+    else:
+        print(f"Quality Score has been compressed: {output_prefix}_qual.zpaq")
+
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 split_id_qual.py <input_file>")
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python3 split_id_qual.py <input_file1> [input_file2]")
         sys.exit(1)
     
-    file_path = sys.argv[1]
-    process_records(file_path)
-    file_name = os.path.basename(file_path)
-    print(f"파일이 저장되었습니다: {file_name}_id.txt, {file_name}_qual.txt")
+    file_path1 = sys.argv[1]
+    output_prefix1 = os.path.basename(file_path1)
 
-    # ID 파일과 품질 파일 압축을 병렬로 수행
-    with ThreadPoolExecutor() as executor:
-        id_future = executor.submit(compress_with_zpaq, [f"{file_name}_id.txt"], f"{file_name}_id")
-        
-        rle_encoded_file = f"{file_name}_qual_rle"
-        rle_future = executor.submit(rle_encode_file, f"{file_name}_qual.txt", rle_encoded_file)
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        future1 = executor.submit(process_file, file_path1, output_prefix1)
 
-        # 모든 작업이 완료될 때까지 대기
-        for future in as_completed([id_future, rle_future]):
-            if future is id_future:
-                print("ID 파일 압축 완료.")
-            elif future is rle_future:
-                print("품질 파일 RLE 인코딩 완료.")
+        if len(sys.argv) == 3:
+            file_path2 = sys.argv[2]
+            output_prefix2 = os.path.basename(file_path2)
+            future2 = executor.submit(process_file, file_path2, output_prefix2)
 
-    # RLE 인코딩 후 품질 파일 압축
-    compress_with_zpaq([rle_encoded_file], f"{file_name}_qual")
+        # Wait for the first file to complete
+        future1.result()
 
-    print(f"ID, Quality Score가 압축되었습니다.: {file_name}_id.zpaq, {file_name}_qual.zpaq")
-    
-    os.remove(f"{file_name}_id.txt")
-    os.remove(f"{file_name}_qual.txt")
-    os.remove(f"{file_name}_qual_rle")
+        if len(sys.argv) == 3:
+            # If there's a second file, wait for it to complete
+            future2.result()
+
+            # Now compare the ID files
+            if are_files_identical(f"{output_prefix1}_id.txt", f"{output_prefix2}_id.txt"):
+                print("ID files are identical. Removing the second ID file.")
+                os.remove(f"{output_prefix2}_id.txt")
+                os.remove(f"{output_prefix2}_id.zpaq")
+            else:
+                print("ID files are different. Keeping both.")
+
+    # os.remove(f"{output_prefix1}_qual.txt")
+    # os.remove(f"{output_prefix1}_qual_rle")
+    # if os.path.exists(f"{output_prefix2}_id.txt"):
+    #     os.remove(f"{output_prefix2}_id.txt")
+    # os.remove(f"{output_prefix2}_qual_rle")
+    # os.remove(f"{output_prefix1}_qual.txt")
+    for i in range(1,3):
+        name = 'output_prefix' + str(i)
+        if os.path.exists(f"{name}_id.txt"):
+            os.remove(f"{name}_id.txt")
+        if os.path.exists(f"{name}_qual.txt"):
+            os.remove(f"{name}_qual.txt")
+        if os.path.exists(f"{name}qual_rle"):
+            os.remove(f"{name}_qual_rle")
+
+    print("All operations completed.")
