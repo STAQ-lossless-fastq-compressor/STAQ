@@ -137,7 +137,7 @@
 #!/bin/bash
 
 # Check if the correct number of arguments is provided
-if [ "$#" -lt 6 ]; then
+if [ "$#" -lt 5 ]; then
     echo "Usage: ./staq.sh [-c|-d] -i input1.fastq [input2.fastq] [--deep] [-l] -o output.staq [--gpu-id gpu_id (Using Deep)]"
     exit 1
 fi
@@ -233,10 +233,10 @@ elif [ "$mode" == "-d" ]; then
 
     if [ -z "$deep_option" ]; then
         ../Spring/build/spring -d -i "$spring_file" -o "$output_base_name.seq" &
-        python3 ../rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
+        python3 ../rle_decode.py "$id_zpaq_file" "$qual_zpaq_file" &
     else
         ../Spring/build/spring -d -i "$spring_file" --deep --gpu-id "$gpu_id" -o "$output_base_name.seq" &
-        python3 ../rle_decode.py "$id_zpaq_file" "$qual_zpaq_file"
+        python3 ../rle_decode.py "$id_zpaq_file" "$qual_zpaq_file" &
     fi
     wait
 

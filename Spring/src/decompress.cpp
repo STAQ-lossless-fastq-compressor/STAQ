@@ -682,7 +682,7 @@ void decompress_unpack_seq(const std::string &infile_seq, const int &num_thr_e,
       std::string trace = outfile + ".tmp.compressed.combined";
       // std::string trace = outfile + ".compressed.combined";
       std::cout << "Infile trace: " << trace << std::endl;
-      std::string bash_cmd = "python3 -u Trace/decompressor.py --input_dir " + trace + " --batch_size 512 --gpu_id " + std::to_string(gpu_id) + " --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
+      std::string bash_cmd = "python3 -u ../Trace/decompressor.py --input_dir " + trace + " --batch_size 512 --gpu_id " + std::to_string(gpu_id) + " --hidden_dim 256 --ffn_dim 4096 --seq_len 8 --learning_rate 1e-3 --vocab_dim 64" ;
       // Execute the command
       system(bash_cmd.c_str());
 
