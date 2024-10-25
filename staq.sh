@@ -136,6 +136,8 @@
 
 #!/bin/bash
 
+start_time=$(date +%s)
+
 # Check if the correct number of arguments is provided
 if [ "$#" -lt 5 ]; then
     echo "Usage: ./staq.sh [-c|-d] -i input1.fastq [input2.fastq] [--deep] [-l] -o output.staq [--gpu-id gpu_id (Using Deep)]"
@@ -248,3 +250,7 @@ fi
 cd ..
 rm -rf "$work_dir"
 echo "Operation completed: $output_file"
+
+end_time=$(date +%s)
+elapsed=$((end_time - start_time))
+echo "Elapsed time: $elapsed seconds"
