@@ -147,13 +147,6 @@ void pack_compress_seq(const encoder_global &eg, uint64_t *file_len_seq_thr, boo
     f_seq_tail.close();
     in_seq.close();
 
-    // bsc compression mode
-    // bsc::BSC_compress(
-    //     (eg.outfile_seq + '.' + std::to_string(tid) + ".tmp").c_str(),
-    //     (eg.outfile_seq + '.' + std::to_string(tid) + ".bsc").c_str());
-    // remove((eg.outfile_seq + '.' + std::to_string(tid)).c_str());
-    // remove((eg.outfile_seq + '.' + std::to_string(tid) + ".tmp").c_str());
-    
     // Compress using zpaq and remove uncompressed files if deep is false
     if(deep){
       // Define the command to run the Python script

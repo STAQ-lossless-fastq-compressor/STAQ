@@ -47,18 +47,17 @@ def run_zpaq(cmd):
         print(f"명령 실행 완료: {cmd}")
     except subprocess.CalledProcessError as e:
         print(f"복원 중 오류 발생: {e}")
-
+    
 def process_files(qual_file):
     qual_basename = os.path.splitext(os.path.basename(qual_file))[0]
 
-    # zpaq 압축 해제 및 RLE 디코딩
-    zpaq_cmd_qual = f"zpaq x {qual_file}"
-    run_zpaq(zpaq_cmd_qual)
-    rle_decode_file_optimized(f"{qual_basename}_rle", f"{qual_basename}_decompress.txt")
+    zpaq_cmd_qual_file = f"zpaq x {qual_file}"
+    run_zpaq(zpaq_cmd_qual_file)
+    rle_decode_file_optimized(f"merged_qual_rle", f"{qual_basename}_decompress.txt")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 rle_decode.py <qual_file1>")
+        print("Usage: python3 pe_decode.py <qual_file1>")
         sys.exit(1)
 
     process_files(sys.argv[1])
