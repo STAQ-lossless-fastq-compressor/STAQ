@@ -115,7 +115,7 @@ elif [ "$mode" == "-d" ]; then
     if [ -z "$deep_option" ]; then
         if [ -n "$output_file2" ]; then
             ../Spring/build/spring -d -i "$spring_file" -o "$output_base_name.seq" "$output_base_name2.seq" &
-            python3 ../pe_decode.py "$qual_base_name1" &
+            python3 ../pe_decode.py "$qual_zpaq_file1" &
         else
             ../Spring/build/spring -d -i "$spring_file" -o "$output_base_name.seq" &
             python3 ../rle_decode.py "$qual_zpaq_file1" &
@@ -123,7 +123,7 @@ elif [ "$mode" == "-d" ]; then
     else
         if [ -n "$output_file2" ]; then
             ../Spring/build/spring -d -i "$spring_file" --deep --gpu-id "$gpu_id" -o "$output_base_name.seq" "$output_base_name2.seq" &
-            python3 ../pe_decode.py "$qual_base_name1" &
+            python3 ../pe_decode.py "$qual_zpaq_file1" &
         else
             ../Spring/build/spring -d -i "$spring_file" --deep --gpu-id "$gpu_id" -o "$output_base_name.seq" &
             python3 ../rle_decode.py "$qual_zpaq_file1" &

@@ -13,10 +13,6 @@ def combine_to_fastq(seq_file, qual_file, output_fastq):
             
             # 시퀀스 라인 읽기
             seq_line = seq_f.readline().strip()
-            
-            # # '+' 라인과 quality 라인 건너뛰기
-            # seq_f.readline()  # '+' 라인 건너뛰기
-            # seq_f.readline()  # quality 라인 건너뛰기
 
             # 시퀀스 길이만큼 quality 데이터에서 자르기
             qual_line = qual_data[qual_index:qual_index + len(seq_line)]
@@ -41,10 +37,6 @@ def combine_to_pe_fastq(seq_file1, qual_file1, output_fastq1, seq_file2, output_
             
             # 시퀀스 라인 읽기
             seq_line = seq_f.readline().strip()
-            
-            # # '+' 라인과 quality 라인 건너뛰기
-            # seq_f.readline()  # '+' 라인 건너뛰기
-            # seq_f.readline()  # quality 라인 건너뛰기
 
             # 시퀀스 길이만큼 quality 데이터에서 자르기
             qual_line = qual_data[qual_index:qual_index + len(seq_line)]
@@ -64,10 +56,6 @@ def combine_to_pe_fastq(seq_file1, qual_file1, output_fastq1, seq_file2, output_
             
             # 시퀀스 라인 읽기
             seq_line = seq_f2.readline().strip()
-            
-            # '+' 라인과 quality 라인 건너뛰기
-            seq_f2.readline()  # '+' 라인 건너뛰기
-            seq_f2.readline()  # quality 라인 건너뛰기
 
             # 시퀀스 길이만큼 quality 데이터에서 자르기
             qual_line = qual_data[qual_index:qual_index + len(seq_line)]

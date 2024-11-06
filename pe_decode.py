@@ -53,7 +53,7 @@ def process_files(qual_file):
 
     zpaq_cmd_qual_file = f"zpaq x {qual_file}"
     run_zpaq(zpaq_cmd_qual_file)
-    rle_decode_file_optimized(f"merged_qual_rle", f"{qual_basename}_decompress.txt")
+    rle_decode_file_optimized(f"merged_qual.rle", f"{qual_basename}_decompress.txt")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
