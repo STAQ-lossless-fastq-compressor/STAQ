@@ -22,6 +22,12 @@ else
     exit 1
 fi
 
+# Check if the build directory exists, and remove it if it does
+if [ -d "build" ]; then
+    echo "Removing existing build directory..."
+    rm -rf build
+fi
+
 # Create the build directory and navigate into it
 mkdir -p build
 cd build
