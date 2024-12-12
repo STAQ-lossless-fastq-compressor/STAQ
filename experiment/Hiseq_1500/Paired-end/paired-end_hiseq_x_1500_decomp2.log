@@ -1,0 +1,46 @@
+Executing: bash -c 'time pigz -p 4 -d -c ./ERR4330007.fastq.gz > ./ERR4330007_1.fastq ./ERR4330007_2.fastq' > ./ERR4330007_decomp.log
+
+real	0m27.263s
+user	0m38.793s
+sys	0m16.449s
+
+Executing: bash -c 'time pigz -p 4 -d ./ERR4330011.fastq.gz' > ./ERR4330011_decomp.log
+
+real	0m33.685s
+user	0m45.839s
+sys	0m19.200s
+Executing: bash -c 'time pigz -p 4 -d ./ERR4330024.fastq.gz' > ./ERR4330024_decomp.log
+
+real	0m54.591s
+user	1m9.024s
+sys	0m30.792s
+Executing: bash -c 'time pigz -p 4 -d ./ERR4330002.fastq.gz' > ./ERR4330002_decomp.log
+
+real	0m58.997s
+user	1m15.371s
+sys	0m33.721s
+Executing: bash -c 'time pigz -p 4 -d ./SRR31291562.fastq.gz' > ./SRR31291562_decomp.log
+
+real	0m45.964s
+user	0m58.544s
+sys	0m30.236s
+Executing: bash -c 'time pigz -p 4 -d ./SRR31291559.fastq.gz' > ./SRR31291559_decomp.log
+
+real	0m50.804s
+user	1m5.351s
+sys	0m36.696s
+Executing: bash -c 'time pigz -p 4 -d ./SRR31291558.fastq.gz' > ./SRR31291558_decomp.log
+
+real	0m55.695s
+user	1m8.306s
+sys	0m35.208s
+Executing: bash -c 'time pigz -p 4 -d ./SRR31291563.fastq.gz' > ./SRR31291563_decomp.log
+
+real	1m7.201s
+user	1m21.968s
+sys	0m41.249s
+Executing: bash -c 'time pigz -p 4 -d ./SRR31291560.fastq.gz' > ./SRR31291560_decomp.log
+
+real	1m24.217s
+user	1m45.861s
+sys	0m51.663s

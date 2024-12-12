@@ -1,0 +1,26 @@
+nohup: ignoring input
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/DRR621689_1.fastq /home/donggyu/cmc/fastq_data/DRR621689_2.fastq > ./DRR621689.fastq.gz' > ./DRR621689_comp.log
+
+real	13m10.775s
+user	52m45.593s
+sys	0m36.586s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/DRR621765_1.fastq /home/donggyu/cmc/fastq_data/DRR621765_2.fastq > ./DRR621765.fastq.gz' > ./DRR621765_comp.log
+
+real	30m3.200s
+user	120m17.501s
+sys	1m11.656s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/DRR621766_1.fastq /home/donggyu/cmc/fastq_data/DRR621766_2.fastq > ./DRR621766.fastq.gz' > ./DRR621766_comp.log
+
+real	30m57.318s
+user	123m54.600s
+sys	1m12.609s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/DRR621731_1.fastq /home/donggyu/cmc/fastq_data/DRR621731_2.fastq > ./DRR621731.fastq.gz' > ./DRR621731_comp.log
+
+real	31m15.821s
+user	125m8.731s
+sys	1m11.973s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/DRR621725_1.fastq /home/donggyu/cmc/fastq_data/DRR621725_2.fastq > ./DRR621725.fastq.gz' > ./DRR621725_comp.log
+
+real	36m33.070s
+user	146m18.654s
+sys	1m10.572s

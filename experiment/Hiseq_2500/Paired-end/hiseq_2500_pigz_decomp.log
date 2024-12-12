@@ -1,0 +1,26 @@
+nohup: ignoring input
+Executing: bash -c 'time pigz -p 4 -d ./DRR621689.fastq.gz' > ./DRR621689_decomp.log
+
+real	0m55.353s
+user	1m17.318s
+sys	0m36.516s
+Executing: bash -c 'time pigz -p 4 -d ./DRR621765.fastq.gz' > ./DRR621765_decomp.log
+
+real	1m48.392s
+user	2m32.261s
+sys	1m14.622s
+Executing: bash -c 'time pigz -p 4 -d ./DRR621766.fastq.gz' > ./DRR621766_decomp.log
+
+real	1m53.370s
+user	2m43.603s
+sys	1m12.704s
+Executing: bash -c 'time pigz -p 4 -d ./DRR621731.fastq.gz' > ./DRR621731_decomp.log
+
+real	1m54.949s
+user	2m40.260s
+sys	1m17.436s
+Executing: bash -c 'time pigz -p 4 -d ./DRR621725.fastq.gz' > ./DRR621725_decomp.log
+
+real	2m17.950s
+user	3m12.302s
+sys	1m29.638s

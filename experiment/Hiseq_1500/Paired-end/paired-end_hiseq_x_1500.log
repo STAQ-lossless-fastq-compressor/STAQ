@@ -1,0 +1,51 @@
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR4330016_1.fastq /nas-home/donggyu/cmc/fastq_data/ERR4330016_2.fastq > ./ERR4330016.fastq.gz' > ./ERR4330016_comp.log
+
+real	7m44.177s
+user	30m52.365s
+sys	0m17.014s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR4330007_1.fastq /nas-home/donggyu/cmc/fastq_data/ERR4330007_2.fastq > ./ERR4330007.fastq.gz' > ./ERR4330007_comp.log
+
+real	9m31.299s
+user	38m0.387s
+sys	0m22.852s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR4330011_1.fastq /nas-home/donggyu/cmc/fastq_data/ERR4330011_2.fastq > ./ERR4330011.fastq.gz' > ./ERR4330011_comp.log
+
+real	10m37.456s
+user	42m25.977s
+sys	0m24.004s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR4330024_1.fastq /nas-home/donggyu/cmc/fastq_data/ERR4330024_2.fastq > ./ERR4330024.fastq.gz' > ./ERR4330024_comp.log
+
+real	16m15.649s
+user	64m53.778s
+sys	0m40.491s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR4330002_1.fastq /nas-home/donggyu/cmc/fastq_data/ERR4330002_2.fastq > ./ERR4330002.fastq.gz' > ./ERR4330002_comp.log
+
+real	17m23.253s
+user	69m22.249s
+sys	0m45.323s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR31291562_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR31291562_2.fastq > ./SRR31291562.fastq.gz' > ./SRR31291562_comp.log
+
+real	14m38.096s
+user	58m2.338s
+sys	0m38.784s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR31291559_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR31291559_2.fastq > ./SRR31291559.fastq.gz' > ./SRR31291559_comp.log
+
+real	16m23.030s
+user	65m18.590s
+sys	0m42.901s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR31291558_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR31291558_2.fastq > ./SRR31291558.fastq.gz' > ./SRR31291558_comp.log
+
+real	16m52.000s
+user	67m15.978s
+sys	0m44.191s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR31291563_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR31291563_2.fastq > ./SRR31291563.fastq.gz' > ./SRR31291563_comp.log
+
+real	20m9.468s
+user	80m21.761s
+sys	0m53.308s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR31291560_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR31291560_2.fastq > ./SRR31291560.fastq.gz' > ./SRR31291560_comp.log
+
+real	26m19.475s
+user	105m1.121s
+sys	1m10.365s
+Executing: bash -c 'time pigz -p 4 -d ./ERR4330016.fastq.gz' > ./ERR4330016_decomp.log

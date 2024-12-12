@@ -1,0 +1,3199 @@
+nohup: ignoring input
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./ERR13703789_qual.zpaq: Temporary directory: ./tmp.fa37JncCHr/
+Starting decompression...
+Untarring tar archive ...
+Untarring archive done!
+Decompressing ...
+Infile trace: ./tmp.fa37JncCHr/read_seq.bin.0.tmp.compressed.combined
+Infile trace: ./tmp.fa37JncCHr/read_seq.bin.5.tmp.compressed.combined
+Infile trace: ./tmp.fa37JncCHr/read_seq.bin.6.tmp.compressed.combined
+Infile trace: ./tmp.fa37JncCHr/read_seq.bin.4.tmp.compressed.combined
+Infile trace: ./tmp.fa37JncCHr/read_seq.bin.3.tmp.compressed.combined
+Infile trace: Infile trace: ./tmp.fa37JncCHr/read_seq.bin.7.tmp.compressed.combinedInfile trace: ./tmp.fa37JncCHr/read_seq.bin.2.tmp.compressed.combined
+./tmp.fa37JncCHr/read_seq.bin.1.tmp.compressed.combined
+
+Metadata: {'len_series': 3499026}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+Metadata: {'len_series': 3327131}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+Metadata: {'len_series': 3422360}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+6801
+6466
+Metadata: {'len_series': 3495257}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+Metadata: {'len_series': 3561956}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+6652
+6794
+Metadata: {'len_series': 3515677}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+6924
+Metadata: {'len_series': 3587748}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+6834
+Metadata: {'len_series': 3570490}
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+6975
+6941
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+0 : 8.294893169972314
+0 : 8.234496302642311
+0 : 8.293643887996446
+0 : 8.272622104616183
+0 : 8.292660835164114
+0 : 8.278974455808452
+0 : 8.247508510006591
+0 : 8.289492226804617
+1000 : 7.565260213339864
+1000 : 7.484614108697277
+1000 : 7.499655023411134
+1000 : 7.541812786651833
+1000 : 7.5182497876224215
+1000 : 7.438224196384146
+1000 : 7.523878435819859
+1000 : 7.40771378619048
+2000 : 7.535082073627666
+2000 : 7.547866575962204
+2000 : 7.415055381590512
+2000 : 7.424125746597016
+2000 : 7.453708138406626
+2000 : 7.463881944101066
+2000 : 7.441883299263903
+2000 : 7.407629858656859
+1 versions, 1 files, 6824 fragments, 119.391090 MB
+Extracting 470.225498 MB in 1 files -threads 32
+[6814..6824] -> 715691
+> ERR13703789_qual_rle
+[1969..2884] -> 67100165
+14.42% 0:20:08 [4870..5823] -> 67042177
+28.68% 0:08:26 [5824..6813] -> 67059712
+42.94% 0:04:31 [1..1026] -> 67082173
+57.20% 0:02:33 [3868..4869] -> 67097791
+71.47% 0:01:22 [2885..3867] -> 67076008
+85.74% 0:00:35 [1027..1968] -> 67076096
+210.688 seconds (all OK)
+3000 : 7.500086355899498
+3000 : 7.440486112208293
+3000 : 7.472646179989035
+3000 : 7.433039263425934
+3000 : 7.491507861274461
+3000 : 7.378337085631302
+3000 : 7.3996017085145835
+3000 : 7.502621380173216
+명령 실행 완료: zpaq x ./ERR13703789_qual.zpaq
+Total bytes read: 470225498
+Total bytes written: 1771027122
+4000 : 7.354309733444561
+4000 : 7.454572867175164
+4000 : 7.464926910687709
+4000 : 7.326522840509958
+4000 : 7.473513660479988
+4000 : 7.494086225176196
+4000 : 7.428806426422899
+4000 : 7.433974849046628
+5000 : 7.312181551219811
+5000 : 7.394686444352924
+5000 : 7.319911827410793
+5000 : 7.401236919558987
+5000 : 7.277592400478283
+5000 : 7.348590966338071
+5000 : 7.410792275640924
+5000 : 7.310119135270664
+6000 : 7.371392426189462
+6000 : 7.343160442154427
+6000 : 7.392364678566277
+6000 : 7.230840636667737
+6000 : 7.403188578680978
+6000 : 7.286378650145562
+6000 : 7.433374973560419
+6000 : 7.381504318129592
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+Last decode part don't need inference.
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.0.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.4.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.2.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.7.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.5.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.1.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.6.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.3.zpaq: 1 versions, 1 files, 6 fragments, 0.028325 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.4
+1.039 seconds (all OK)
+1 versions, 1 files, 9 fragments, 0.028483 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..9] -> 256044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.3
+1.042 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.4.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.3.zpaq: 1 versions, 1 files, 4 fragments, 0.028229 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.7
+1.076 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.7.zpaq: 1 versions, 1 files, 6 fragments, 0.028542 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.1
+1.201 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.028367 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.6
+1.206 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.1.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.6.zpaq: 1 versions, 1 files, 4 fragments, 0.028243 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.5
+1.257 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.5.zpaq: 1 versions, 1 files, 2 fragments, 0.028259 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.2
+1.337 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.2.zpaq: 1 versions, 1 files, 7 fragments, 0.028497 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.0
+1.358 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.0.zpaq: 1 versions, 1 files, 12 fragments, 0.228100 MB
+Extracting 0.558112 MB in 1 files -threads 32
+[1..12] -> 558168
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.4
+3.533 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.4.zpaq: 1 versions, 1 files, 6 fragments, 0.229000 MB
+Extracting 0.561264 MB in 1 files -threads 32
+[1..6] -> 561296
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.3
+3.685 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.3.zpaq: 1 versions, 1 files, 10 fragments, 0.228067 MB
+Extracting 0.558440 MB in 1 files -threads 32
+[1..10] -> 558488
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.6
+3.634 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.6.zpaq: 1 versions, 1 files, 13 fragments, 0.227817 MB
+Extracting 0.557392 MB in 1 files -threads 32
+[1..13] -> 557452
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.5
+3.783 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.5.zpaq: 1 versions, 1 files, 2 fragments, 0.021926 MB
+Extracting 0.115174 MB in 1 files -threads 32
+[1..2] -> 115190
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.4
+0.530 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.4.zpaq: 1 versions, 1 files, 13 fragments, 0.232049 MB
+Extracting 0.568144 MB in 1 files -threads 32
+[1..13] -> 568204
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.1
+4.039 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.1.zpaq: 1 versions, 1 files, 2 fragments, 0.022479 MB
+Extracting 0.117347 MB in 1 files -threads 32
+[1..2] -> 117363
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.3
+0.598 seconds (all OK)
+1 versions, 1 files, 4 fragments, 0.021480 MB
+Extracting 0.114100 MB in 1 files -threads 32
+[1..4] -> 114124
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.6
+0.501 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.3.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.6.zpaq: 1 versions, 1 files, 12 fragments, 0.227302 MB
+Extracting 0.556640 MB in 1 files -threads 32
+[1..12] -> 556696
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.7
+4.334 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.7.zpaq: 1 versions, 1 files, 6 fragments, 0.228962 MB
+Extracting 0.560848 MB in 1 files -threads 32
+[1..6] -> 560880
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.2
+4.103 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.2.zpaq: 1 versions, 1 files, 13 fragments, 0.230892 MB
+Extracting 0.565064 MB in 1 files -threads 32
+[1..13] -> 565124
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.0
+4.125 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.0.zpaq: 1 versions, 1 files, 1 fragments, 0.022212 MB
+Extracting 0.116075 MB in 1 files -threads 32
+[1..1] -> 116087
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.5
+0.484 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.5.zpaq: 1 versions, 1 files, 3 fragments, 0.033979 MB
+Extracting 0.090820 MB in 1 files -threads 32
+[1..3] -> 90840
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.4
+0.651 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.4.zpaq: 1 versions, 1 files, 3 fragments, 0.032718 MB
+Extracting 0.088590 MB in 1 files -threads 32
+[1..3] -> 88610
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.6
+0.541 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.021846 MB
+Extracting 0.116498 MB in 1 files -threads 32
+[1..2] -> 116514
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.1
+0.653 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.6.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.1.zpaq: 1 versions, 1 files, 2 fragments, 0.022765 MB
+Extracting 0.118059 MB in 1 files -threads 32
+[1..2] -> 118075
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.2
+0.517 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.2.zpaq: 1 versions, 1 files, 2 fragments, 0.034791 MB
+Extracting 0.094378 MB in 1 files -threads 32
+[1..2] -> 94394
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.3
+0.647 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.3.zpaq: 1 versions, 1 files, 2 fragments, 0.034536 MB
+Extracting 0.092802 MB in 1 files -threads 32
+[1..2] -> 92818
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.5
+0.464 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.5.zpaq: 1 versions, 1 files, 2 fragments, 0.021280 MB
+Extracting 0.113732 MB in 1 files -threads 32
+[1..2] -> 113748
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.7
+0.613 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.022676 MB
+Extracting 0.117736 MB in 1 files -threads 32
+[1..2] -> 117752
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.0
+0.547 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.7.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.0.zpaq: 1 versions, 1 files, 3 fragments, 0.033647 MB
+Extracting 0.090960 MB in 1 files -threads 32
+[1..3] -> 90980
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.1
+0.513 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.1.zpaq: 1 versions, 1 files, 4 fragments, 0.035593 MB
+Extracting 0.095906 MB in 1 files -threads 32
+[1..4] -> 95930
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.2
+0.530 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.2.zpaq: 1 versions, 1 files, 3 fragments, 0.032603 MB
+Extracting 0.088304 MB in 1 files -threads 32
+[1..3] -> 88324
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.7
+0.692 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.7.zpaq: 1 versions, 1 files, 2 fragments, 0.035322 MB
+Extracting 0.094206 MB in 1 files -threads 32
+[1..2] -> 94222
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.0
+0.721 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.0.zpaq: 1 versions, 1 files, 291 fragments, 3.811939 MB
+Extracting 17.240017 MB in 1 files -threads 32
+[1..291] -> 17241189
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.0
+55.144 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.0.zpaq: 1 versions, 1 files, 7 fragments, 0.226458 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.0
+0.976 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.0.zpaq: 1 versions, 1 files, 3 fragments, 0.010030 MB
+Extracting 0.070633 MB in 1 files -threads 32
+[1..3] -> 70653
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.0
+0.234 seconds (all OK)
+1 versions, 1 files, 272 fragments, 3.817162 MB
+Extracting 17.287624 MB in 1 files -threads 32
+[1..272] -> 17288720
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.2
+56.818 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.2.zpaq: 1 versions, 1 files, 297 fragments, 3.770559 MB
+Extracting 17.115243 MB in 1 files -threads 32
+[1..297] -> 17116439
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.1
+56.934 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.1.zpaq: 1 versions, 1 files, 270 fragments, 3.806491 MB
+Extracting 17.234301 MB in 1 files -threads 32
+[1..270] -> 17235389
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.4
+57.852 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.4.zpaq: 1 versions, 1 files, 259 fragments, 3.768163 MB
+Extracting 17.083920 MB in 1 files -threads 32
+[1..259] -> 17084964
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.6
+57.952 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.6.zpaq: 1 versions, 1 files, 278 fragments, 3.776529 MB
+Extracting 17.095284 MB in 1 files -threads 32
+[1..278] -> 17096404
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.7
+57.241 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.7.zpaq: 1 versions, 1 files, 9 fragments, 0.225920 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.2
+0.993 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.2.zpaq: 1 versions, 1 files, 1 fragments, 0.009901 MB
+Extracting 0.070106 MB in 1 files -threads 32
+[1..1] -> 70118
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.2
+0.193 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.226048 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.4
+0.999 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.4.zpaq: 1 versions, 1 files, 260 fragments, 3.789315 MB
+Extracting 17.146079 MB in 1 files -threads 32
+[1..260] -> 17147127
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.5
+58.648 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.5.zpaq: 1 versions, 1 files, 8 fragments, 0.227038 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.1
+1.312 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.1.zpaq: 1 versions, 1 files, 1 fragments, 0.009858 MB
+Extracting 0.069764 MB in 1 files -threads 32
+[1..1] -> 69776
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.4
+0.194 seconds (all OK)
+1 versions, 1 files, 266 fragments, 3.801722 MB
+Extracting 17.240279 MB in 1 files -threads 32
+[1..266] -> 17241351
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.3
+58.851 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.3.zpaq: 1 versions, 1 files, 2 fragments, 0.010047 MB
+Extracting 0.071018 MB in 1 files -threads 32
+[1..2] -> 71034
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.1
+0.237 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.226794 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.7
+1.111 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.7.zpaq: 1 versions, 1 files, 4 fragments, 0.226539 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..4] -> 512024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.6
+1.335 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.6.zpaq: 1 versions, 1 files, 2 fragments, 0.009868 MB
+Extracting 0.069580 MB in 1 files -threads 32
+[1..2] -> 69596
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.7
+0.237 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.009894 MB
+Extracting 0.069805 MB in 1 files -threads 32
+[1..2] -> 69821
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.6
+0.192 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.225671 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.5
+1.061 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.5.zpaq: 1 versions, 1 files, 2 fragments, 0.009878 MB
+Extracting 0.069674 MB in 1 files -threads 32
+[1..2] -> 69690
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.5
+0.211 seconds (all OK)
+1 versions, 1 files, 9 fragments, 0.225400 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.3
+1.111 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.3.zpaq: 1 versions, 1 files, 1 fragments, 0.009906 MB
+Extracting 0.070158 MB in 1 files -threads 32
+[1..1] -> 70170
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.3
+0.233 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.14.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.13.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.9.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.8.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.15.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.12.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.10.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.11.zpaq: 1 versions, 1 files, 4 fragments, 0.027988 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.15
+0.532 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.15.zpaq: 1 versions, 1 files, 2 fragments, 0.028113 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.12
+0.541 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.12.zpaq: 1 versions, 1 files, 4 fragments, 0.028076 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.13
+0.577 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.13.zpaq: 1 versions, 1 files, 5 fragments, 0.028057 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.9
+0.615 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.9.zpaq: 1 versions, 1 files, 4 fragments, 0.027701 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.14
+0.620 seconds (all OK)
+1 versions, 1 files, 4 fragments, 0.028152 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.10
+0.622 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.14.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.10.zpaq: 1 versions, 1 files, 6 fragments, 0.028120 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.11
+0.659 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.11.zpaq: 1 versions, 1 files, 4 fragments, 0.028254 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.8
+0.880 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.8.zpaq: 1 versions, 1 files, 16 fragments, 0.222973 MB
+Extracting 0.545544 MB in 1 files -threads 32
+[1..16] -> 545616
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.15
+1.458 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.15.zpaq: 1 versions, 1 files, 3 fragments, 0.226147 MB
+Extracting 0.553752 MB in 1 files -threads 32
+[1..3] -> 553772
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.12
+1.471 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.12.zpaq: 1 versions, 1 files, 8 fragments, 0.224779 MB
+Extracting 0.549832 MB in 1 files -threads 32
+[1..8] -> 549872
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.13
+1.443 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.13.zpaq: 1 versions, 1 files, 8 fragments, 0.224005 MB
+Extracting 0.548112 MB in 1 files -threads 32
+[1..8] -> 548152
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.9
+1.426 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.9.zpaq: 1 versions, 1 files, 8 fragments, 0.218775 MB
+Extracting 0.534392 MB in 1 files -threads 32
+[1..8] -> 534432
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.14
+1.434 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.14.zpaq: 1 versions, 1 files, 14 fragments, 0.226231 MB
+Extracting 0.553096 MB in 1 files -threads 32
+[1..14] -> 553160
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.10
+1.570 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.10.zpaq: 1 versions, 1 files, 11 fragments, 0.224131 MB
+Extracting 0.548520 MB in 1 files -threads 32
+[1..11] -> 548572
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.11
+1.634 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.11.zpaq: 1 versions, 1 files, 1 fragments, 0.021239 MB
+Extracting 0.113093 MB in 1 files -threads 32
+[1..1] -> 113105
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.13
+0.277 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.021536 MB
+Extracting 0.114045 MB in 1 files -threads 32
+[1..2] -> 114061
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.12
+0.287 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.13.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.12.zpaq: 1 versions, 1 files, 3 fragments, 0.022443 MB
+Extracting 0.113978 MB in 1 files -threads 32
+[1..3] -> 113998
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.14
+0.309 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.14.zpaq: 1 versions, 1 files, 2 fragments, 0.022847 MB
+Extracting 0.122545 MB in 1 files -threads 32
+[1..2] -> 122561
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.15
+0.381 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.15.zpaq: 1 versions, 1 files, 2 fragments, 0.022171 MB
+Extracting 0.115471 MB in 1 files -threads 32
+[1..2] -> 115487
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.9
+0.380 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.9.zpaq: 1 versions, 1 files, 3 fragments, 0.032543 MB
+Extracting 0.088728 MB in 1 files -threads 32
+[1..3] -> 88748
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.13
+0.224 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.13.zpaq: 1 versions, 1 files, 3 fragments, 0.032980 MB
+Extracting 0.089652 MB in 1 files -threads 32
+[1..3] -> 89672
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.12
+0.241 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.12.zpaq: 1 versions, 1 files, 5 fragments, 0.021644 MB
+Extracting 0.113846 MB in 1 files -threads 32
+[1..5] -> 113874
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.10
+0.376 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.10.zpaq: 1 versions, 1 files, 3 fragments, 0.022187 MB
+Extracting 0.115336 MB in 1 files -threads 32
+[1..3] -> 115356
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.11
+0.341 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.11.zpaq: 1 versions, 1 files, 3 fragments, 0.034349 MB
+Extracting 0.093914 MB in 1 files -threads 32
+[1..3] -> 93934
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.9
+0.248 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.9.zpaq: 1 versions, 1 files, 3 fragments, 0.034842 MB
+Extracting 0.094358 MB in 1 files -threads 32
+[1..3] -> 94378
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.14
+0.322 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.14.zpaq: 1 versions, 1 files, 3 fragments, 0.034752 MB
+Extracting 0.108704 MB in 1 files -threads 32
+[1..3] -> 108724
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.15
+0.327 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.15.zpaq: 1 versions, 1 files, 1 fragments, 0.033242 MB
+Extracting 0.089418 MB in 1 files -threads 32
+[1..1] -> 89430
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.10
+0.240 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.10.zpaq: 1 versions, 1 files, 4 fragments, 0.034514 MB
+Extracting 0.093542 MB in 1 files -threads 32
+[1..4] -> 93566
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.11
+0.258 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.11.zpaq: 1 versions, 1 files, 10 fragments, 0.227699 MB
+Extracting 0.557688 MB in 1 files -threads 32
+[1..10] -> 557736
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.8
+2.044 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.8.zpaq: 1 versions, 1 files, 2 fragments, 0.021708 MB
+Extracting 0.115238 MB in 1 files -threads 32
+[1..2] -> 115254
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.8
+0.453 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.8.zpaq: 1 versions, 1 files, 3 fragments, 0.033160 MB
+Extracting 0.091054 MB in 1 files -threads 32
+[1..3] -> 91074
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.8
+0.238 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.8.zpaq: 1 versions, 1 files, 287 fragments, 3.756577 MB
+Extracting 17.007894 MB in 1 files -threads 32
+[1..287] -> 17009050
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.13
+44.274 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.13.zpaq: 1 versions, 1 files, 245 fragments, 3.779888 MB
+Extracting 17.091739 MB in 1 files -threads 32
+[1..245] -> 17092727
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.10
+44.912 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.10.zpaq: 1 versions, 1 files, 10 fragments, 0.225493 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.13
+1.571 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.13.zpaq: 1 versions, 1 files, 273 fragments, 3.782559 MB
+Extracting 17.134914 MB in 1 files -threads 32
+[1..273] -> 17136014
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.15
+45.813 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.15.zpaq: 1 versions, 1 files, 1 fragments, 0.009728 MB
+Extracting 0.068729 MB in 1 files -threads 32
+[1..1] -> 68741
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.13
+0.229 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.225594 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.10
+1.168 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.10.zpaq: 1 versions, 1 files, 1 fragments, 0.009781 MB
+Extracting 0.069137 MB in 1 files -threads 32
+[1..1] -> 69149
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.10
+0.271 seconds (all OK)
+1 versions, 1 files, 8 fragments, 0.223522 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.15
+1.068 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.15.zpaq: 1 versions, 1 files, 1 fragments, 0.009664 MB
+Extracting 0.068193 MB in 1 files -threads 32
+[1..1] -> 68205
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.15
+0.195 seconds (all OK)
+1 versions, 1 files, 271 fragments, 3.743026 MB
+Extracting 16.957270 MB in 1 files -threads 32
+[1..271] -> 16957440
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.12
+48.469 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.12.zpaq: 1 versions, 1 files, 290 fragments, 3.785750 MB
+Extracting 17.109834 MB in 1 files -threads 32
+[1..290] -> 17111002
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.11
+48.605 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.11.zpaq: 1 versions, 1 files, 10 fragments, 0.225526 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.12
+1.113 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.12.zpaq: 1 versions, 1 files, 255 fragments, 3.779928 MB
+Extracting 17.078029 MB in 1 files -threads 32
+[1..255] -> 17079057
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.9
+49.657 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.9.zpaq: 1 versions, 1 files, 2 fragments, 0.009825 MB
+Extracting 0.069219 MB in 1 files -threads 32
+[1..2] -> 69235
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.12
+0.215 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.224338 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.11
+1.215 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.11.zpaq: 1 versions, 1 files, 2 fragments, 0.009741 MB
+Extracting 0.068565 MB in 1 files -threads 32
+[1..2] -> 68581
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.11
+0.190 seconds (all OK)
+1 versions, 1 files, 248 fragments, 3.758774 MB
+Extracting 17.045398 MB in 1 files -threads 32
+[1..248] -> 17046398
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.8
+49.633 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.8.zpaq: 1 versions, 1 files, 5 fragments, 0.224260 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.9
+1.175 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.9.zpaq: 1 versions, 1 files, 1 fragments, 0.009702 MB
+Extracting 0.068514 MB in 1 files -threads 32
+[1..1] -> 68526
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.9
+0.207 seconds (all OK)
+1 versions, 1 files, 285 fragments, 3.829106 MB
+Extracting 17.259710 MB in 1 files -threads 32
+[1..285] -> 17260858
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.14
+51.402 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.14.zpaq: 1 versions, 1 files, 12 fragments, 0.226378 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..12] -> 512056
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.8
+0.949 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.8.zpaq: 1 versions, 1 files, 2 fragments, 0.009887 MB
+Extracting 0.069711 MB in 1 files -threads 32
+[1..2] -> 69727
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.8
+0.200 seconds (all OK)
+1 versions, 1 files, 9 fragments, 0.222248 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.14
+1.090 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.14.zpaq: 1 versions, 1 files, 2 fragments, 0.009522 MB
+Extracting 0.066799 MB in 1 files -threads 32
+[1..2] -> 66815
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.14
+0.185 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.22.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.21.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.16.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.23.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.20.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.18.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.17.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.19.zpaq: 1 versions, 1 files, 5 fragments, 0.028367 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.22
+0.551 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.22.zpaq: 1 versions, 1 files, 2 fragments, 0.028158 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.21
+0.591 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.21.zpaq: 1 versions, 1 files, 5 fragments, 0.028356 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.19
+0.614 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.19.zpaq: 1 versions, 1 files, 5 fragments, 0.028030 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.16
+0.644 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.028310 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.20
+0.645 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.16.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.20.zpaq: 1 versions, 1 files, 5 fragments, 0.028355 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.18
+0.684 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.18.zpaq: 1 versions, 1 files, 3 fragments, 0.028114 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.17
+0.731 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.17.zpaq: 1 versions, 1 files, 4 fragments, 0.028365 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.23
+0.816 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.23.zpaq: 1 versions, 1 files, 7 fragments, 0.229190 MB
+Extracting 0.561024 MB in 1 files -threads 32
+[1..7] -> 561060
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.22
+1.543 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.22.zpaq: 1 versions, 1 files, 11 fragments, 0.229318 MB
+Extracting 0.561312 MB in 1 files -threads 32
+[1..11] -> 561364
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.18
+1.483 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.18.zpaq: 1 versions, 1 files, 13 fragments, 0.229238 MB
+Extracting 0.561120 MB in 1 files -threads 32
+[1..13] -> 561180
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.19
+1.654 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.19.zpaq: 1 versions, 1 files, 6 fragments, 0.226957 MB
+Extracting 0.556200 MB in 1 files -threads 32
+[1..6] -> 556232
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.21
+1.747 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.21.zpaq: 1 versions, 1 files, 7 fragments, 0.229183 MB
+Extracting 0.561528 MB in 1 files -threads 32
+[1..7] -> 561564
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.20
+1.700 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.20.zpaq: 1 versions, 1 files, 5 fragments, 0.229692 MB
+Extracting 0.562608 MB in 1 files -threads 32
+[1..5] -> 562636
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.23
+1.542 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.23.zpaq: 1 versions, 1 files, 11 fragments, 0.223316 MB
+Extracting 0.546200 MB in 1 files -threads 32
+[1..11] -> 546252
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.16
+1.741 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.16.zpaq: 1 versions, 1 files, 2 fragments, 0.021186 MB
+Extracting 0.113259 MB in 1 files -threads 32
+[1..2] -> 113275
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.22
+0.366 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.22.zpaq: 1 versions, 1 files, 2 fragments, 0.022841 MB
+Extracting 0.118086 MB in 1 files -threads 32
+[1..2] -> 118102
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.18
+0.446 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.18.zpaq: 1 versions, 1 files, 3 fragments, 0.022162 MB
+Extracting 0.115901 MB in 1 files -threads 32
+[1..3] -> 115921
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.19
+0.392 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.19.zpaq: 1 versions, 1 files, 2 fragments, 0.021648 MB
+Extracting 0.114910 MB in 1 files -threads 32
+[1..2] -> 114926
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.23
+0.308 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.23.zpaq: 1 versions, 1 files, 3 fragments, 0.021993 MB
+Extracting 0.115427 MB in 1 files -threads 32
+[1..3] -> 115447
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.20
+0.325 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.20.zpaq: 1 versions, 1 files, 2 fragments, 0.021900 MB
+Extracting 0.114815 MB in 1 files -threads 32
+[1..2] -> 114831
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.21
+0.364 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.21.zpaq: 1 versions, 1 files, 4 fragments, 0.032371 MB
+Extracting 0.086262 MB in 1 files -threads 32
+[1..4] -> 86286
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.22
+0.251 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.22.zpaq: 1 versions, 1 files, 2 fragments, 0.021348 MB
+Extracting 0.113282 MB in 1 files -threads 32
+[1..2] -> 113298
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.16
+0.351 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.16.zpaq: 1 versions, 1 files, 8 fragments, 0.225985 MB
+Extracting 0.552728 MB in 1 files -threads 32
+[1..8] -> 552768
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.17
+2.061 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.17.zpaq: 1 versions, 1 files, 2 fragments, 0.035715 MB
+Extracting 0.095844 MB in 1 files -threads 32
+[1..2] -> 95860
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.18
+0.302 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.18.zpaq: 1 versions, 1 files, 2 fragments, 0.033992 MB
+Extracting 0.090580 MB in 1 files -threads 32
+[1..2] -> 90596
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.21
+0.242 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.033856 MB
+Extracting 0.090472 MB in 1 files -threads 32
+[1..2] -> 90488
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.20
+0.274 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.21.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.20.zpaq: 1 versions, 1 files, 4 fragments, 0.032510 MB
+Extracting 0.090014 MB in 1 files -threads 32
+[1..4] -> 90038
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.16
+0.234 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.033816 MB
+Extracting 0.091522 MB in 1 files -threads 32
+[1..2] -> 91538
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.19
+0.310 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.19.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.16.zpaq: 1 versions, 1 files, 2 fragments, 0.032969 MB
+Extracting 0.089168 MB in 1 files -threads 32
+[1..2] -> 89184
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.23
+0.322 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.23.zpaq: 1 versions, 1 files, 4 fragments, 0.021998 MB
+Extracting 0.114658 MB in 1 files -threads 32
+[1..4] -> 114682
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.17
+0.350 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.17.zpaq: 1 versions, 1 files, 3 fragments, 0.034089 MB
+Extracting 0.091134 MB in 1 files -threads 32
+[1..3] -> 91154
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.17
+0.230 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.17.zpaq: 1 versions, 1 files, 252 fragments, 3.741384 MB
+Extracting 16.959232 MB in 1 files -threads 32
+[1..252] -> 16960248
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.23
+63.089 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.23.zpaq: 1 versions, 1 files, 5 fragments, 0.225871 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.23
+1.954 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.23.zpaq: 1 versions, 1 files, 1 fragments, 0.009930 MB
+Extracting 0.070326 MB in 1 files -threads 32
+[1..1] -> 70338
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.23
+0.345 seconds (all OK)
+1 versions, 1 files, 274 fragments, 3.781205 MB
+Extracting 17.104856 MB in 1 files -threads 32
+[1..274] -> 17104896
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.17
+65.609 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.17.zpaq: 1 versions, 1 files, 283 fragments, 3.762137 MB
+Extracting 17.042090 MB in 1 files -threads 32
+[1..283] -> 17043230
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.16
+66.174 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.16.zpaq: 1 versions, 1 files, 246 fragments, 3.818443 MB
+Extracting 17.285975 MB in 1 files -threads 32
+[1..246] -> 17286967
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.18
+66.384 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.18.zpaq: 1 versions, 1 files, 257 fragments, 3.790080 MB
+Extracting 17.161987 MB in 1 files -threads 32
+[1..257] -> 17163023
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.20
+66.411 seconds (all OK)
+1 versions, 1 files, 271 fragments, 3.749062 MB
+Extracting 16.979422 MB in 1 files -threads 32
+[1..271] -> 16980514
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.22
+66.648 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.20.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.22.zpaq: 1 versions, 1 files, 245 fragments, 3.769900 MB
+Extracting 17.073242 MB in 1 files -threads 32
+[1..245] -> 17074230
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.19
+66.563 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.19.zpaq: 1 versions, 1 files, 262 fragments, 3.795062 MB
+Extracting 17.190018 MB in 1 files -threads 32
+[1..262] -> 17191074
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.21
+66.887 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.21.zpaq: 1 versions, 1 files, 7 fragments, 0.225406 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.17
+1.715 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.17.zpaq: 1 versions, 1 files, 1 fragments, 0.009777 MB
+Extracting 0.069091 MB in 1 files -threads 32
+[1..1] -> 69103
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.17
+0.235 seconds (all OK)
+1 versions, 1 files, 8 fragments, 0.226283 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.18
+1.820 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.18.zpaq: 1 versions, 1 files, 9 fragments, 0.224960 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.16
+2.024 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.16.zpaq: 1 versions, 1 files, 8 fragments, 0.226662 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.20
+1.928 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.20.zpaq: 1 versions, 1 files, 7 fragments, 0.226630 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.22
+2.030 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.22.zpaq: 1 versions, 1 files, 1 fragments, 0.009907 MB
+Extracting 0.070164 MB in 1 files -threads 32
+[1..1] -> 70176
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.18
+0.322 seconds (all OK)
+1 versions, 1 files, 13 fragments, 0.226665 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..13] -> 512060
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.19
+1.938 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.19.zpaq: 1 versions, 1 files, 2 fragments, 0.009704 MB
+Extracting 0.068275 MB in 1 files -threads 32
+[1..2] -> 68291
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.16
+0.322 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.009978 MB
+Extracting 0.070191 MB in 1 files -threads 32
+[1..3] -> 70211
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.20
+0.329 seconds (all OK)
+1 versions, 1 files, 1 fragments, 0.009904 MB
+Extracting 0.070128 MB in 1 files -threads 32
+[1..1] -> 70140
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.22
+0.282 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.225971 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.21
+1.953 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.21.zpaq: 1 versions, 1 files, 2 fragments, 0.009940 MB
+Extracting 0.070140 MB in 1 files -threads 32
+[1..2] -> 70156
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.19
+0.335 seconds (all OK)
+1 versions, 1 files, 1 fragments, 0.009831 MB
+Extracting 0.069525 MB in 1 files -threads 32
+[1..1] -> 69537
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.21
+0.317 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.29.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.24.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.30.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.25.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.27.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.26.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.31.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.28.zpaq: 1 versions, 1 files, 6 fragments, 0.028274 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.28
+0.792 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.28.zpaq: 1 versions, 1 files, 2 fragments, 0.028254 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.25
+0.833 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.25.zpaq: 1 versions, 1 files, 4 fragments, 0.028282 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.30
+0.883 seconds (all OK)
+1 versions, 1 files, 6 fragments, 0.028454 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.24
+0.886 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.30.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.24.zpaq: 1 versions, 1 files, 11 fragments, 0.028399 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..11] -> 256052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.31
+0.913 seconds (all OK)
+1 versions, 1 files, 5 fragments, 0.028199 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.27
+0.913 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.27.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.31.zpaq: 1 versions, 1 files, 5 fragments, 0.028278 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.29
+1.021 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.028185 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.26
+1.020 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.26.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.29.zpaq: 1 versions, 1 files, 4 fragments, 0.226633 MB
+Extracting 0.554392 MB in 1 files -threads 32
+[1..4] -> 554416
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.31
+2.066 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.31.zpaq: 1 versions, 1 files, 3 fragments, 0.020828 MB
+Extracting 0.111257 MB in 1 files -threads 32
+[1..3] -> 111277
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.31
+0.337 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.31.zpaq: 1 versions, 1 files, 10 fragments, 0.226576 MB
+Extracting 0.553984 MB in 1 files -threads 32
+[1..10] -> 554032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.27
+2.452 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.27.zpaq: 1 versions, 1 files, 7 fragments, 0.225225 MB
+Extracting 0.550736 MB in 1 files -threads 32
+[1..7] -> 550772
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.26
+2.359 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.26.zpaq: 1 versions, 1 files, 6 fragments, 0.228820 MB
+Extracting 0.560320 MB in 1 files -threads 32
+[1..6] -> 560352
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.25
+2.605 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.25.zpaq: 1 versions, 1 files, 10 fragments, 0.227239 MB
+Extracting 0.555696 MB in 1 files -threads 32
+[1..10] -> 555744
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.28
+2.704 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.28.zpaq: 1 versions, 1 files, 7 fragments, 0.227407 MB
+Extracting 0.557112 MB in 1 files -threads 32
+[1..7] -> 557148
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.29
+2.499 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.29.zpaq: 1 versions, 1 files, 1 fragments, 0.031674 MB
+Extracting 0.083916 MB in 1 files -threads 32
+[1..1] -> 83928
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.31
+0.266 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.31.zpaq: 1 versions, 1 files, 9 fragments, 0.228331 MB
+Extracting 0.558640 MB in 1 files -threads 32
+[1..9] -> 558684
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.30
+2.762 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.30.zpaq: 1 versions, 1 files, 5 fragments, 0.230304 MB
+Extracting 0.563880 MB in 1 files -threads 32
+[1..5] -> 563908
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.24
+2.797 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.24.zpaq: 1 versions, 1 files, 1 fragments, 0.021617 MB
+Extracting 0.113452 MB in 1 files -threads 32
+[1..1] -> 113464
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.26
+0.317 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.26.zpaq: 1 versions, 1 files, 2 fragments, 0.021313 MB
+Extracting 0.113184 MB in 1 files -threads 32
+[1..2] -> 113200
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.27
+0.368 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.27.zpaq: 1 versions, 1 files, 5 fragments, 0.021369 MB
+Extracting 0.113579 MB in 1 files -threads 32
+[1..5] -> 113607
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.25
+0.340 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.25.zpaq: 1 versions, 1 files, 3 fragments, 0.021812 MB
+Extracting 0.114619 MB in 1 files -threads 32
+[1..3] -> 114639
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.28
+0.364 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.28.zpaq: 1 versions, 1 files, 1 fragments, 0.021488 MB
+Extracting 0.114146 MB in 1 files -threads 32
+[1..1] -> 114158
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.29
+0.429 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.29.zpaq: 1 versions, 1 files, 3 fragments, 0.033225 MB
+Extracting 0.089220 MB in 1 files -threads 32
+[1..3] -> 89240
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.26
+0.366 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.26.zpaq: 1 versions, 1 files, 1 fragments, 0.032506 MB
+Extracting 0.087078 MB in 1 files -threads 32
+[1..1] -> 87090
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.25
+0.312 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.25.zpaq: 1 versions, 1 files, 2 fragments, 0.021375 MB
+Extracting 0.113650 MB in 1 files -threads 32
+[1..2] -> 113666
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.30
+0.461 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.30.zpaq: 1 versions, 1 files, 2 fragments, 0.021315 MB
+Extracting 0.114239 MB in 1 files -threads 32
+[1..2] -> 114255
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.24
+0.456 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.032641 MB
+Extracting 0.087872 MB in 1 files -threads 32
+[1..3] -> 87892
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.27
+0.404 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.24.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.27.zpaq: 1 versions, 1 files, 4 fragments, 0.033468 MB
+Extracting 0.090314 MB in 1 files -threads 32
+[1..4] -> 90338
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.28
+0.357 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.28.zpaq: 1 versions, 1 files, 2 fragments, 0.032788 MB
+Extracting 0.089014 MB in 1 files -threads 32
+[1..2] -> 89030
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.29
+0.298 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.29.zpaq: 1 versions, 1 files, 2 fragments, 0.032826 MB
+Extracting 0.087640 MB in 1 files -threads 32
+[1..2] -> 87656
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.30
+0.342 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.30.zpaq: 1 versions, 1 files, 1 fragments, 0.032578 MB
+Extracting 0.087508 MB in 1 files -threads 32
+[1..1] -> 87520
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.24
+0.316 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.24.zpaq: 1 versions, 1 files, 275 fragments, 3.754342 MB
+Extracting 17.013940 MB in 1 files -threads 32
+[1..275] -> 17015048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.26
+48.452 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.26.zpaq: 1 versions, 1 files, 290 fragments, 3.743198 MB
+Extracting 16.951817 MB in 1 files -threads 32
+[1..290] -> 16952985
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.27
+48.390 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.27.zpaq: 1 versions, 1 files, 244 fragments, 3.741856 MB
+Extracting 16.925939 MB in 1 files -threads 32
+[1..244] -> 16926923
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.28
+48.579 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.28.zpaq: 1 versions, 1 files, 281 fragments, 3.746042 MB
+Extracting 16.961301 MB in 1 files -threads 32
+[1..281] -> 16962433
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.25
+48.838 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.25.zpaq: 1 versions, 1 files, 277 fragments, 3.745960 MB
+Extracting 16.924224 MB in 1 files -threads 32
+[1..277] -> 16924672
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.31
+49.662 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.31.zpaq: 1 versions, 1 files, 14 fragments, 0.225698 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..14] -> 512064
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.27
+1.010 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.27.zpaq: 1 versions, 1 files, 6 fragments, 0.225482 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..6] -> 512032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.26
+1.210 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.26.zpaq: 1 versions, 1 files, 284 fragments, 3.719029 MB
+Extracting 16.853828 MB in 1 files -threads 32
+[1..284] -> 16854972
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.29
+49.557 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.009823 MB
+Extracting 0.069248 MB in 1 files -threads 32
+[1..2] -> 69264
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.27
+0.266 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.29.zpaq: 1 versions, 1 files, 10 fragments, 0.225590 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.28
+1.008 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.28.zpaq: 1 versions, 1 files, 1 fragments, 0.009744 MB
+Extracting 0.068842 MB in 1 files -threads 32
+[1..1] -> 68854
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.26
+0.229 seconds (all OK)
+1 versions, 1 files, 4 fragments, 0.009909 MB
+Extracting 0.069462 MB in 1 files -threads 32
+[1..4] -> 69486
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.28
+0.191 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.226588 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.25
+1.138 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.25.zpaq: 1 versions, 1 files, 1 fragments, 0.009894 MB
+Extracting 0.070040 MB in 1 files -threads 32
+[1..1] -> 70052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.25
+0.202 seconds (all OK)
+1 versions, 1 files, 8 fragments, 0.225727 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.31
+1.146 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.31.zpaq: 1 versions, 1 files, 1 fragments, 0.009803 MB
+Extracting 0.069299 MB in 1 files -threads 32
+[1..1] -> 69311
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.31
+0.189 seconds (all OK)
+1 versions, 1 files, 288 fragments, 3.723070 MB
+Extracting 16.836107 MB in 1 files -threads 32
+[1..288] -> 16837267
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.30
+50.209 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.30.zpaq: 1 versions, 1 files, 256 fragments, 3.739387 MB
+Extracting 16.938691 MB in 1 files -threads 32
+[1..256] -> 16939723
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.24
+50.212 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.24.zpaq: 1 versions, 1 files, 15 fragments, 0.225984 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..15] -> 512068
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.29
+1.109 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.29.zpaq: 1 versions, 1 files, 1 fragments, 0.009840 MB
+Extracting 0.069639 MB in 1 files -threads 32
+[1..1] -> 69651
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.29
+0.189 seconds (all OK)
+1 versions, 1 files, 11 fragments, 0.226707 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.24
+0.990 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.24.zpaq: 1 versions, 1 files, 5 fragments, 0.225528 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.30
+1.043 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.30.zpaq: 1 versions, 1 files, 1 fragments, 0.009948 MB
+Extracting 0.070485 MB in 1 files -threads 32
+[1..1] -> 70497
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.24
+0.192 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.009899 MB
+Extracting 0.069830 MB in 1 files -threads 32
+[1..2] -> 69846
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.30
+0.190 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.36.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.37.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.39.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.32.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.38.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.34.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.35.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.33.zpaq: 1 versions, 1 files, 4 fragments, 0.028123 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.33
+0.537 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.33.zpaq: 1 versions, 1 files, 3 fragments, 0.028656 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.37
+0.545 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.37.zpaq: 1 versions, 1 files, 7 fragments, 0.028244 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.34
+0.582 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.34.zpaq: 1 versions, 1 files, 5 fragments, 0.028610 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.38
+0.612 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.028429 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.39
+0.612 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.38.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.39.zpaq: 1 versions, 1 files, 3 fragments, 0.027869 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.32
+0.682 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.32.zpaq: 1 versions, 1 files, 6 fragments, 0.028252 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.35
+0.812 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.35.zpaq: 1 versions, 1 files, 7 fragments, 0.028697 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.36
+0.841 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.36.zpaq: 1 versions, 1 files, 10 fragments, 0.229615 MB
+Extracting 0.562064 MB in 1 files -threads 32
+[1..10] -> 562112
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.39
+1.390 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.39.zpaq: 1 versions, 1 files, 8 fragments, 0.233915 MB
+Extracting 0.572752 MB in 1 files -threads 32
+[1..8] -> 572792
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.38
+1.472 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.38.zpaq: 1 versions, 1 files, 5 fragments, 0.226982 MB
+Extracting 0.555904 MB in 1 files -threads 32
+[1..5] -> 555932
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.35
+1.387 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.35.zpaq: 1 versions, 1 files, 9 fragments, 0.225267 MB
+Extracting 0.551664 MB in 1 files -threads 32
+[1..9] -> 551708
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.33
+1.673 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.33.zpaq: 1 versions, 1 files, 4 fragments, 0.024706 MB
+Extracting 0.124637 MB in 1 files -threads 32
+[1..4] -> 124661
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.39
+0.280 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.39.zpaq: 1 versions, 1 files, 9 fragments, 0.225782 MB
+Extracting 0.552824 MB in 1 files -threads 32
+[1..9] -> 552868
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.34
+1.727 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.34.zpaq: 1 versions, 1 files, 8 fragments, 0.221826 MB
+Extracting 0.542144 MB in 1 files -threads 32
+[1..8] -> 542184
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.32
+1.639 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.32.zpaq: 1 versions, 1 files, 2 fragments, 0.022750 MB
+Extracting 0.119254 MB in 1 files -threads 32
+[1..2] -> 119270
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.38
+0.262 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.38.zpaq: 1 versions, 1 files, 12 fragments, 0.236033 MB
+Extracting 0.577744 MB in 1 files -threads 32
+[1..12] -> 577800
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.37
+1.924 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.37.zpaq: 1 versions, 1 files, 2 fragments, 0.025289 MB
+Extracting 0.125218 MB in 1 files -threads 32
+[1..2] -> 125234
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.35
+0.308 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.35.zpaq: 1 versions, 1 files, 1 fragments, 0.021581 MB
+Extracting 0.113626 MB in 1 files -threads 32
+[1..1] -> 113638
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.33
+0.324 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.33.zpaq: 1 versions, 1 files, 8 fragments, 0.234452 MB
+Extracting 0.574272 MB in 1 files -threads 32
+[1..8] -> 574312
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.36
+1.708 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.36.zpaq: 1 versions, 1 files, 5 fragments, 0.022248 MB
+Extracting 0.114366 MB in 1 files -threads 32
+[1..5] -> 114394
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.32
+0.257 seconds (all OK)
+1 versions, 1 files, 4 fragments, 0.040119 MB
+Extracting 0.108758 MB in 1 files -threads 32
+[1..4] -> 108782
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.39
+0.296 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.32.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.39.zpaq: 1 versions, 1 files, 1 fragments, 0.035181 MB
+Extracting 0.095320 MB in 1 files -threads 32
+[1..1] -> 95332
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.38
+0.270 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.38.zpaq: 1 versions, 1 files, 3 fragments, 0.021386 MB
+Extracting 0.113178 MB in 1 files -threads 32
+[1..3] -> 113198
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.34
+0.404 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.34.zpaq: 1 versions, 1 files, 3 fragments, 0.041491 MB
+Extracting 0.111460 MB in 1 files -threads 32
+[1..3] -> 111480
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.35
+0.262 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.35.zpaq: 1 versions, 1 files, 2 fragments, 0.033077 MB
+Extracting 0.089336 MB in 1 files -threads 32
+[1..2] -> 89352
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.33
+0.247 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.33.zpaq: 1 versions, 1 files, 3 fragments, 0.034195 MB
+Extracting 0.093196 MB in 1 files -threads 32
+[1..3] -> 93216
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.32
+0.270 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.32.zpaq: 1 versions, 1 files, 3 fragments, 0.022084 MB
+Extracting 0.117159 MB in 1 files -threads 32
+[1..3] -> 117179
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.36
+0.329 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.36.zpaq: 1 versions, 1 files, 4 fragments, 0.023368 MB
+Extracting 0.121027 MB in 1 files -threads 32
+[1..4] -> 121051
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.37
+0.447 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.37.zpaq: 1 versions, 1 files, 1 fragments, 0.032413 MB
+Extracting 0.088150 MB in 1 files -threads 32
+[1..1] -> 88162
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.34
+0.247 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.34.zpaq: 1 versions, 1 files, 2 fragments, 0.033945 MB
+Extracting 0.090750 MB in 1 files -threads 32
+[1..2] -> 90766
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.36
+0.228 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.36.zpaq: 1 versions, 1 files, 1 fragments, 0.036473 MB
+Extracting 0.097618 MB in 1 files -threads 32
+[1..1] -> 97630
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.37
+0.249 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.37.zpaq: 1 versions, 1 files, 255 fragments, 3.761817 MB
+Extracting 16.998892 MB in 1 files -threads 32
+[1..255] -> 16999920
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.32
+42.276 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.32.zpaq: 1 versions, 1 files, 266 fragments, 3.817740 MB
+Extracting 17.328880 MB in 1 files -threads 32
+[1..266] -> 17329952
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.36
+42.528 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.36.zpaq: 1 versions, 1 files, 260 fragments, 3.883609 MB
+Extracting 17.486700 MB in 1 files -threads 32
+[1..260] -> 17487748
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.35
+43.036 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.35.zpaq: 1 versions, 1 files, 263 fragments, 3.830120 MB
+Extracting 17.361065 MB in 1 files -threads 32
+[1..263] -> 17362125
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.37
+43.091 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.37.zpaq: 1 versions, 1 files, 9 fragments, 0.223409 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.32
+1.475 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.32.zpaq: 1 versions, 1 files, 2 fragments, 0.009640 MB
+Extracting 0.067768 MB in 1 files -threads 32
+[1..2] -> 67784
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.32
+0.197 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.222862 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.35
+1.391 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.35.zpaq: 1 versions, 1 files, 15 fragments, 0.227676 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..15] -> 512068
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.36
+1.575 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.36.zpaq: 1 versions, 1 files, 271 fragments, 3.836517 MB
+Extracting 17.368482 MB in 1 files -threads 32
+[1..271] -> 17369574
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.38
+44.619 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.38.zpaq: 1 versions, 1 files, 1 fragments, 0.010111 MB
+Extracting 0.071784 MB in 1 files -threads 32
+[1..1] -> 71796
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.36
+0.209 seconds (all OK)
+1 versions, 1 files, 1 fragments, 0.009824 MB
+Extracting 0.069488 MB in 1 files -threads 32
+[1..1] -> 69500
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.35
+0.334 seconds (all OK)
+1 versions, 1 files, 9 fragments, 0.226919 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.37
+1.425 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.37.zpaq: 1 versions, 1 files, 235 fragments, 3.890760 MB
+Extracting 17.548015 MB in 1 files -threads 32
+[1..235] -> 17548963
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.39
+45.125 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.39.zpaq: 1 versions, 1 files, 234 fragments, 3.723357 MB
+Extracting 16.857354 MB in 1 files -threads 32
+[1..234] -> 16858298
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.34
+44.916 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.34.zpaq: 1 versions, 1 files, 2 fragments, 0.010200 MB
+Extracting 0.072218 MB in 1 files -threads 32
+[1..2] -> 72234
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.37
+0.212 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.227147 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.38
+0.960 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.38.zpaq: 1 versions, 1 files, 2 fragments, 0.010121 MB
+Extracting 0.071594 MB in 1 files -threads 32
+[1..2] -> 71610
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.38
+0.252 seconds (all OK)
+1 versions, 1 files, 11 fragments, 0.223870 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.39
+1.014 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.39.zpaq: 1 versions, 1 files, 9 fragments, 0.225119 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.34
+0.983 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.34.zpaq: 1 versions, 1 files, 2 fragments, 0.009950 MB
+Extracting 0.070258 MB in 1 files -threads 32
+[1..2] -> 70274
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.39
+0.193 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.009803 MB
+Extracting 0.069103 MB in 1 files -threads 32
+[1..2] -> 69119
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.34
+0.190 seconds (all OK)
+1 versions, 1 files, 274 fragments, 3.715726 MB
+Extracting 16.802079 MB in 1 files -threads 32
+[1..274] -> 16803183
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.33
+48.709 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.33.zpaq: 1 versions, 1 files, 11 fragments, 0.225314 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.33
+0.961 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.33.zpaq: 1 versions, 1 files, 2 fragments, 0.009787 MB
+Extracting 0.068958 MB in 1 files -threads 32
+[1..2] -> 68974
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.33
+0.202 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.42.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.41.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.44.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.45.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.43.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.46.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.47.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.40.zpaq: 1 versions, 1 files, 2 fragments, 0.028293 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.47
+0.546 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.028528 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.44
+0.548 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.028359 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.45
+0.548 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.47.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.45.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.44.zpaq: 1 versions, 1 files, 6 fragments, 0.028510 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.46
+0.553 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.028403 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.41
+0.555 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.46.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.41.zpaq: 1 versions, 1 files, 4 fragments, 0.028466 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.43
+0.570 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.43.zpaq: 1 versions, 1 files, 3 fragments, 0.028376 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.40
+0.769 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.40.zpaq: 1 versions, 1 files, 2 fragments, 0.028515 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..2] -> 256016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.42
+0.810 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.42.zpaq: 1 versions, 1 files, 15 fragments, 0.232161 MB
+Extracting 0.567424 MB in 1 files -threads 32
+[1..15] -> 567492
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.43
+1.394 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.43.zpaq: 1 versions, 1 files, 18 fragments, 0.231548 MB
+Extracting 0.566048 MB in 1 files -threads 32
+[1..18] -> 566128
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.41
+1.434 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.41.zpaq: 1 versions, 1 files, 10 fragments, 0.231721 MB
+Extracting 0.566552 MB in 1 files -threads 32
+[1..10] -> 566600
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.46
+1.459 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.46.zpaq: 1 versions, 1 files, 9 fragments, 0.231591 MB
+Extracting 0.566264 MB in 1 files -threads 32
+[1..9] -> 566308
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.44
+1.601 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.44.zpaq: 1 versions, 1 files, 11 fragments, 0.230775 MB
+Extracting 0.564728 MB in 1 files -threads 32
+[1..11] -> 564780
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.40
+1.449 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.40.zpaq: 1 versions, 1 files, 4 fragments, 0.021659 MB
+Extracting 0.115265 MB in 1 files -threads 32
+[1..4] -> 115289
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.43
+0.292 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.43.zpaq: 1 versions, 1 files, 4 fragments, 0.022884 MB
+Extracting 0.118635 MB in 1 files -threads 32
+[1..4] -> 118659
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.46
+0.270 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.46.zpaq: 1 versions, 1 files, 2 fragments, 0.023004 MB
+Extracting 0.118719 MB in 1 files -threads 32
+[1..2] -> 118735
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.41
+0.306 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.41.zpaq: 1 versions, 1 files, 4 fragments, 0.036126 MB
+Extracting 0.095632 MB in 1 files -threads 32
+[1..4] -> 95656
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.46
+0.228 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.46.zpaq: 1 versions, 1 files, 2 fragments, 0.035938 MB
+Extracting 0.095926 MB in 1 files -threads 32
+[1..2] -> 95942
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.41
+0.231 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.022664 MB
+Extracting 0.117949 MB in 1 files -threads 32
+[1..3] -> 117969
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.44
+0.381 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.41.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.44.zpaq: 1 versions, 1 files, 2 fragments, 0.033435 MB
+Extracting 0.088674 MB in 1 files -threads 32
+[1..2] -> 88690
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.43
+0.330 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.43.zpaq: 1 versions, 1 files, 5 fragments, 0.022992 MB
+Extracting 0.118509 MB in 1 files -threads 32
+[1..5] -> 118537
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.40
+0.394 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.40.zpaq: 1 versions, 1 files, 10 fragments, 0.229963 MB
+Extracting 0.562232 MB in 1 files -threads 32
+[1..10] -> 562280
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.47
+2.133 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.47.zpaq: 1 versions, 1 files, 8 fragments, 0.231090 MB
+Extracting 0.565304 MB in 1 files -threads 32
+[1..8] -> 565344
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.45
+2.166 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.45.zpaq: 1 versions, 1 files, 5 fragments, 0.035241 MB
+Extracting 0.094332 MB in 1 files -threads 32
+[1..5] -> 94360
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.44
+0.245 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.44.zpaq: 1 versions, 1 files, 2 fragments, 0.035788 MB
+Extracting 0.095836 MB in 1 files -threads 32
+[1..2] -> 95852
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.40
+0.234 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.40.zpaq: 1 versions, 1 files, 7 fragments, 0.233699 MB
+Extracting 0.572624 MB in 1 files -threads 32
+[1..7] -> 572660
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.42
+2.180 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.42.zpaq: 1 versions, 1 files, 2 fragments, 0.023037 MB
+Extracting 0.118619 MB in 1 files -threads 32
+[1..2] -> 118635
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.47
+0.375 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.47.zpaq: 1 versions, 1 files, 2 fragments, 0.022160 MB
+Extracting 0.116651 MB in 1 files -threads 32
+[1..2] -> 116667
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.45
+0.457 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.45.zpaq: 1 versions, 1 files, 2 fragments, 0.022201 MB
+Extracting 0.117453 MB in 1 files -threads 32
+[1..2] -> 117469
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.42
+0.346 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.42.zpaq: 1 versions, 1 files, 2 fragments, 0.034324 MB
+Extracting 0.091976 MB in 1 files -threads 32
+[1..2] -> 91992
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.45
+0.281 seconds (all OK)
+1 versions, 1 files, 5 fragments, 0.036342 MB
+Extracting 0.096680 MB in 1 files -threads 32
+[1..5] -> 96708
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.47
+0.399 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.45.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.47.zpaq: 1 versions, 1 files, 2 fragments, 0.034237 MB
+Extracting 0.091750 MB in 1 files -threads 32
+[1..2] -> 91766
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.42
+0.228 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.42.zpaq: 1 versions, 1 files, 279 fragments, 3.812399 MB
+Extracting 17.178116 MB in 1 files -threads 32
+[1..279] -> 17179240
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.46
+63.158 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.46.zpaq: 1 versions, 1 files, 259 fragments, 3.813719 MB
+Extracting 17.225419 MB in 1 files -threads 32
+[1..259] -> 17226463
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.43
+63.836 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.43.zpaq: 1 versions, 1 files, 6 fragments, 0.225712 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..6] -> 512032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.46
+1.507 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.46.zpaq: 1 versions, 1 files, 2 fragments, 0.010022 MB
+Extracting 0.070819 MB in 1 files -threads 32
+[1..2] -> 70835
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.46
+0.324 seconds (all OK)
+1 versions, 1 files, 251 fragments, 3.835751 MB
+Extracting 17.316941 MB in 1 files -threads 32
+[1..251] -> 17317888
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.41
+65.072 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.41.zpaq: 1 versions, 1 files, 8 fragments, 0.227012 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.43
+1.822 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.43.zpaq: 1 versions, 1 files, 2 fragments, 0.010035 MB
+Extracting 0.070928 MB in 1 files -threads 32
+[1..2] -> 70944
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.43
+0.223 seconds (all OK)
+1 versions, 1 files, 11 fragments, 0.226435 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.41
+1.680 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.41.zpaq: 1 versions, 1 files, 271 fragments, 3.852542 MB
+Extracting 17.408712 MB in 1 files -threads 32
+[1..271] -> 17409804
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.40
+66.606 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.40.zpaq: 1 versions, 1 files, 2 fragments, 0.010016 MB
+Extracting 0.070756 MB in 1 files -threads 32
+[1..2] -> 70772
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.41
+0.222 seconds (all OK)
+1 versions, 1 files, 266 fragments, 3.824500 MB
+Extracting 17.243672 MB in 1 files -threads 32
+[1..266] -> 17244744
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.45
+66.232 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.45.zpaq: 1 versions, 1 files, 265 fragments, 3.812236 MB
+Extracting 17.223815 MB in 1 files -threads 32
+[1..265] -> 17224883
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.42
+66.653 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.42.zpaq: 1 versions, 1 files, 14 fragments, 0.226580 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..14] -> 512064
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.40
+1.319 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.40.zpaq: 1 versions, 1 files, 3 fragments, 0.010025 MB
+Extracting 0.070591 MB in 1 files -threads 32
+[1..3] -> 70611
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.40
+0.220 seconds (all OK)
+1 versions, 1 files, 5 fragments, 0.226364 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.45
+1.509 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.45.zpaq: 1 versions, 1 files, 280 fragments, 3.800335 MB
+Extracting 17.147395 MB in 1 files -threads 32
+[1..280] -> 17148523
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.44
+68.660 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.44.zpaq: 1 versions, 1 files, 2 fragments, 0.010003 MB
+Extracting 0.070663 MB in 1 files -threads 32
+[1..2] -> 70679
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.45
+0.254 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.226947 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.42
+1.774 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.42.zpaq: 1 versions, 1 files, 1 fragments, 0.010086 MB
+Extracting 0.071578 MB in 1 files -threads 32
+[1..1] -> 71590
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.42
+0.240 seconds (all OK)
+1 versions, 1 files, 288 fragments, 3.826301 MB
+Extracting 17.213911 MB in 1 files -threads 32
+[1..288] -> 17215071
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.47
+68.945 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.47.zpaq: 1 versions, 1 files, 8 fragments, 0.226265 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.44
+1.355 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.44.zpaq: 1 versions, 1 files, 2 fragments, 0.010018 MB
+Extracting 0.070783 MB in 1 files -threads 32
+[1..2] -> 70799
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.44
+0.257 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.226111 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.47
+1.182 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.47.zpaq: 1 versions, 1 files, 2 fragments, 0.009954 MB
+Extracting 0.070279 MB in 1 files -threads 32
+[1..2] -> 70295
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.47
+0.208 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.53.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.54.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.55.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.52.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.48.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.51.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.50.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.49.zpaq: 1 versions, 1 files, 3 fragments, 0.028344 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.51
+0.540 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.51.zpaq: 1 versions, 1 files, 4 fragments, 0.028495 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.54
+0.551 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.54.zpaq: 1 versions, 1 files, 4 fragments, 0.028582 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.53
+0.593 seconds (all OK)
+1 versions, 1 files, 6 fragments, 0.028443 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.52
+0.593 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.028211 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.49
+0.594 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.53.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.52.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.49.zpaq: 1 versions, 1 files, 5 fragments, 0.028415 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.50
+0.644 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.50.zpaq: 1 versions, 1 files, 4 fragments, 0.028577 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.55
+0.702 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.55.zpaq: 1 versions, 1 files, 4 fragments, 0.028346 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..4] -> 256024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.48
+0.734 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.48.zpaq: 1 versions, 1 files, 6 fragments, 0.232174 MB
+Extracting 0.569104 MB in 1 files -threads 32
+[1..6] -> 569136
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.54
+2.462 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.54.zpaq: 1 versions, 1 files, 11 fragments, 0.226084 MB
+Extracting 0.552064 MB in 1 files -threads 32
+[1..11] -> 552116
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.49
+2.529 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.49.zpaq: 1 versions, 1 files, 11 fragments, 0.234126 MB
+Extracting 0.573488 MB in 1 files -threads 32
+[1..11] -> 573540
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.53
+2.773 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.53.zpaq: 1 versions, 1 files, 7 fragments, 0.229463 MB
+Extracting 0.561792 MB in 1 files -threads 32
+[1..7] -> 561828
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.48
+2.775 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.48.zpaq: 1 versions, 1 files, 9 fragments, 0.230494 MB
+Extracting 0.563768 MB in 1 files -threads 32
+[1..9] -> 563812
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.52
+2.963 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.52.zpaq: 1 versions, 1 files, 11 fragments, 0.230289 MB
+Extracting 0.563416 MB in 1 files -threads 32
+[1..11] -> 563468
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.50
+2.955 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.50.zpaq: 1 versions, 1 files, 10 fragments, 0.230129 MB
+Extracting 0.563008 MB in 1 files -threads 32
+[1..10] -> 563056
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.51
+3.166 seconds (all OK)
+1 versions, 1 files, 11 fragments, 0.233793 MB
+Extracting 0.572728 MB in 1 files -threads 32
+[1..11] -> 572780
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.55
+3.008 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.51.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.55.zpaq: 1 versions, 1 files, 3 fragments, 0.023311 MB
+Extracting 0.118165 MB in 1 files -threads 32
+[1..3] -> 118185
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.49
+0.618 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.49.zpaq: 1 versions, 1 files, 2 fragments, 0.028295 MB
+Extracting 0.135524 MB in 1 files -threads 32
+[1..2] -> 135540
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.54
+0.750 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.54.zpaq: 1 versions, 1 files, 2 fragments, 0.023454 MB
+Extracting 0.121448 MB in 1 files -threads 32
+[1..2] -> 121464
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.53
+0.683 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.53.zpaq: 1 versions, 1 files, 2 fragments, 0.022575 MB
+Extracting 0.117350 MB in 1 files -threads 32
+[1..2] -> 117366
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.48
+0.670 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.023248 MB
+Extracting 0.119782 MB in 1 files -threads 32
+[1..3] -> 119802
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.52
+0.636 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.48.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.52.zpaq: 1 versions, 1 files, 2 fragments, 0.022297 MB
+Extracting 0.117298 MB in 1 files -threads 32
+[1..2] -> 117314
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.51
+0.544 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.036723 MB
+Extracting 0.098314 MB in 1 files -threads 32
+[1..2] -> 98330
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.49
+0.499 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.51.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.49.zpaq: 1 versions, 1 files, 1 fragments, 0.022891 MB
+Extracting 0.119427 MB in 1 files -threads 32
+[1..1] -> 119439
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.50
+0.740 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.50.zpaq: 1 versions, 1 files, 2 fragments, 0.044937 MB
+Extracting 0.128772 MB in 1 files -threads 32
+[1..2] -> 128788
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.54
+0.623 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.54.zpaq: 1 versions, 1 files, 3 fragments, 0.023818 MB
+Extracting 0.121612 MB in 1 files -threads 32
+[1..3] -> 121632
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.55
+0.705 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.55.zpaq: 1 versions, 1 files, 2 fragments, 0.036891 MB
+Extracting 0.099524 MB in 1 files -threads 32
+[1..2] -> 99540
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.53
+0.474 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.53.zpaq: 1 versions, 1 files, 2 fragments, 0.034369 MB
+Extracting 0.093844 MB in 1 files -threads 32
+[1..2] -> 93860
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.51
+0.429 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.035893 MB
+Extracting 0.098622 MB in 1 files -threads 32
+[1..3] -> 98642
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.52
+0.490 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.52.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.51.zpaq: 1 versions, 1 files, 2 fragments, 0.035171 MB
+Extracting 0.094252 MB in 1 files -threads 32
+[1..2] -> 94268
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.48
+0.531 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.48.zpaq: 1 versions, 1 files, 3 fragments, 0.035618 MB
+Extracting 0.098000 MB in 1 files -threads 32
+[1..3] -> 98020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.50
+0.577 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.50.zpaq: 1 versions, 1 files, 3 fragments, 0.036894 MB
+Extracting 0.100042 MB in 1 files -threads 32
+[1..3] -> 100062
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.55
+0.509 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.55.zpaq: 1 versions, 1 files, 233 fragments, 3.827971 MB
+Extracting 17.295344 MB in 1 files -threads 32
+[1..233] -> 17296284
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.55
+52.777 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.55.zpaq: 1 versions, 1 files, 292 fragments, 3.837900 MB
+Extracting 17.277276 MB in 1 files -threads 32
+[1..292] -> 17278452
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.49
+53.700 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.49.zpaq: 1 versions, 1 files, 255 fragments, 3.803951 MB
+Extracting 17.174751 MB in 1 files -threads 32
+[1..255] -> 17175779
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.52
+53.382 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.52.zpaq: 1 versions, 1 files, 287 fragments, 3.830674 MB
+Extracting 17.281649 MB in 1 files -threads 32
+[1..287] -> 17282805
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.48
+53.620 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.48.zpaq: 1 versions, 1 files, 298 fragments, 3.893786 MB
+Extracting 17.442928 MB in 1 files -threads 32
+[1..298] -> 17444128
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.54
+54.024 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.54.zpaq: 1 versions, 1 files, 285 fragments, 3.813633 MB
+Extracting 17.194045 MB in 1 files -threads 32
+[1..285] -> 17195193
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.50
+53.943 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.50.zpaq: 1 versions, 1 files, 9 fragments, 0.226213 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.52
+0.992 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.52.zpaq: 1 versions, 1 files, 11 fragments, 0.227438 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.55
+1.395 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.55.zpaq: 1 versions, 1 files, 9 fragments, 0.224666 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.49
+1.316 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.49.zpaq: 1 versions, 1 files, 3 fragments, 0.010150 MB
+Extracting 0.071591 MB in 1 files -threads 32
+[1..3] -> 71611
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.55
+0.254 seconds (all OK)
+1 versions, 1 files, 1 fragments, 0.009948 MB
+Extracting 0.070471 MB in 1 files -threads 32
+[1..1] -> 70483
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.52
+0.337 seconds (all OK)
+1 versions, 1 files, 1 fragments, 0.009768 MB
+Extracting 0.069008 MB in 1 files -threads 32
+[1..1] -> 69020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.49
+0.328 seconds (all OK)
+1 versions, 1 files, 10 fragments, 0.226628 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.48
+1.287 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.48.zpaq: 1 versions, 1 files, 6 fragments, 0.222495 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..6] -> 512032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.54
+1.286 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.54.zpaq: 1 versions, 1 files, 2 fragments, 0.010062 MB
+Extracting 0.071138 MB in 1 files -threads 32
+[1..2] -> 71154
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.54
+0.204 seconds (all OK)
+1 versions, 1 files, 2 fragments, 0.009947 MB
+Extracting 0.070224 MB in 1 files -threads 32
+[1..2] -> 70240
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.48
+0.331 seconds (all OK)
+1 versions, 1 files, 5 fragments, 0.224882 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.50
+1.130 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.50.zpaq: 1 versions, 1 files, 2 fragments, 0.009972 MB
+Extracting 0.070427 MB in 1 files -threads 32
+[1..2] -> 70443
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.50
+0.194 seconds (all OK)
+1 versions, 1 files, 246 fragments, 3.841093 MB
+Extracting 17.346132 MB in 1 files -threads 32
+[1..246] -> 17347124
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.53
+56.190 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.53.zpaq: 1 versions, 1 files, 274 fragments, 3.790976 MB
+Extracting 17.097067 MB in 1 files -threads 32
+[1..274] -> 17098171
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.51
+56.827 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.51.zpaq: 1 versions, 1 files, 5 fragments, 0.226440 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.53
+0.979 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.53.zpaq: 1 versions, 1 files, 2 fragments, 0.010127 MB
+Extracting 0.071686 MB in 1 files -threads 32
+[1..2] -> 71702
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.53
+0.193 seconds (all OK)
+1 versions, 1 files, 12 fragments, 0.225957 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..12] -> 512056
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.51
+0.944 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.51.zpaq: 1 versions, 1 files, 2 fragments, 0.009967 MB
+Extracting 0.070376 MB in 1 files -threads 32
+[1..2] -> 70392
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.51
+0.191 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.63.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.57.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.60.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.56.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.62.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.61.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.59.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.58.zpaq: 1 versions, 1 files, 3 fragments, 0.031225 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.63
+0.532 seconds (all OK)
+1 versions, 1 files, 5 fragments, 0.031204 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.60
+0.532 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.031221 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..7] -> 256036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.59
+0.533 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.60.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.63.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.59.zpaq: 1 versions, 1 files, 3 fragments, 0.028272 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.56
+0.542 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.56.zpaq: 1 versions, 1 files, 5 fragments, 0.031136 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.61
+0.578 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.61.zpaq: 1 versions, 1 files, 5 fragments, 0.030896 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.58
+0.814 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.58.zpaq: 1 versions, 1 files, 5 fragments, 0.031052 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.57
+0.842 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.57.zpaq: 1 versions, 1 files, 5 fragments, 0.031324 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..5] -> 256028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.62
+0.851 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.62.zpaq: 1 versions, 1 files, 8 fragments, 0.228757 MB
+Extracting 0.559944 MB in 1 files -threads 32
+[1..8] -> 559984
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.56
+1.443 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.56.zpaq: 1 versions, 1 files, 2 fragments, 0.024033 MB
+Extracting 0.121252 MB in 1 files -threads 32
+[1..2] -> 121268
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.56
+0.298 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.56.zpaq: 1 versions, 1 files, 13 fragments, 0.284291 MB
+Extracting 0.721496 MB in 1 files -threads 32
+[1..13] -> 721556
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.60
+1.947 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.60.zpaq: 1 versions, 1 files, 11 fragments, 0.283778 MB
+Extracting 0.718256 MB in 1 files -threads 32
+[1..11] -> 718308
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.59
+1.973 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.59.zpaq: 1 versions, 1 files, 13 fragments, 0.281642 MB
+Extracting 0.716240 MB in 1 files -threads 32
+[1..13] -> 716300
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.61
+2.019 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.61.zpaq: 1 versions, 1 files, 11 fragments, 0.282349 MB
+Extracting 0.710568 MB in 1 files -threads 32
+[1..11] -> 710620
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.57
+1.794 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.57.zpaq: 1 versions, 1 files, 16 fragments, 0.285741 MB
+Extracting 0.729920 MB in 1 files -threads 32
+[1..16] -> 729992
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.62
+1.811 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.62.zpaq: 1 versions, 1 files, 2 fragments, 0.038082 MB
+Extracting 0.102518 MB in 1 files -threads 32
+[1..2] -> 102534
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.56
+0.421 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.56.zpaq: 1 versions, 1 files, 2 fragments, 0.024628 MB
+Extracting 0.138165 MB in 1 files -threads 32
+[1..2] -> 138181
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.60
+0.297 seconds (all OK)
+1 versions, 1 files, 15 fragments, 0.278293 MB
+Extracting 0.700936 MB in 1 files -threads 32
+[1..15] -> 701004
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.58
+1.968 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.60.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.58.zpaq: 1 versions, 1 files, 3 fragments, 0.023878 MB
+Extracting 0.135618 MB in 1 files -threads 32
+[1..3] -> 135638
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.59
+0.298 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.59.zpaq: 1 versions, 1 files, 3 fragments, 0.025094 MB
+Extracting 0.138912 MB in 1 files -threads 32
+[1..3] -> 138932
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.61
+0.328 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.61.zpaq: 1 versions, 1 files, 3 fragments, 0.025397 MB
+Extracting 0.141579 MB in 1 files -threads 32
+[1..3] -> 141599
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.62
+0.311 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.62.zpaq: 1 versions, 1 files, 1 fragments, 0.035840 MB
+Extracting 0.091672 MB in 1 files -threads 32
+[1..1] -> 91684
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.59
+0.235 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.59.zpaq: 1 versions, 1 files, 3 fragments, 0.024500 MB
+Extracting 0.136749 MB in 1 files -threads 32
+[1..3] -> 136769
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.57
+0.420 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.57.zpaq: 1 versions, 1 files, 11 fragments, 0.284050 MB
+Extracting 0.729384 MB in 1 files -threads 32
+[1..11] -> 729436
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.63
+2.546 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.63.zpaq: 1 versions, 1 files, 1 fragments, 0.026636 MB
+Extracting 0.143031 MB in 1 files -threads 32
+[1..1] -> 143043
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.58
+0.308 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.58.zpaq: 1 versions, 1 files, 1 fragments, 0.037356 MB
+Extracting 0.095956 MB in 1 files -threads 32
+[1..1] -> 95968
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.60
+0.360 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.60.zpaq: 1 versions, 1 files, 5 fragments, 0.038080 MB
+Extracting 0.098764 MB in 1 files -threads 32
+[1..5] -> 98792
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.61
+0.350 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.61.zpaq: 1 versions, 1 files, 3 fragments, 0.037004 MB
+Extracting 0.095856 MB in 1 files -threads 32
+[1..3] -> 95876
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.57
+0.262 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.57.zpaq: 1 versions, 1 files, 2 fragments, 0.038551 MB
+Extracting 0.100678 MB in 1 files -threads 32
+[1..2] -> 100694
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.62
+0.356 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.62.zpaq: 1 versions, 1 files, 1 fragments, 0.042178 MB
+Extracting 0.110828 MB in 1 files -threads 32
+[1..1] -> 110840
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.58
+0.277 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.58.zpaq: 1 versions, 1 files, 3 fragments, 0.026207 MB
+Extracting 0.144000 MB in 1 files -threads 32
+[1..3] -> 144020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.63
+0.311 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.63.zpaq: 1 versions, 1 files, 5 fragments, 0.040883 MB
+Extracting 0.105654 MB in 1 files -threads 32
+[1..5] -> 105682
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.63
+0.250 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.63.zpaq: 1 versions, 1 files, 210 fragments, 3.283724 MB
+Extracting 14.577666 MB in 1 files -threads 32
+[1..210] -> 14578514
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.62
+36.149 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.62.zpaq: 1 versions, 1 files, 255 fragments, 3.299815 MB
+Extracting 14.681108 MB in 1 files -threads 32
+[1..255] -> 14682136
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.60
+36.910 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.60.zpaq: 1 versions, 1 files, 9 fragments, 0.226638 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.62
+1.210 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.62.zpaq: 1 versions, 1 files, 3 fragments, 0.011839 MB
+Extracting 0.091240 MB in 1 files -threads 32
+[1..3] -> 91260
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.62
+0.413 seconds (all OK)
+1 versions, 1 files, 216 fragments, 3.309663 MB
+Extracting 14.694168 MB in 1 files -threads 32
+[1..216] -> 14695040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.63
+37.502 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.63.zpaq: 1 versions, 1 files, 5 fragments, 0.226806 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..5] -> 512028
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.60
+1.315 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.60.zpaq: 1 versions, 1 files, 2 fragments, 0.011845 MB
+Extracting 0.090187 MB in 1 files -threads 32
+[1..2] -> 90203
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.60
+0.229 seconds (all OK)
+1 versions, 1 files, 228 fragments, 3.312079 MB
+Extracting 14.748787 MB in 1 files -threads 32
+[1..228] -> 14749707
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.59
+38.973 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.59.zpaq: 1 versions, 1 files, 11 fragments, 0.224557 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..11] -> 512052
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.63
+1.214 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.63.zpaq: 1 versions, 1 files, 1 fragments, 0.011644 MB
+Extracting 0.091173 MB in 1 files -threads 32
+[1..1] -> 91185
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.63
+0.287 seconds (all OK)
+1 versions, 1 files, 241 fragments, 3.337595 MB
+Extracting 14.844569 MB in 1 files -threads 32
+[1..241] -> 14845541
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.57
+39.350 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.57.zpaq: 1 versions, 1 files, 9 fragments, 0.227130 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.59
+1.025 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.59.zpaq: 1 versions, 1 files, 3 fragments, 0.011884 MB
+Extracting 0.089782 MB in 1 files -threads 32
+[1..3] -> 89802
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.59
+0.229 seconds (all OK)
+1 versions, 1 files, 211 fragments, 3.301954 MB
+Extracting 14.685302 MB in 1 files -threads 32
+[1..211] -> 14686154
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.61
+40.360 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.61.zpaq: 1 versions, 1 files, 12 fragments, 0.227061 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..12] -> 512056
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.57
+0.983 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.57.zpaq: 1 versions, 1 files, 5 fragments, 0.011931 MB
+Extracting 0.088821 MB in 1 files -threads 32
+[1..5] -> 88849
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.57
+0.230 seconds (all OK)
+1 versions, 1 files, 7 fragments, 0.226720 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..7] -> 512036
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.61
+1.027 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.61.zpaq: 1 versions, 1 files, 5 fragments, 0.011751 MB
+Extracting 0.089530 MB in 1 files -threads 32
+[1..5] -> 89558
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.61
+0.231 seconds (all OK)
+1 versions, 1 files, 220 fragments, 3.365394 MB
+Extracting 14.944626 MB in 1 files -threads 32
+[1..220] -> 14945514
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.58
+44.549 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.58.zpaq: 1 versions, 1 files, 4 fragments, 0.224242 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..4] -> 512024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.58
+1.050 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.58.zpaq: 1 versions, 1 files, 2 fragments, 0.011641 MB
+Extracting 0.087617 MB in 1 files -threads 32
+[1..2] -> 87633
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.58
+0.225 seconds (all OK)
+1 versions, 1 files, 292 fragments, 3.868039 MB
+Extracting 17.426519 MB in 1 files -threads 32
+[1..292] -> 17427695
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.56
+49.098 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.56.zpaq: 1 versions, 1 files, 9 fragments, 0.224963 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.56
+1.099 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.56.zpaq: 1 versions, 1 files, 1 fragments, 0.009888 MB
+Extracting 0.069993 MB in 1 files -threads 32
+[1..1] -> 70005
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.56
+0.192 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.64.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.65.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.68.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.66.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.67.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_flag.txt.69.zpaq: 1 versions, 1 files, 3 fragments, 0.031534 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.65
+0.534 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.031756 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.66
+0.536 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.65.zpaq: 1 versions, 1 files, 6 fragments, 0.031486 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..6] -> 256032
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.64
+0.540 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.66.zpaq: zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.64.zpaq: 1 versions, 1 files, 3 fragments, 0.032118 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..3] -> 256020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.68
+0.580 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.68.zpaq: 1 versions, 1 files, 8 fragments, 0.031917 MB
+Extracting 0.256000 MB in 1 files -threads 32
+[1..8] -> 256040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.67
+0.624 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.67.zpaq: 1 versions, 1 files, 5 fragments, 0.028273 MB
+Extracting 0.221096 MB in 1 files -threads 32
+[1..5] -> 221124
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//e.69
+0.764 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_pos.bin.69.zpaq: 1 versions, 1 files, 10 fragments, 0.286411 MB
+Extracting 0.740152 MB in 1 files -threads 32
+[1..10] -> 740200
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.64
+2.833 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.64.zpaq: 1 versions, 1 files, 12 fragments, 0.252924 MB
+Extracting 0.729968 MB in 1 files -threads 32
+[1..12] -> 730024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.69
+2.802 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.69.zpaq: 1 versions, 1 files, 8 fragments, 0.288652 MB
+Extracting 0.751936 MB in 1 files -threads 32
+[1..8] -> 751976
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.65
+3.156 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.65.zpaq: 1 versions, 1 files, 5 fragments, 0.025418 MB
+Extracting 0.142011 MB in 1 files -threads 32
+[1..5] -> 142039
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.64
+0.474 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.64.zpaq: 1 versions, 1 files, 12 fragments, 0.289184 MB
+Extracting 0.772192 MB in 1 files -threads 32
+[1..12] -> 772248
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.67
+3.275 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.67.zpaq: 1 versions, 1 files, 3 fragments, 0.022639 MB
+Extracting 0.133739 MB in 1 files -threads 32
+[1..3] -> 133759
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.69
+0.466 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.69.zpaq: 1 versions, 1 files, 16 fragments, 0.292247 MB
+Extracting 0.769536 MB in 1 files -threads 32
+[1..16] -> 769608
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.66
+3.694 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.66.zpaq: 1 versions, 1 files, 2 fragments, 0.026341 MB
+Extracting 0.146235 MB in 1 files -threads 32
+[1..2] -> 146251
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.65
+0.549 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.65.zpaq: 1 versions, 1 files, 3 fragments, 0.038344 MB
+Extracting 0.098984 MB in 1 files -threads 32
+[1..3] -> 99004
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.64
+0.496 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.64.zpaq: 1 versions, 1 files, 11 fragments, 0.293820 MB
+Extracting 0.802848 MB in 1 files -threads 32
+[1..11] -> 802900
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//a.68
+3.881 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noise.txt.68.zpaq: 1 versions, 1 files, 4 fragments, 0.033575 MB
+Extracting 0.084986 MB in 1 files -threads 32
+[1..4] -> 85010
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.69
+0.465 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.69.zpaq: 1 versions, 1 files, 2 fragments, 0.026104 MB
+Extracting 0.147051 MB in 1 files -threads 32
+[1..2] -> 147067
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.67
+0.661 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.67.zpaq: 1 versions, 1 files, 2 fragments, 0.040316 MB
+Extracting 0.104486 MB in 1 files -threads 32
+[1..2] -> 104502
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.65
+0.516 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.65.zpaq: 1 versions, 1 files, 3 fragments, 0.025819 MB
+Extracting 0.146174 MB in 1 files -threads 32
+[1..3] -> 146194
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.66
+0.617 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.66.zpaq: 1 versions, 1 files, 6 fragments, 0.025704 MB
+Extracting 0.149151 MB in 1 files -threads 32
+[1..6] -> 149183
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//b.68
+0.481 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_noisepos.bin.68.zpaq: 1 versions, 1 files, 1 fragments, 0.039411 MB
+Extracting 0.101054 MB in 1 files -threads 32
+[1..1] -> 101066
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.67
+0.477 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.67.zpaq: 1 versions, 1 files, 3 fragments, 0.039276 MB
+Extracting 0.099964 MB in 1 files -threads 32
+[1..3] -> 99984
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.66
+0.489 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.66.zpaq: 1 versions, 1 files, 1 fragments, 0.038269 MB
+Extracting 0.097590 MB in 1 files -threads 32
+[1..1] -> 97602
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//c.68
+0.487 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_unaligned.txt.68.zpaq: 1 versions, 1 files, 180 fragments, 2.550099 MB
+Extracting 11.342859 MB in 1 files -threads 32
+[1..180] -> 11343587
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.69
+48.331 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.69.zpaq: 1 versions, 1 files, 11 fragments, 0.195207 MB
+Extracting 0.442192 MB in 1 files -threads 32
+[1..11] -> 442244
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.69
+0.916 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.69.zpaq: 1 versions, 1 files, 1 fragments, 0.007577 MB
+Extracting 0.091246 MB in 1 files -threads 32
+[1..1] -> 91258
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.69
+0.315 seconds (all OK)
+1 versions, 1 files, 231 fragments, 3.056474 MB
+Extracting 13.593744 MB in 1 files -threads 32
+[1..231] -> 13594676
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.68
+53.745 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.68.zpaq: 1 versions, 1 files, 4 fragments, 0.225827 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..4] -> 512024
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.68
+1.078 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.68.zpaq: 1 versions, 1 files, 209 fragments, 3.220040 MB
+Extracting 14.299314 MB in 1 files -threads 32
+[1..209] -> 14300158
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.65
+55.797 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.65.zpaq: 1 versions, 1 files, 2 fragments, 0.010684 MB
+Extracting 0.100356 MB in 1 files -threads 32
+[1..2] -> 100372
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.68
+0.380 seconds (all OK)
+1 versions, 1 files, 222 fragments, 3.251358 MB
+Extracting 14.444038 MB in 1 files -threads 32
+[1..222] -> 14444934
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.64
+57.330 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.64.zpaq: 1 versions, 1 files, 3 fragments, 0.225530 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..3] -> 512020
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.65
+1.177 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.65.zpaq: 1 versions, 1 files, 202 fragments, 3.139375 MB
+Extracting 13.976468 MB in 1 files -threads 32
+[1..202] -> 13977284
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.67
+56.766 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.67.zpaq: 1 versions, 1 files, 4 fragments, 0.011695 MB
+Extracting 0.093992 MB in 1 files -threads 32
+[1..4] -> 94016
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.65
+0.248 seconds (all OK)
+1 versions, 1 files, 237 fragments, 3.167917 MB
+Extracting 14.100231 MB in 1 files -threads 32
+[1..237] -> 14101187
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//f.66
+56.744 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_lengths.bin.66.zpaq: 1 versions, 1 files, 9 fragments, 0.226585 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..9] -> 512044
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.64
+1.080 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.64.zpaq: 1 versions, 1 files, 2 fragments, 0.011679 MB
+Extracting 0.092519 MB in 1 files -threads 32
+[1..2] -> 92535
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.64
+0.235 seconds (all OK)
+1 versions, 1 files, 8 fragments, 0.225798 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..8] -> 512040
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.67
+1.352 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.67.zpaq: 1 versions, 1 files, 10 fragments, 0.225786 MB
+Extracting 0.512000 MB in 1 files -threads 32
+[1..10] -> 512048
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//g.66
+1.096 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+./tmp.fa37JncCHr/read_rev.txt.66.zpaq: 1 versions, 1 files, 1 fragments, 0.011164 MB
+Extracting 0.096524 MB in 1 files -threads 32
+[1..1] -> 96536
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.67
+0.242 seconds (all OK)
+1 versions, 1 files, 3 fragments, 0.011603 MB
+Extracting 0.096192 MB in 1 files -threads 32
+[1..3] -> 96212
+> ./tmp.fa37JncCHr/./tmp.fa37JncCHr//d.66
+0.304 seconds (all OK)
+Decompression done!
+Total time for decompression: 1347 s
+FASTQ 파일 생성 완료
+Operation completed: ERR13703789_deep.fastq
+Elapsed time: 1370 seconds

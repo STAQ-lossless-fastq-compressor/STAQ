@@ -1,0 +1,48 @@
+nohup: ignoring input
+Temporary directory: ./tmp.BWDxS22Jjz/
+Starting compression...
+Preprocessing ...
+Max Read length: 151
+Total number of reads: 685038342
+Total number of reads without N: 684088958
+Paired id match code: 2
+Preprocessing done!
+Time for this step: 1822 s
+Temporary directory size: 34047968663
+Reordering ...
+Reading file
+Constructing dictionaries
+Reordering reads
+Reordering done, 170911289 were unmatched
+Writing to file
+Done!
+Reordering done!
+Time for this step: 10334 s
+temp_dir size: 37587238436
+Encoding ...
+Maximum Read length: 151
+Number of non-singleton reads: 533337938
+Number of singleton reads: 150751020
+Number of reads with N: 949384
+Encoding reads
+Encoding done:
+58264638 singleton reads were aligned
+735230 reads with N were aligned
+Encoding done!
+Time for this step: 3556 s
+Temporary directory size: 27776778445
+Reordering and compressing streams ...
+Reordering and compressing streams done!
+Time for this step: 504 s
+Temporary directory size: 13193519608
+
+Sizes of streams after compression: 
+Reads:        6586958753 bytes
+Quality:      6434682706 bytes
+ID:            171878149 bytes
+Creating tar archive ...Tar archive done!
+Time for this step: 21 s
+Compression done!
+Total time for compression: 16238 s
+
+Total size:  13206056960 bytes

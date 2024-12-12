@@ -1,0 +1,453 @@
+Temporary directory: ./tmp.fa37JncCHr/
+Starting compression...
+Preprocessing ...
+Max Read length: 289
+Total number of reads: 1054340
+Total number of reads without N: 1050515
+Preprocessing done!
+Time for this step: 2 s
+Temporary directory size: 30685031
+Reordering ...
+Reading file
+Constructing dictionaries
+Reordering reads
+Reordering done, 1027082 were unmatched
+Writing to file
+Done!
+Reordering done!
+Time for this step: 7 s
+temp_dir size: 34958145
+Encoding ...
+Maximum Read length: 289
+Number of non-singleton reads: 43296
+Number of singleton reads: 1007219
+Number of reads with N: 3825
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.4.zpaq at offset 0 + 0
+Adding 0.130306 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.4.tmp 130306
+[1..5] 130334 -method 56,3,0
+1 +added, 0 -removed.
+
+0.000000 + (0.130306 -> 0.130306 -> 0.125597) = 0.125597 MB
+0.760 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.1.zpaq at offset 0 + 0
+Adding 0.106512 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.1.tmp 106512
+[1..2] 106528 -method 56,3,0
+1 +added, 0 -removed.
+
+0.000000 + (0.106512 -> 0.106512 -> 0.102820) = 0.102820 MB
+0.780 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.5.zpaq at offset 0 + 0
+Adding 0.114024 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.5.tmp 114024
+[1..1] 114036 -method 56,2,0
+1 +added, 0 -removed.
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.2.zpaq at offset 0 + 0
+Adding 0.109345 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.2.tmp 109345
+[1..2] 109361 -method 56,3,0
+1 +added, 0 -removed.
+
+0.000000 + (0.114024 -> 0.114024 -> 0.110269) = 0.110269 MB
+
+0.000000 + (0.109345 -> 0.109345 -> 0.105736) = 0.105736 MB
+0.796 seconds (all OK)
+0.797 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.3.zpaq at offset 0 + 0
+Adding 0.130714 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.3.tmp 130714
+[1..1] 130726 -method 56,2,0
+1 +added, 0 -removed.
+
+0.000000 + (0.130714 -> 0.130714 -> 0.125942) = 0.125942 MB
+0.798 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.6.zpaq at offset 0 + 0
+Adding 0.125364 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.6.tmp 125364
+[1..1] 125376 -method 56,2,0
+1 +added, 0 -removed.
+
+0.000000 + (0.125364 -> 0.125364 -> 0.120699) = 0.120699 MB
+0.857 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.7.zpaq at offset 0 + 0
+Adding 0.117315 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.7.tmp 117315
+[1..3] 117335 -method 56,3,0
+1 +added, 0 -removed.
+
+0.000000 + (0.117315 -> 0.117315 -> 0.113270) = 0.113270 MB
+0.876 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_seq.bin.0.zpaq at offset 0 + 0
+Adding 0.134672 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:28.
++ ./tmp.fa37JncCHr//read_seq.bin.0.tmp 134672
+[1..2] 134688 -method 56,2,0
+1 +added, 0 -removed.
+
+0.000000 + (0.134672 -> 0.134672 -> 0.129802) = 0.129802 MB
+0.936 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.4.zpaq at offset 0 + 0
+Adding 0.030340 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:29.
++ ./tmp.fa37JncCHr//e.4 30340
+[1..1] 30352 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (0.030340 -> 0.030340 -> 0.002139) = 0.002139 MB
+0.170 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.4.zpaq at offset 0 + 0
+Adding 0.012176 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//a.4 12176
+[1..1] 12188 -method 56,145,0
+1 +added, 0 -removed.
+
+0.000000 + (0.012176 -> 0.012176 -> 0.004547) = 0.004547 MB
+0.154 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.4.zpaq at offset 0 + 0
+Adding 0.002394 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//b.4 2394
+[1..1] 2406 -method 56,234,0
+1 +added, 0 -removed.
+
+0.000000 + (0.002394 -> 0.002394 -> 0.001471) = 0.001471 MB
+0.106 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.4.zpaq at offset 0 + 0
+Adding 0.001744 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//c.4 1744
+[1..1] 1756 -method 56,248,0
+1 +added, 0 -removed.
+
+0.000000 + (0.001744 -> 0.001744 -> 0.001710) = 0.001710 MB
+0.127 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.2.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:29.
++ ./tmp.fa37JncCHr//e.2 256000
+[1..3] 256020 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009500) = 0.009500 MB
+0.620 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.0.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:29.
++ ./tmp.fa37JncCHr//e.0 256000
+[1..4] 256024 -method 56,254,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009008) = 0.009008 MB
+0.646 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.1.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:29.
++ ./tmp.fa37JncCHr//e.1 256000
+[1..5] 256028 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009463) = 0.009463 MB
+0.646 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.3.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:29.
++ ./tmp.fa37JncCHr//e.3 256000
+[1..4] 256024 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009735) = 0.009735 MB
+0.656 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.0.zpaq at offset 0 + 0
+Adding 0.084880 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//a.0 84880
+[1..4] 84904 -method 56,142,0
+1 +added, 0 -removed.
+
+0.000000 + (0.084880 -> 0.084880 -> 0.026268) = 0.026268 MB
+0.306 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.3.zpaq at offset 0 + 0
+Adding 0.094768 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//a.3 94768
+[1..3] 94788 -method 56,146,0
+1 +added, 0 -removed.
+
+0.000000 + (0.094768 -> 0.094768 -> 0.027484) = 0.027484 MB
+0.348 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.2.zpaq at offset 0 + 0
+Adding 0.094128 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//a.2 94128
+[1..2] 94144 -method 56,146,0
+1 +added, 0 -removed.
+
+0.000000 + (0.094128 -> 0.094128 -> 0.027366) = 0.027366 MB
+0.441 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.0.zpaq at offset 0 + 0
+Adding 0.017669 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//b.0 17669
+[1..1] 17681 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.017669 -> 0.017669 -> 0.004097) = 0.004097 MB
+0.133 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.1.zpaq at offset 0 + 0
+Adding 0.091280 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//a.1 91280
+[1..2] 91296 -method 56,144,0
+1 +added, 0 -removed.
+
+0.000000 + (0.091280 -> 0.091280 -> 0.027511) = 0.027511 MB
+0.443 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.3.zpaq at offset 0 + 0
+Adding 0.019348 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
++ ./tmp.fa37JncCHr//b.3 19348
+[1..1] 19360 -method 56,248,0
+1 +added, 0 -removed.
+
+0.000000 + (0.019348 -> 0.019348 -> 0.004405) = 0.004405 MB
+0.151 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.1.zpaq at offset 0 + 0
+Adding 0.019008 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//b.1 19008
+[1..1] 19020 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.019008 -> 0.019008 -> 0.004344) = 0.004344 MB
+0.113 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.2.zpaq at offset 0 + 0
+Adding 0.020810 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//b.2 20810
+[1..1] 20822 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.020810 -> 0.020810 -> 0.004694) = 0.004694 MB
+0.165 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.0.zpaq at offset 0 + 0
+Adding 0.014118 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//c.0 14118
+[1..1] 14130 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (0.014118 -> 0.014118 -> 0.005673) = 0.005673 MB
+0.149 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.3.zpaq at offset 0 + 0
+Adding 0.015004 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//c.3 15004
+[1..1] 15016 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.015004 -> 0.015004 -> 0.006141) = 0.006141 MB
+0.138 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.1.zpaq at offset 0 + 0
+Adding 0.015196 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//c.1 15196
+[1..1] 15208 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (0.015196 -> 0.015196 -> 0.006012) = 0.006012 MB
+0.132 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.2.zpaq at offset 0 + 0
+Adding 0.018088 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
++ ./tmp.fa37JncCHr//c.2 18088
+[1..2] 18104 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.018088 -> 0.018088 -> 0.006786) = 0.006786 MB
+0.169 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.4.zpaq at offset 0 + 0
+Adding 2.649393 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:30.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.4 2649393
+100.00% 0:00:00 [1..46] 2649585 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (2.649393 -> 2.649393 -> 0.608243) = 0.608243 MB
+10.780 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.4.zpaq at offset 0 + 0
+Adding 0.060680 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:41.
++ ./tmp.fa37JncCHr//g.4 60680
+[1..1] 60692 -method 56,236,0
+1 +added, 0 -removed.
+
+0.000000 + (0.060680 -> 0.060680 -> 0.027524) = 0.027524 MB
+0.265 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.4.zpaq at offset 0 + 0
+Adding 0.001522 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:41.
++ ./tmp.fa37JncCHr//d.4 1522
+[1..1] 1534 -method 56,250,0
+1 +added, 0 -removed.
+
+0.000000 + (0.001522 -> 0.001522 -> 0.001084) = 0.001084 MB
+0.072 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.3.zpaq at offset 0 + 0
+Adding 22.520007 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.3 22520007
+100.00% 0:00:00 [1..281] 22521139 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (22.520007 -> 22.520007 -> 5.089233) = 5.089233 MB
+70.922 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.0.zpaq at offset 0 + 0
+Adding 21.912292 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.0 21912292
+100.00% 0:00:00 [1..293] 21913472 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (21.912292 -> 21.912292 -> 4.874722) = 4.874722 MB
+71.227 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.1.zpaq at offset 0 + 0
+Adding 21.878643 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.1 21878643
+100.00% 0:00:00 [1..300] 21879851 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (21.878643 -> 21.878643 -> 4.858284) = 4.858284 MB
+71.393 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.3.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:42.
++ ./tmp.fa37JncCHr//g.3 512000
+[1..7] 512036 -method 56,244,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.221337) = 0.221337 MB
+0.914 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.3.zpaq at offset 0 + 0
+Adding 0.011846 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:43.
++ ./tmp.fa37JncCHr//d.3 11846
+[1..1] 11858 -method 56,249,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011846 -> 0.011846 -> 0.001606) = 0.001606 MB
+0.073 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.0.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:42.
++ ./tmp.fa37JncCHr//g.0 512000
+[1..11] 512052 -method 56,245,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.220326) = 0.220326 MB
+0.948 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.0.zpaq at offset 0 + 0
+Adding 0.010610 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:43.
++ ./tmp.fa37JncCHr//d.0 10610
+[1..1] 10622 -method 56,249,0
+1 +added, 0 -removed.
+
+0.000000 + (0.010610 -> 0.010610 -> 0.001984) = 0.001984 MB
+0.077 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.1.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:42.
++ ./tmp.fa37JncCHr//g.1 512000
+[1..5] 512028 -method 56,242,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.220869) = 0.220869 MB
+0.931 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.2.zpaq at offset 0 + 0
+Adding 22.409101 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:31.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.2 22409101
+100.00% 0:00:00 [1..297] 22410297 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (22.409101 -> 22.409101 -> 5.060603) = 5.060603 MB
+72.285 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.1.zpaq at offset 0 + 0
+Adding 0.011410 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:43.
++ ./tmp.fa37JncCHr//d.1 11410
+[1..1] 11422 -method 56,250,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011410 -> 0.011410 -> 0.001894) = 0.001894 MB
+0.077 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.2.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:43.
++ ./tmp.fa37JncCHr//g.2 512000
+[1..3] 512020 -method 56,237,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.219948) = 0.219948 MB
+0.903 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.2.zpaq at offset 0 + 0
+Adding 0.011766 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:16:44.
++ ./tmp.fa37JncCHr//d.2 11766
+[1..1] 11778 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011766 -> 0.011766 -> 0.001865) = 0.001865 MB
+0.074 seconds (all OK)
+Encoding reads
+Encoding done:
+3852 singleton reads were aligned
+6 reads with N were aligned
+Encoding done!
+Time for this step: 2 s
+Temporary directory size: 58962458
+Reordering and compressing streams ...
+Reordering and compressing streams done!
+Time for this step: 75 s
+Temporary directory size: 25751912
+
+Sizes of streams after compression: 
+Reads:          22542029 bytes
+Quality:               0 bytes
+ID:              3209883 bytes
+Creating tar archive ...Tar archive done!
+Time for this step: 0 s
+Compression done!
+Total time for compression: 88 s
+
+Total size:     25804800 bytes
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ERR13703692_qual.zpaq at offset 0 + 0
+Adding 27.983620 MB in 1 files -method 56 -threads 32 at 2024-11-02 13:15:38.
+100.00% 0:00:00 + ERR13703692_qual_rle 27983620
+100.00% 0:00:00 [1..429] 27985344 -method 56,185,0
+1 +added, 0 -removed.
+
+0.000000 + (27.983620 -> 27.983620 -> 7.154967) = 7.154967 MB
+76.513 seconds (all OK)
+Files saved: ERR13703692_qual.txt
+Total bytes read: 99104549
+Total bytes written: 27983620
+ERR13703692 Quality file RLE encoding completed.
+Compressed file created: ERR13703692_qual.zpaq
+ERR13703692 Quality file compression completed.
+All operations completed.
+tar: *_metadata.txt: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+Operation completed: ERR13703692.staq
+Elapsed time: 99 seconds

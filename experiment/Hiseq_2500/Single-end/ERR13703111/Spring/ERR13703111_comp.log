@@ -1,0 +1,46 @@
+Temporary directory: ./tmp.fa37JncCHr/
+Starting compression...
+Preprocessing ...
+Max Read length: 237
+Total number of reads: 234360964
+Total number of reads without N: 233800822
+Preprocessing done!
+Time for this step: 850 s
+Temporary directory size: 8071491926
+Reordering ...
+Reading file
+Constructing dictionaries
+Reordering reads
+Reordering done, 205878865 were unmatched
+Writing to file
+Done!
+Reordering done!
+Time for this step: 269 s
+temp_dir size: 9063384438
+Encoding ...
+Maximum Read length: 237
+Number of non-singleton reads: 30013708
+Number of singleton reads: 203787114
+Number of reads with N: 560142
+Encoding reads
+Encoding done:
+57474672 singleton reads were aligned
+49600 reads with N were aligned
+Encoding done!
+Time for this step: 267 s
+Temporary directory size: 11615958525
+Reordering and compressing streams ...
+Reordering and compressing streams done!
+Time for this step: 233 s
+Temporary directory size: 6114847929
+
+Sizes of streams after compression: 
+Reads:        3911852849 bytes
+Quality:      1508468192 bytes
+ID:            694526888 bytes
+Creating tar archive ...Tar archive done!
+Time for this step: 6 s
+Compression done!
+Total time for compression: 1627 s
+
+Total size:   6121185280 bytes

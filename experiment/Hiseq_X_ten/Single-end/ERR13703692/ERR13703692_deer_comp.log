@@ -1,0 +1,588 @@
+nohup: ignoring input
+Temporary directory: ./tmp.fa37JncCHr/
+Starting compression...
+Preprocessing ...
+Max Read length: 289
+Total number of reads: 1054340
+Total number of reads without N: 1050515
+Preprocessing done!
+Time for this step: 3 s
+Temporary directory size: 30685031
+Reordering ...
+Reading file
+Constructing dictionaries
+Reordering reads
+Reordering done, 1027047 were unmatched
+Writing to file
+Done!
+Reordering done!
+Time for this step: 5 s
+temp_dir size: 34958143
+Encoding ...
+Maximum Read length: 289
+Number of non-singleton reads: 43356
+Number of singleton reads: 1007159
+Number of reads with N: 3825
+read_seq.bin.6.tmp.compressed
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+read_seq.bin.5.tmp.compressed
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.read_seq.bin.3.tmp.compressed
+
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+read_seq.bin.1.tmp.compressedread_seq.bin.7.tmp.compressed
+
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+
+read_seq.bin.2.tmp.compressed
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+read_seq.bin.4.tmp.compressed
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+read_seq.bin.0.tmp.compressed
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+FLAGS.seq_len change from 8 to 32 due to FLAGS.vocab_dim = 64 and FLAGS.hidden_dim = 256.
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+/home/donggyu/cmc/STAQ/staq_temp_1730620995/../Trace/compressor.py:168: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  series = np.fromstring(fp.read(), dtype=np.uint8)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+SLiMPerformer(
+  (input_map): Embedding(256, 32)
+  (output_logit_map): Linear(in_features=256, out_features=256, bias=True)
+  (layers): ModuleList(
+    (0): SLiMPerformerLayer(
+      (attention): MultiHeadAttention(
+        (q_map): Linear(in_features=256, out_features=256, bias=True)
+        (k_map): Linear(in_features=256, out_features=256, bias=True)
+        (v_map): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (U_map): Linear(in_features=256, out_features=4096, bias=True)
+      (V_map): Linear(in_features=4096, out_features=256, bias=True)
+      (layernorm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      (layernorm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+)
+200190204194
+218215
+
+
+208
+
+
+203
+0 : 8.337809032738015 size: 0.0
+0 : 8.316516892630595 size: 0.0
+0 : 8.27484205667352 size: 00.0 
+: 8.246751098412192 size: 0.0
+0 : 8.274007596851535 size: 0.0
+0 : 8.206551185668916 size: 0.0
+0 : 8.276544684917061 size: 0.00
+ : 8.330618782070742 size: 0.0
+last series
+Last encode part don't need inference.
+0.1067361831665039
+last series
+Last encode part don't need inference.
+0.10885810852050781
+last series
+Last encode part don't need inference.
+0.11168098449707031
+last series
+Last encode part don't need inference.
+0.11332225799560547
+last series
+Last encode part don't need inference.
+0.113677978515625
+last series
+Last encode part don't need inference.
+0.11536026000976562
+last series
+Last encode part don't need inference.
+0.11857986450195312
+last series
+Last encode part don't need inference.
+0.120147705078125
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.4.zpaq at offset 0 + 0
+Adding 0.030340 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//e.4 30340
+[1..1] 30352 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (0.030340 -> 0.030340 -> 0.002142) = 0.002142 MB
+0.102 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.4.zpaq at offset 0 + 0
+Adding 0.012224 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//a.4 12224
+[1..1] 12236 -method 56,147,0
+1 +added, 0 -removed.
+
+0.000000 + (0.012224 -> 0.012224 -> 0.004572) = 0.004572 MB
+0.090 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.4.zpaq at offset 0 + 0
+Adding 0.002386 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//b.4 2386
+[1..1] 2398 -method 56,233,0
+1 +added, 0 -removed.
+
+0.000000 + (0.002386 -> 0.002386 -> 0.001468) = 0.001468 MB
+0.072 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.4.zpaq at offset 0 + 0
+Adding 0.001716 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//c.4 1716
+[1..1] 1728 -method 56,244,0
+1 +added, 0 -removed.
+
+0.000000 + (0.001716 -> 0.001716 -> 0.001706) = 0.001706 MB
+0.072 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.3.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//e.3 256000
+[1..4] 256024 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009736) = 0.009736 MB
+0.406 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.0.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//e.0 256000
+[1..3] 256020 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.008993) = 0.008993 MB
+0.413 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.2.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//e.2 256000
+[1..4] 256024 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009538) = 0.009538 MB
+0.408 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_flag.txt.1.zpaq at offset 0 + 0
+Adding 0.256000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
++ ./tmp.fa37JncCHr//e.1 256000
+[1..5] 256028 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.256000 -> 0.256000 -> 0.009465) = 0.009465 MB
+0.411 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.3.zpaq at offset 0 + 0
+Adding 0.094808 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//a.3 94808
+[1..1] 94820 -method 56,146,0
+1 +added, 0 -removed.
+
+0.000000 + (0.094808 -> 0.094808 -> 0.027488) = 0.027488 MB
+0.272 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.2.zpaq at offset 0 + 0
+Adding 0.094256 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//a.2 94256
+[1..4] 94280 -method 56,146,0
+1 +added, 0 -removed.
+
+0.000000 + (0.094256 -> 0.094256 -> 0.027508) = 0.027508 MB
+0.272 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.1.zpaq at offset 0 + 0
+Adding 0.091328 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//a.1 91328
+[1..2] 91344 -method 56,144,0
+1 +added, 0 -removed.
+
+0.000000 + (0.091328 -> 0.091328 -> 0.027476) = 0.027476 MB
+0.271 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_pos.bin.0.zpaq at offset 0 + 0
+Adding 0.085080 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//a.0 85080
+[1..2] 85096 -method 56,142,0
+1 +added, 0 -removed.
+
+0.000000 + (0.085080 -> 0.085080 -> 0.026198) = 0.026198 MB
+0.281 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.2.zpaq at offset 0 + 0
+Adding 0.020985 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//b.2 20985
+[1..2] 21001 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.020985 -> 0.020985 -> 0.004765) = 0.004765 MB
+0.101 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.0.zpaq at offset 0 + 0
+Adding 0.017879 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//b.0 17879
+[1..1] 17891 -method 56,250,0
+1 +added, 0 -removed.
+
+0.000000 + (0.017879 -> 0.017879 -> 0.004140) = 0.004140 MB
+0.094 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.3.zpaq at offset 0 + 0
+Adding 0.019445 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//b.3 19445
+[1..1] 19457 -method 56,246,0
+1 +added, 0 -removed.
+
+0.000000 + (0.019445 -> 0.019445 -> 0.004427) = 0.004427 MB
+0.110 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noise.txt.1.zpaq at offset 0 + 0
+Adding 0.019171 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//b.1 19171
+[1..1] 19183 -method 56,249,0
+1 +added, 0 -removed.
+
+0.000000 + (0.019171 -> 0.019171 -> 0.004424) = 0.004424 MB
+0.115 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.0.zpaq at offset 0 + 0
+Adding 0.014488 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//c.0 14488
+[1..1] 14500 -method 56,253,0
+1 +added, 0 -removed.
+
+0.000000 + (0.014488 -> 0.014488 -> 0.005760) = 0.005760 MB
+0.093 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.3.zpaq at offset 0 + 0
+Adding 0.015188 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//c.3 15188
+[1..1] 15200 -method 56,252,0
+1 +added, 0 -removed.
+
+0.000000 + (0.015188 -> 0.015188 -> 0.006215) = 0.006215 MB
+0.098 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.2.zpaq at offset 0 + 0
+Adding 0.018406 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//c.2 18406
+[1..1] 18418 -method 56,254,0
+1 +added, 0 -removed.
+
+0.000000 + (0.018406 -> 0.018406 -> 0.006855) = 0.006855 MB
+0.115 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_noisepos.bin.1.zpaq at offset 0 + 0
+Adding 0.015510 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
++ ./tmp.fa37JncCHr//c.1 15510
+[1..1] 15522 -method 56,252,0
+1 +added, 0 -removed.
+
+0.000000 + (0.015510 -> 0.015510 -> 0.006094) = 0.006094 MB
+0.099 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.4.zpaq at offset 0 + 0
+Adding 2.648354 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:45.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.4 2648354
+100.00% 0:00:00 [1..46] 2648546 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (2.648354 -> 2.648354 -> 0.608095) = 0.608095 MB
+9.976 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.4.zpaq at offset 0 + 0
+Adding 0.060680 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:55.
++ ./tmp.fa37JncCHr//g.4 60680
+[1..1] 60692 -method 56,236,0
+1 +added, 0 -removed.
+
+0.000000 + (0.060680 -> 0.060680 -> 0.027524) = 0.027524 MB
+0.337 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.4.zpaq at offset 0 + 0
+Adding 0.001528 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:56.
++ ./tmp.fa37JncCHr//d.4 1528
+[1..1] 1540 -method 56,215,0
+1 +added, 0 -removed.
+
+0.000000 + (0.001528 -> 0.001528 -> 0.001084) = 0.001084 MB
+0.177 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ERR13703692_qual.zpaq at offset 0 + 0
+Adding 27.983620 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:31.
+100.00% 0:00:00 + ERR13703692_qual_rle 27983620
+100.00% 0:00:00 [1..429] 27985344 -method 56,185,0
+1 +added, 0 -removed.
+
+0.000000 + (27.983620 -> 27.983620 -> 7.154967) = 7.154967 MB
+87.053 seconds (all OK)
+Files saved: ERR13703692_qual.txt
+Total bytes read: 99104549
+Total bytes written: 27983620
+ERR13703692 Quality file RLE encoding completed.
+Compressed file created: ERR13703692_qual.zpaq
+ERR13703692 Quality file compression completed.
+All operations completed.
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.1.zpaq at offset 0 + 0
+Adding 21.876983 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.1 21876983
+100.00% 0:00:00 [1..300] 21878191 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (21.876983 -> 21.876983 -> 4.857965) = 4.857965 MB
+77.937 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.3.zpaq at offset 0 + 0
+Adding 22.518894 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.3 22518894
+100.00% 0:00:00 [1..281] 22520026 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (22.518894 -> 22.518894 -> 5.089106) = 5.089106 MB
+79.112 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.1.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:04.
++ ./tmp.fa37JncCHr//g.1 512000
+[1..5] 512028 -method 56,242,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.220869) = 0.220869 MB
+1.273 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.1.zpaq at offset 0 + 0
+Adding 0.011416 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:05.
++ ./tmp.fa37JncCHr//d.1 11416
+[1..1] 11428 -method 56,250,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011416 -> 0.011416 -> 0.001890) = 0.001890 MB
+0.094 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.2.zpaq at offset 0 + 0
+Adding 22.406085 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.2 22406085
+100.00% 0:00:00 [1..297] 22407281 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (22.406085 -> 22.406085 -> 5.060199) = 5.060199 MB
+79.360 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_unaligned.txt.0.zpaq at offset 0 + 0
+Adding 21.905596 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:03:46.
+100.00% 0:00:00 + ./tmp.fa37JncCHr//f.0 21905596
+100.00% 0:00:00 [1..293] 21906776 -method 56,251,0
+1 +added, 0 -removed.
+
+0.000000 + (21.905596 -> 21.905596 -> 4.873749) = 4.873749 MB
+79.947 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.3.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:05.
++ ./tmp.fa37JncCHr//g.3 512000
+[1..7] 512036 -method 56,244,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.221337) = 0.221337 MB
+0.976 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.3.zpaq at offset 0 + 0
+Adding 0.011851 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:06.
++ ./tmp.fa37JncCHr//d.3 11851
+[1..1] 11863 -method 56,249,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011851 -> 0.011851 -> 0.001612) = 0.001612 MB
+0.077 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.2.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:05.
++ ./tmp.fa37JncCHr//g.2 512000
+[1..3] 512020 -method 56,237,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.219948) = 0.219948 MB
+0.984 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.2.zpaq at offset 0 + 0
+Adding 0.011782 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:06.
++ ./tmp.fa37JncCHr//d.2 11782
+[1..1] 11794 -method 56,247,0
+1 +added, 0 -removed.
+
+0.000000 + (0.011782 -> 0.011782 -> 0.001876) = 0.001876 MB
+0.078 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_lengths.bin.0.zpaq at offset 0 + 0
+Adding 0.512000 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:06.
++ ./tmp.fa37JncCHr//g.0 512000
+[1..11] 512052 -method 56,245,0
+1 +added, 0 -removed.
+
+0.000000 + (0.512000 -> 0.512000 -> 0.220326) = 0.220326 MB
+0.969 seconds (all OK)
+zpaq v7.15 journaling archiver, compiled Jan  5 2021
+Creating ./tmp.fa37JncCHr//read_rev.txt.0.zpaq at offset 0 + 0
+Adding 0.010635 MB in 1 files -method 56 -threads 32 at 2024-11-03 08:05:07.
++ ./tmp.fa37JncCHr//d.0 10635
+[1..1] 10647 -method 56,250,0
+1 +added, 0 -removed.
+
+0.000000 + (0.010635 -> 0.010635 -> 0.001995) = 0.001995 MB
+0.078 seconds (all OK)
+Encoding reads
+Encoding done:
+3850 singleton reads were aligned
+6 reads with N were aligned
+Encoding done!
+Time for this step: 20 s
+Temporary directory size: 58984441
+Reordering and compressing streams ...
+Reordering and compressing streams done!
+Time for this step: 82 s
+Temporary directory size: 25777132
+
+Sizes of streams after compression: 
+Reads:          22567249 bytes
+Quality:               0 bytes
+ID:              3209883 bytes
+Creating tar archive ...Tar archive done!
+Time for this step: 0 s
+Compression done!
+Total time for compression: 112 s
+
+Total size:     25825280 bytes
+Operation completed: ERR13703692_deep.staq
+Elapsed time: 112 seconds

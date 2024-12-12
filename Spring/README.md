@@ -1,5 +1,7 @@
 # SPRING - ZPAQ Version
 
+The SPRING software, used by DongGyu Hwang, was developed at the University of Illinois at Urbana-Champaign and Stanford University.
+
 [![C/C++ CI](https://github.com/shubhamchandak94/Spring/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/shubhamchandak94/Spring/actions/workflows/c-cpp.yml)
 ### [Bioinformatics publication](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty1015/5232998?guestAccessKey=266a1378-4684-4f04-bb99-6febdf9d1fb9)
 #### Check out specialized tool for compressing nanopore long reads: https://github.com/qm2/NanoSpring

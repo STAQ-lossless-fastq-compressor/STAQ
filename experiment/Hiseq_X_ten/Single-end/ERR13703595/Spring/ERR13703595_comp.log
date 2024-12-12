@@ -1,0 +1,47 @@
+nohup: ignoring input
+Temporary directory: ./tmp.hMaiRrV41m/
+Starting compression...
+Preprocessing ...
+Max Read length: 291
+Total number of reads: 200698448
+Total number of reads without N: 199999707
+Preprocessing done!
+Time for this step: 3257 s
+Temporary directory size: 6793661372
+Reordering ...
+Reading file
+Constructing dictionaries
+Reordering reads
+Reordering done, 189450894 were unmatched
+Writing to file
+Done!
+Reordering done!
+Time for this step: 325 s
+temp_dir size: 7625974259
+Encoding ...
+Maximum Read length: 291
+Number of non-singleton reads: 11444279
+Number of singleton reads: 188555428
+Number of reads with N: 698741
+Encoding reads
+Encoding done:
+53387651 singleton reads were aligned
+167270 reads with N were aligned
+Encoding done!
+Time for this step: 306 s
+Temporary directory size: 10512609253
+Reordering and compressing streams ...
+Reordering and compressing streams done!
+Time for this step: 264 s
+Temporary directory size: 5084161931
+
+Sizes of streams after compression: 
+Reads:        3575588404 bytes
+Quality:      1199932244 bytes
+ID:            308641283 bytes
+Creating tar archive ...Tar archive done!
+Time for this step: 10 s
+Compression done!
+Total time for compression: 4163 s
+
+Total size:   5089515520 bytes
