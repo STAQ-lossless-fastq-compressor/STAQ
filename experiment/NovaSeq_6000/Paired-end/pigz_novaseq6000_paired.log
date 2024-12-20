@@ -1,0 +1,31 @@
+nohup: ignoring input
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/ERR13720533_1.fastq /home/donggyu/cmc/fastq_data/ERR13720533_2.fastq > ./ERR13720533.fastq.gz' > ./ERR13720533_comp.log
+
+real	14m5.925s
+user	56m25.682s
+sys	0m20.809s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/ERR13720551_1.fastq /home/donggyu/cmc/fastq_data/ERR13720551_2.fastq > ./ERR13720551.fastq.gz' > ./ERR13720551_comp.log
+
+real	14m15.695s
+user	57m4.822s
+sys	0m21.269s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /home/donggyu/cmc/fastq_data/ERR13720549_1.fastq /home/donggyu/cmc/fastq_data/ERR13720549_2.fastq > ./ERR13720549.fastq.gz' > ./ERR13720549_comp.log
+
+real	15m57.611s
+user	63m52.930s
+sys	0m22.485s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13720533.fastq.gz' > ./ERR13720533_decomp.log
+
+real	0m35.777s
+user	0m50.635s
+sys	0m22.650s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13720551.fastq.gz' > ./ERR13720551_decomp.log
+
+real	0m35.837s
+user	0m51.089s
+sys	0m22.618s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13720549.fastq.gz' > ./ERR13720549_decomp.log
+
+real	0m39.508s
+user	0m56.216s
+sys	0m24.267s

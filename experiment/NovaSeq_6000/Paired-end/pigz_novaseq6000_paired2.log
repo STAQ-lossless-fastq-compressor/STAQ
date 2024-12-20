@@ -1,0 +1,11 @@
+nohup: ignoring input
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR27002256_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR27002256_2.fastq > ./SRR27002256.fastq.gz' > ./SRR27002256_comp.log
+
+real	232m3.330s
+user	927m50.142s
+sys	5m27.086s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR27002255_1.fastq /nas-home/donggyu/cmc/fastq_data/SRR27002255_2.fastq > ./SRR27002255.fastq.gz' > ./SRR27002255_comp.log
+
+real	246m50.148s
+user	983m48.877s
+sys	8m44.374s

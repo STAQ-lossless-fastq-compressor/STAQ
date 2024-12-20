@@ -1,0 +1,11 @@
+nohup: ignoring input
+Executing: bash -c 'time pigz -p 4 -d ./SRR27002256.fastq.gz' > ./SRR27002256_decomp.log
+
+real	10m12.533s
+user	13m0.262s
+sys	6m37.859s
+Executing: bash -c 'time pigz -p 4 -d ./SRR27002255.fastq.gz' > ./SRR27002255_decomp.log
+
+real	11m0.669s
+user	14m5.955s
+sys	7m15.949s
