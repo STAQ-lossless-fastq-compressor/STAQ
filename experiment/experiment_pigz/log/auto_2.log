@@ -1,0 +1,31 @@
+nohup: 입력 무시
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083896_1.fastq > ./SRR20083896_1.fastq.gz' > ./SRR20083896_1_comp.log
+
+real	9m46.418s
+user	39m1.690s
+sys	0m26.408s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083905_1.fastq > ./SRR20083905_1.fastq.gz' > ./SRR20083905_1_comp.log
+
+real	9m56.566s
+user	39m39.781s
+sys	0m26.297s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083901_1.fastq > ./SRR20083901_1.fastq.gz' > ./SRR20083901_1_comp.log
+
+real	9m33.656s
+user	38m11.382s
+sys	0m27.684s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083896_1.fastq.gz' > ./SRR20083896_1_decomp.log
+
+real	0m26.790s
+user	0m40.481s
+sys	0m18.856s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083905_1.fastq.gz' > ./SRR20083905_1_decomp.log
+
+real	0m27.031s
+user	0m41.058s
+sys	0m18.400s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083901_1.fastq.gz' > ./SRR20083901_1_decomp.log
+
+real	0m27.673s
+user	0m41.738s
+sys	0m19.628s

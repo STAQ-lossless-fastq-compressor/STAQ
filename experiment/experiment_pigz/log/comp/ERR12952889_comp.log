@@ -1,0 +1,5 @@
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR12952889.fastq > ./ERR12952889.fastq.gz' > ./ERR12952889_comp.log
+
+real	193m59.510s
+user	775m59.366s
+sys	6m19.587s

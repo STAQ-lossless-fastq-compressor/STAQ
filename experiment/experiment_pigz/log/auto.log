@@ -1,0 +1,60 @@
+nohup: 입력 무시
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR11512184.fastq > ./ERR11512184.fastq.gz' > ./ERR11512184_comp.log
+
+real	1m42.515s
+user	6m49.833s
+sys	0m4.656s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR11512182.fastq > ./ERR11512182.fastq.gz' > ./ERR11512182_comp.log
+
+real	1m58.374s
+user	7m53.161s
+sys	0m5.518s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR11512187.fastq > ./ERR11512187.fastq.gz' > ./ERR11512187_comp.log
+
+real	3m7.958s
+user	12m31.591s
+sys	0m9.786s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703453.fastq > ./ERR13703453.fastq.gz' > ./ERR13703453_comp.log
+
+real	4m19.854s
+user	17m20.041s
+sys	0m9.284s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703454.fastq > ./ERR13703454.fastq.gz' > ./ERR13703454_comp.log
+
+real	6m0.553s
+user	24m3.078s
+sys	0m13.915s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083898_1.fastq > ./SRR20083898_1.fastq.gz' > ./SRR20083898_1_comp.log
+
+real	10m7.541s
+user	40m29.992s
+sys	0m21.690s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083894_1.fastq > ./SRR20083894_1.fastq.gz' > ./SRR20083894_1_comp.log
+
+real	10m46.594s
+user	43m4.689s
+sys	0m23.466s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR7746653_1.fastq > ./SRR7746653_1.fastq.gz' > ./SRR7746653_1_comp.log
+
+real	11m57.918s
+user	47m48.116s
+sys	0m35.119s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083903_1.fastq > ./SRR20083903_1.fastq.gz' > ./SRR20083903_1_comp.log
+
+real	21m1.804s
+user	83m16.601s
+sys	1m4.437s
+Executing: bash -c 'time pigz -p 4 -d ./ERR11512184.fastq.gz' > ./ERR11512184.fastq > ./ERR11512184_decomp.log
+pigz: skipping: ./ERR11512184.fastq exists
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+Traceback (most recent call last):
+  File "/home/donggyu/cmc/experiment/auto.py", line 55, in <module>
+    compress_fastq_files()
+  File "/home/donggyu/cmc/experiment/auto.py", line 46, in compress_fastq_files
+    subprocess.run(command, shell=True, check=True)
+  File "/home/donggyu/anaconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'bash -c 'time pigz -p 4 -d ./ERR11512184.fastq.gz' > ./ERR11512184.fastq > ./ERR11512184_decomp.log' returned non-zero exit status 1.

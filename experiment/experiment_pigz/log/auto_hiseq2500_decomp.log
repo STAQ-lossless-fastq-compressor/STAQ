@@ -1,0 +1,50 @@
+nohup: 입력 무시
+
+real	1m50.885s
+user	2m2.098s
+sys	0m58.123s
+
+real	2m49.381s
+user	2m31.877s
+sys	0m59.788s
+
+real	2m27.504s
+user	2m21.267s
+sys	1m8.568s
+
+real	2m34.804s
+user	2m20.653s
+sys	1m4.851s
+
+real	3m3.157s
+user	2m48.659s
+sys	1m18.096s
+
+real	4m6.487s
+user	3m27.638s
+sys	1m41.384s
+
+real	4m21.856s
+user	3m48.930s
+sys	1m48.181s
+pigz: abort: write error on ./ERR13703121.fastq (No space left on device)
+
+real	3m46.545s
+user	3m12.213s
+sys	1m42.032s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703249.fastq.gz' > ./ERR13703249_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703240.fastq.gz' > ./ERR13703240_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703254.fastq.gz' > ./ERR13703254_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703155.fastq.gz' > ./ERR13703155_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703245.fastq.gz' > ./ERR13703245_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703108.fastq.gz' > ./ERR13703108_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703162.fastq.gz' > ./ERR13703162_decomp.log
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703121.fastq.gz' > ./ERR13703121_decomp.log
+Traceback (most recent call last):
+  File "/home/donggyu/cmc/experiment/auto.py", line 53, in <module>
+    compress_fastq_files()
+  File "/home/donggyu/cmc/experiment/auto.py", line 44, in compress_fastq_files
+    subprocess.run(command, shell=True, check=True)
+  File "/home/donggyu/anaconda3/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'bash -c 'time pigz -p 4 -d ./ERR13703121.fastq.gz' > ./ERR13703121_decomp.log' returned non-zero exit status 28.

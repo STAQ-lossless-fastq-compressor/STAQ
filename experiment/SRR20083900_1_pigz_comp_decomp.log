@@ -1,0 +1,10 @@
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083900_1.fastq > ./SRR20083900_1.fastq.gz' > ./SRR20083900_1_comp.log
+
+real	17m1.523s
+user	67m51.634s
+sys	0m36.461s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083900_1.fastq.gz' > ./SRR20083900_1_decomp.log
+
+real	0m38.196s
+user	0m54.980s
+sys	0m23.920s

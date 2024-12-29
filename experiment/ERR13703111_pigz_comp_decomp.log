@@ -1,0 +1,10 @@
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703111.fastq > ./ERR13703111.fastq.gz' > ./ERR13703111_comp.log
+
+real	37m4.005s
+user	147m2.634s
+sys	1m58.310s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703111.fastq.gz' > ./ERR13703111_decomp.log
+
+real	2m21.451s
+user	3m19.963s
+sys	1m29.152s

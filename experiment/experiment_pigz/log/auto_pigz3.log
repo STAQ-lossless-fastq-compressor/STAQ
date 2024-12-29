@@ -1,0 +1,11 @@
+nohup: 입력 무시
+
+real	9m57.200s
+user	39m50.330s
+sys	0m12.771s
+
+real	9m41.608s
+user	38m47.963s
+sys	0m10.872s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083905_1.fastq > ./SRR20083905_1.fastq.gz' > ./SRR20083905_1_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/SRR20083901_1.fastq > ./SRR20083901_1.fastq.gz' > ./SRR20083901_1_comp.log

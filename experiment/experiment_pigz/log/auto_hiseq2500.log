@@ -1,0 +1,46 @@
+nohup: 입력 무시
+
+real	11m18.490s
+user	45m8.361s
+sys	1m4.751s
+
+real	12m43.384s
+user	50m53.084s
+sys	1m9.075s
+
+real	16m22.142s
+user	65m19.972s
+sys	1m16.209s
+
+real	14m43.152s
+user	58m50.428s
+sys	1m9.661s
+
+real	17m57.825s
+user	71m50.262s
+sys	1m11.127s
+
+real	22m12.052s
+user	88m42.348s
+sys	1m37.727s
+
+real	24m55.932s
+user	96m21.208s
+sys	1m46.438s
+
+real	27m26.958s
+user	108m57.351s
+sys	1m57.585s
+
+real	32m13.297s
+user	128m41.079s
+sys	2m12.491s
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703249.fastq > ./ERR13703249.fastq.gz' > ./ERR13703249_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703240.fastq > ./ERR13703240.fastq.gz' > ./ERR13703240_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703254.fastq > ./ERR13703254.fastq.gz' > ./ERR13703254_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703155.fastq > ./ERR13703155.fastq.gz' > ./ERR13703155_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703245.fastq > ./ERR13703245.fastq.gz' > ./ERR13703245_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703108.fastq > ./ERR13703108.fastq.gz' > ./ERR13703108_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703162.fastq > ./ERR13703162.fastq.gz' > ./ERR13703162_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703121.fastq > ./ERR13703121.fastq.gz' > ./ERR13703121_comp.log
+Executing: bash -c 'time pigz -p 4 -k -9 -c /nas-home/donggyu/cmc/fastq_data/ERR13703111.fastq > ./ERR13703111.fastq.gz' > ./ERR13703111_comp.log

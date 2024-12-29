@@ -1,0 +1,46 @@
+nohup: 입력 무시
+Executing: bash -c 'time pigz -p 4 -d ./ERR11512184.fastq.gz' > ./ERR11512184_decomp.log
+
+real	0m8.370s
+user	0m13.003s
+sys	0m6.269s
+Executing: bash -c 'time pigz -p 4 -d ./ERR11512182.fastq.gz' > ./ERR11512182_decomp.log
+
+real	0m17.478s
+user	0m19.051s
+sys	0m9.377s
+Executing: bash -c 'time pigz -p 4 -d ./ERR11512187.fastq.gz' > ./ERR11512187_decomp.log
+
+real	0m23.680s
+user	0m27.675s
+sys	0m14.588s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703453.fastq.gz' > ./ERR13703453_decomp.log
+
+real	0m57.035s
+user	0m42.989s
+sys	0m20.545s
+Executing: bash -c 'time pigz -p 4 -d ./ERR13703454.fastq.gz' > ./ERR13703454_decomp.log
+
+real	0m56.890s
+user	0m49.511s
+sys	0m25.826s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083898_1.fastq.gz' > ./SRR20083898_1_decomp.log
+
+real	1m16.606s
+user	0m54.389s
+sys	0m28.121s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083894_1.fastq.gz' > ./SRR20083894_1_decomp.log
+
+real	0m46.248s
+user	0m50.244s
+sys	0m25.880s
+Executing: bash -c 'time pigz -p 4 -d ./SRR7746653_1.fastq.gz' > ./SRR7746653_1_decomp.log
+
+real	1m30.728s
+user	1m18.665s
+sys	0m36.280s
+Executing: bash -c 'time pigz -p 4 -d ./SRR20083903_1.fastq.gz' > ./SRR20083903_1_decomp.log
+
+real	2m40.309s
+user	2m4.811s
+sys	0m58.706s
